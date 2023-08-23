@@ -1,13 +1,12 @@
 import Button from "../components/Button";
 import "./Home.scss";
-import { useState, useEffect } from "react";
 import AboutUsIntro from "../components/AboutIntro";
 import MissionIntro from "../components/MissionIntro";
 import Products from "../components/Products";
 
 const Home = () => {
   return (
-    <>
+    <div className="Home-container">
       <div className="Home">
         <h1>We buy, transport, store and deliver oil all over Kosovo</h1>
         <p className="description">
@@ -20,7 +19,7 @@ const Home = () => {
       <AboutUsIntro />
       <MissionIntro />
       <Products />
-    </>
+    </div>
   );
 };
 

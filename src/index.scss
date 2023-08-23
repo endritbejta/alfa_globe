@@ -30,3 +30,17 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide the scrollbar track and thumb */
+::-webkit-scrollbar {
+  display: none;
+  width: 0.5em; /* Set a width for the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Set the track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Set the thumb background color */
+}

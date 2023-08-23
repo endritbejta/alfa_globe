@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  // scrollbar-base-color: #333;
+  scrollbar-track-color: red;
 }
 
 code {
@@ -25,6 +27,8 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-color: #777 #aaa;
+  scrollbar-base-color: red;
 }
 
 ::-webkit-scrollbar {

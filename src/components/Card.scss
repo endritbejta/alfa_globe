@@ -1,0 +1,51 @@
+.card {
+  /* background-color: #ccc; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  height: 300px;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  /* cursor: pointer; */
+  object-fit: contain;
+  color: white;
+  position: relative;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transform: translateY(1px);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transform-origin: center;
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.card button {
+  width: max-content;
+  padding: 10px 15px;
+  align-self: center;
+  z-index: 1;
+  cursor: pointer;
+  /* background-color: transparent; */
+  background-color: rgba(red, 0.9);
+}
+
+.card p,
+.card h3 {
+  z-index: 1;
+}

@@ -22,4 +22,47 @@
   .contact a:visited {
     color: white;
   }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    // transform: translateX(-150%);
+    div {
+      width: 100px;
+      aspect-ratio: 1/1;
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      img {
+        width: 100%;
+        aspect-ratio: 1/0.91;
+      }
+
+      &:nth-child(2) {
+        transform: translate(6px, -4px);
+      }
+      &:nth-child(3) {
+        transform: translate(14px, -8px);
+      }
+    }
+
+    &:hover {
+      div:first-child {
+        transform: scale(1.1) translate(0px, 0px);
+      }
+      div:nth-child(2) {
+        transform: scale(1.2) translate(9px, -5px);
+      }
+      div:nth-child(3) {
+        transform: scale(1.3) translate(20px, -11px);
+      }
+    }
+    .name {
+      text-align: center;
+    }
+  }
 }

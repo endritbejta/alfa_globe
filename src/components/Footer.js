@@ -3,10 +3,47 @@ import "./Footer.scss";
 
 import whatsapp from "../assets/svg/whatsapp.svg";
 import viber from "../assets/svg/viber.svg";
+import alfared from "../assets/image/alfalogored.png";
+import alfaorange from "../assets/image/alfalogoorange.png";
+import alfayellow from "../assets/image/alfalogoyellow.png";
 
 const Footer = () => {
+  const handleClick = () => {
+    const coloredLogos = document.querySelectorAll(".colored-logo");
+    coloredLogos.forEach((logo) => {
+      logo.animate(
+        [
+          { transform: "scale(1) translate(0,0)" },
+          { transform: "scale(0.8) translate(0,0)" },
+          { transform: "scale(1) translate(0,0)" },
+        ],
+        {
+          duration: 400,
+          fill: "forwards",
+          easing: "ease",
+        }
+      );
+    });
+  };
   return (
     <footer className="footer">
+      <div>
+        <div onClick={handleClick} className="logo">
+          <div className="colored-logo">
+            <img src={alfared} />
+          </div>
+          <div className="colored-logo">
+            <img src={alfaorange} />
+          </div>
+          <div className="colored-logo">
+            <img src={alfayellow} />
+          </div>
+        </div>
+        <div className="name">
+          <p>Alfa Globe</p>
+          <address>alfaglobe.ks@gmail.com</address>
+        </div>
+      </div>
       <div className="socials">
         <h3>Socials</h3>
         <div>

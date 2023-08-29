@@ -1,17 +1,23 @@
 .Products {
   background: white;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  row-gap: 1%;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
-.Products div {
-  width: calc(1 / 3 * 100%);
-  height: 60vh;
-}
+// .Products div {
+//   width: calc(1 / 3 * 100%);
+//   height: 60vh;
+// }
 
-.Products div:nth-of-type(odd) {
-  background-color: white;
-}
+// .Products div:nth-of-type(odd) {
+//   background-color: white;
+// }
 
-.Products div:nth-of-type(even) {
-  background-color: gray;
-}
+// .Products div:nth-of-type(even) {
+//   background-color: gray;
+// }

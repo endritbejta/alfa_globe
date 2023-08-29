@@ -9,9 +9,9 @@ const Header = ({ setShowOptions, showOptions }) => {
   return (
     <header className="header">
       <div className="company">
-        {/* <div className={classes.logo}>
+        <div className="logo">
           <img src={alfalogo} alt="alfa globe logo" />
-        </div> */}
+        </div>
         <h1 className="name">ALFA GLOBE</h1>
       </div>
       <div onClick={handleClick} className="hamburger">

@@ -12,11 +12,19 @@
   .company {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0px;
     .logo {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-self: stretch;
+      img {
+        height: 60px;
+        aspect-ratio: 1/0.89;
+        filter: contrast(100%) hue-rotate(180deg);
+      }
+
+      .name {
+        margin-block: auto;
+      }
     }
     .name {
       background: linear-gradient(
@@ -29,12 +37,7 @@
       -webkit-text-fill-color: transparent;
     }
   }
-  img {
-    height: 100%;
-    margin-top: 25px;
-    height: 50px;
-    aspect-ratio: 1/1;
-  }
+
   .hamburger {
     display: none;
     cursor: pointer;

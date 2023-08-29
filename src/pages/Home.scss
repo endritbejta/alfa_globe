@@ -1,6 +1,8 @@
 .Home-container {
   width: 100vw;
+  max-width: 2200px;
   background: url("../assets/image/highway3.jpg") no-repeat bottom fixed;
+  // object-fit: fill;
   .Home {
     padding-top: 120px;
     width: 45%;

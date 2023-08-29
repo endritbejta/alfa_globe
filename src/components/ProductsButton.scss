@@ -1,0 +1,45 @@
+.products-button {
+  width: max-content;
+  margin-inline: auto;
+  padding: 8px 20px;
+  padding-right: 34px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  .icon {
+    position: relative;
+    height: 100%;
+    margin-left: 20px;
+    i {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      transition: all 0.2s ease;
+      font-size: 14px;
+      &:first-of-type {
+        transform: translateX(-150%);
+        opacity: 0;
+      }
+    }
+  }
+  &:hover {
+    .icon {
+      i:first-of-type {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      i:nth-of-type(2) {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+  }
+
+  .inner-text {
+    font-size: 18px;
+  }
+}

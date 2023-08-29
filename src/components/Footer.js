@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.scss";
+import { useState } from "react";
 
 import whatsapp from "../assets/svg/whatsapp.svg";
 import viber from "../assets/svg/viber.svg";
 import alfared from "../assets/image/alfalogored.png";
 import alfaorange from "../assets/image/alfalogoorange.png";
 import alfayellow from "../assets/image/alfalogoyellow.png";
+import alfapink from "../assets/image/alfapink.png";
+import alfagreen from "../assets/image/alfagreen.png";
+import alfablue from "../assets/image/alfablue.png";
 
 const Footer = () => {
   const handleClick = () => {
@@ -25,6 +29,7 @@ const Footer = () => {
       );
     });
   };
+
   return (
     <footer className="footer">
       <div>
@@ -34,6 +39,15 @@ const Footer = () => {
           </div>
           <div className="colored-logo">
             <img src={alfaorange} />
+          </div>
+          <div className="colored-logo">
+            <img src={alfapink} />
+          </div>
+          <div className="colored-logo">
+            <img src={alfablue} />
+          </div>
+          <div className="colored-logo">
+            <img src={alfagreen} />
           </div>
           <div className="colored-logo">
             <img src={alfayellow} />

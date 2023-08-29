@@ -3,6 +3,9 @@
   max-width: 2200px;
   background: url("../assets/image/highway3.jpg") no-repeat bottom fixed;
   // object-fit: fill;
+  transition: scroll ease;
+  position: sticky;
+  z-index: 20;
   .Home {
     padding-top: 120px;
     width: 45%;

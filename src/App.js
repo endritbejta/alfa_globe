@@ -6,7 +6,7 @@ import Products from "./components/Products";
 import Home from "./pages/Home";
 import Mission from "./pages/Mission";
 import MobileNavBar from "./components/MobileNavBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([

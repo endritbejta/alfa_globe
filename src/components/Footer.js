@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Footer.scss";
-import { useState } from "react";
 
 import whatsapp from "../assets/svg/whatsapp.svg";
 import viber from "../assets/svg/viber.svg";
@@ -35,22 +34,22 @@ const Footer = () => {
       <div>
         <div onClick={handleClick} className="logo">
           <div className="colored-logo">
-            <img src={alfared} />
+            <img src={alfared} alt="alfalogo" />
           </div>
           <div className="colored-logo">
-            <img src={alfaorange} />
+            <img src={alfaorange} alt="alfalogo" />
           </div>
           <div className="colored-logo">
-            <img src={alfapink} />
+            <img src={alfapink} alt="alfalogo" />
           </div>
           <div className="colored-logo">
-            <img src={alfablue} />
+            <img src={alfablue} alt="alfalogo" />
           </div>
           <div className="colored-logo">
-            <img src={alfagreen} />
+            <img src={alfagreen} alt="alfalogo" />
           </div>
           <div className="colored-logo">
-            <img src={alfayellow} />
+            <img src={alfayellow} alt="alfalogo" />
           </div>
         </div>
         <div className="name">

@@ -11,7 +11,10 @@ const Products = () => {
         other valued commodieties can be put to good use, the must be brought,
         sold and transported. That is where we come in
       </p>
-      <img src="https://static.vecteezy.com/system/resources/previews/021/868/801/large_2x/aerial-top-view-of-oil-tanker-ship-sailing-on-sea-generative-ai-free-photo.JPG" />
+      <img
+        alt="photo"
+        src="https://static.vecteezy.com/system/resources/previews/021/868/801/large_2x/aerial-top-view-of-oil-tanker-ship-sailing-on-sea-generative-ai-free-photo.JPG"
+      />
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Card = ({ name, description }) => {
       <h3>{name}</h3>
       <p>{description}</p>
       <button>Learn more</button>
-      <img src={nozzle} />
+      <img src={nozzle} alt="petrol nozzle" />
     </div>
   );
 };

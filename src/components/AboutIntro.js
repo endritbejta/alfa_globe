@@ -17,7 +17,7 @@ const AboutUsIntro = () => {
         <Button description="See more" link="mission" />
       </div>
       <div className="image-container">
-        <img src={highway2} />
+        <img src={highway2} alt="highway" />
       </div>
     </div>
   );

@@ -18,7 +18,7 @@
     object-fit: cover;
     animation: pan-image 15s infinite linear;
     animation-play-state: paused;
-    filter: blur(0.2rem);
+    filter: blur(0.3rem);
     transition: filter 0.1s ease;
   }
 
@@ -34,7 +34,6 @@
   }
   &:hover {
     .card-image {
-      /* transition: all 0.2s ease; */
       animation-play-state: running;
       transition: filter 0.2s ease;
       filter: blur(0);
@@ -76,10 +75,6 @@
   }
 
   33% {
-    background-position: 60% 80%;
-    background-size: 200%;
-  }
-  33.0001% {
     background-position: 60% 80%;
     background-size: 200%;
   }

@@ -16,10 +16,10 @@
     .logo {
       display: flex;
       align-self: stretch;
+      transform: translateY(4px);
       img {
         height: 60px;
         aspect-ratio: 1/0.89;
-        filter: contrast(100%) hue-rotate(180deg);
       }
 
       .name {

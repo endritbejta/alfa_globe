@@ -7,25 +7,30 @@ import Home from "./pages/Home";
 import Mission from "./pages/Mission";
 import MobileNavBar from "./components/MobileNavBar";
 import { useEffect, useState } from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import AboutUsIntro from "./components/AboutIntro";
+import Layout from "./Layout/Layout";
 
 const router = createBrowserRouter([
   {
     path: "",
-    element: <Home />,
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+
+      {
+        path: "/about-us",
+        element: <AboutUsIntro />,
+      },
+    ],
   },
 ]);
 
 function App() {
-  const [showOptions, setShowOptions] = useState(false);
-  return (
-    <div className="App">
-      <Header showOptions={showOptions} setShowOptions={setShowOptions} />
-      <Home />
-      <Footer />
-      <MobileNavBar showOptions={showOptions} setShowOptions={setShowOptions} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

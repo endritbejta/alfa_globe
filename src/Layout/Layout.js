@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobileNavBar from "../components/MobileNavBar";
-import Home from "../pages/Home";
 import { Outlet } from "react-router";
 
 const Layout = () => {

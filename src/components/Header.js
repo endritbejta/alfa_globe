@@ -1,6 +1,5 @@
 import "./Header.scss";
 import alfalogo from "../assets/image/alfalogored.png";
-import { useState } from "react";
 const Header = ({ setShowOptions, showOptions }) => {
   const handleClick = () => {
     setShowOptions(!showOptions);

@@ -82,10 +82,10 @@ const Footer = () => {
         <a href="mailto:alphaglobe.ks@gmail.com">alphaglobe.ks@gmail.com</a>
         <a href="tel:+3834944192422">044 192 422</a>
         <a href="https://api.whatsapp.com/send?phone=0038349487989">
-          <img src={whatsapp} width={20} />
+          <img src={whatsapp} alt="whatsapp logo" width={20} />
         </a>
         <a href="viber://chat?number=%0038349487989">
-          <img src={viber} width={18} />
+          <img src={viber} alt="viberlogo" width={18} />
         </a>
       </div>
       <address>Vetenik, rruga e re me tulla, 5200</address>

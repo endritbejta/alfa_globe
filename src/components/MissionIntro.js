@@ -16,7 +16,7 @@ const MissionIntro = () => {
       </div>
       <div className="image-container">
         <img
-          alt="photo of landscape"
+          alt="landscape"
           src="https://static.vecteezy.com/system/resources/previews/021/868/801/large_2x/aerial-top-view-of-oil-tanker-ship-sailing-on-sea-generative-ai-free-photo.JPG"
         />
       </div>

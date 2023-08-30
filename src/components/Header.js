@@ -19,7 +19,7 @@ const Header = ({ setShowOptions, showOptions }) => {
       <nav className={showOptions ? "open" : ""}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#about">About Us</a>

@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./Card";
 import ProductsCard from "./ProductsCard";
 import "./Products.scss";
 

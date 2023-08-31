@@ -213,8 +213,9 @@
     right: 0;
     transform: translateX(100%);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: white;
+    z-index: 21;
   }
 
   .header nav ul {
@@ -260,6 +261,10 @@
   }
 
   .header .hamburger {
+    display: none;
+  }
+
+  .header nav {
     display: none;
   }
 }

@@ -20,10 +20,10 @@ const Products = () => {
         }
       />
       <ProductsCard
-        title="Oils"
+        title="Contruction"
         description="Elevate performance and reliability with our premium oils for transmissions, lubrication, and hydraulic systems. Your machinery deserves the best."
         url={
-          "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+          "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
         }
       />
 

@@ -23,7 +23,7 @@
   }
 
   .tint {
-    background: linear-gradient(180deg, transparent 60%, black 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
     opacity: 0.7;
     height: 100%;
     width: 100%;

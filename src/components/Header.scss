@@ -1,5 +1,7 @@
 .header {
   width: 100%;
+  max-width: 2200px;
+  margin-inline: auto;
   display: flex;
   padding: 0 20px 0 120px;
   justify-content: space-between;
@@ -21,10 +23,6 @@
         height: 60px;
         aspect-ratio: 1/0.89;
       }
-
-      .name {
-        margin-block: auto;
-      }
     }
     .name {
       background: linear-gradient(
@@ -35,9 +33,11 @@
       transform: skew(-15deg) skewY(-2deg);
       color: white;
       padding-inline: 15px;
-      font-weight: 700;
-      letter-spacing: 1px;
+
       p {
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 700;
         transform: skew(15deg) skewY(2deg);
       }
     }
@@ -191,7 +191,9 @@
 
 @media (max-width: 940px) {
   .name {
-    font-size: 24px;
+    p {
+      font-size: 24px;
+    }
   }
 
   .logo {
@@ -206,7 +208,9 @@
 
 @media (max-width: 714px) {
   .name {
-    font-size: 22px;
+    p {
+      font-size: 22px;
+    }
   }
   .logo {
     width: 70px;
@@ -246,7 +250,9 @@
     .company {
       gap: 10px;
       .name {
-        font-size: 20px;
+        p {
+          font-size: 20px;
+        }
       }
 
       .logo {
@@ -278,7 +284,9 @@
     padding: 15px 30px;
     .company {
       .name {
-        font-size: 18px;
+        p {
+          font-size: 18px;
+        }
       }
 
       .logo {
@@ -293,7 +301,9 @@
     padding: 15px 20px;
     .company {
       .name {
-        font-size: 20px;
+        p {
+          font-size: 20px;
+        }
       }
 
       .logo {

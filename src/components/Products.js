@@ -13,7 +13,7 @@ const Products = () => {
         }
       />
       <ProductsCard
-        title="Fertilizer"
+        title="Agriculture"
         description="Discover agriculture's forefront with us, the premier fertilizer distributor. Partnering for success, nurturing crops and yields with diverse solutions."
         url={
           "https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"

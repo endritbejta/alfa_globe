@@ -2,7 +2,9 @@
   background-color: rgb(17, 15, 15);
   color: white;
   padding: 50px;
-  width: 100vw;
+  width: 100%;
+  max-width: 2200px;
+  margin-inline: auto;
   position: sticky;
   bottom: 0;
   display: flex;

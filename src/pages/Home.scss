@@ -1,11 +1,18 @@
 .Home-container {
   width: 100vw;
+  margin-inline: auto;
   max-width: 2200px;
   background: url("../assets/image/highway3.jpg") no-repeat bottom fixed;
   // object-fit: fill;
   transition: scroll ease;
   position: sticky;
   z-index: 20;
+  @media (min-width: 1745px) {
+    background-size: 150%;
+    background-position: 50% 140%;
+    background-repeat: repeat;
+    font-size: 150%;
+  }
   .Home {
     padding-top: 120px;
     width: 45%;

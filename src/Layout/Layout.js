@@ -8,7 +8,7 @@ const Layout = () => {
   const [showOptions, setShowOptions] = useState(false);
 
   return (
-    <div className="App">
+    <div className="Layout">
       <Header showOptions={showOptions} setShowOptions={setShowOptions} />
       <Outlet />
       <Footer />

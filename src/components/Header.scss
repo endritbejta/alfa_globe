@@ -30,12 +30,16 @@
       background: linear-gradient(
         90deg,
         rgba(255, 50, 0, 1) 0%,
-        rgba(255, 255, 0, 1) 100%
+        rgb(255, 214, 8) 100%
       );
+      transform: skew(-15deg) skewY(-2deg);
       color: white;
-      // background-clip: text;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
+      padding-inline: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      p {
+        transform: skew(15deg) skewY(2deg);
+      }
     }
   }
 

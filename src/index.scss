@@ -5,9 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  // scrollbar-base-color: #333;
-  scrollbar-track-color: red;
+  overflow-x: visible;
+  scrollbar-gutter: 0px;
 }
 
 code {
@@ -32,6 +31,11 @@ code {
 
 ::-webkit-scrollbar {
   width: 0.4em; /* Set a width for the scrollbar */
+
+  @media (max-width: 675px) {
+    // width: 0px;
+    display: none;
+  }
 }
 
 ::-webkit-scrollbar-track {

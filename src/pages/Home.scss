@@ -10,6 +10,7 @@
     background-size: 150%;
     background-position: 50% 140%;
     background-repeat: repeat;
+    background-attachment: fixed;
     font-size: 150%;
   }
   .Home {
@@ -87,6 +88,7 @@
 @media (max-width: 675px) {
   .Home-container {
     background-position: center;
+    background-attachment: fixed;
     .Home {
       padding: 30px 50px 5px 50px;
       width: 100%;
@@ -100,6 +102,8 @@
 @media (max-width: 528px) {
   .Home-container {
     background-position: 50% 100%;
+    background-attachment: fixed;
+
     .Home {
       padding: 30px 40px 0px 40px;
       h1 {
@@ -111,10 +115,13 @@
 
 @media (max-width: 416px) {
   .Home-container {
-    background-position: 50% 50%;
+    background: white;
+
+    background-attachment: fixed;
+
     .Home {
       padding: 30px 30px 0px 30px;
-
+      color: black;
       h1 {
         font-size: 34px;
       }

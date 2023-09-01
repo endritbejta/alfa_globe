@@ -8,7 +8,7 @@
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
   align-items: center;
-  border-bottom: 2px solid #b3afaf;
+  border-bottom: 1px solid #b3afaf;
   height: 60px;
   position: relative;
   .company {
@@ -276,6 +276,12 @@
 @media (max-width: 528px) {
   .header {
     padding: 15px 40px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 22;
+    background-color: white;
   }
 
   .header .hamburger {

@@ -18,7 +18,7 @@ const MobileNavBar = ({ setShowOptions, showOptions }) => {
       </a>
       <div
         onClick={() => setShowOptions(!showOptions)}
-        className="mobile-nav__item"
+        className="mobile-nav__item mobile-nav__item--menu"
       >
         <i className="fa-solid fa-bars"></i>
       </div>

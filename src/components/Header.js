@@ -16,7 +16,7 @@ const Header = ({ setShowOptions, showOptions }) => {
       <div onClick={handleClick} className="hamburger">
         <i className="fa-solid fa-bars-staggered"></i>
       </div>
-      <nav className={showOptions ? "open" : ""}>
+      {/* <nav className={showOptions ? "open" : ""}>
         <ul>
           <li>
             <a href="/">Home</a>
@@ -37,7 +37,7 @@ const Header = ({ setShowOptions, showOptions }) => {
             <a href="#career">Career</a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 };

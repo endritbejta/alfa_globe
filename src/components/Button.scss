@@ -29,3 +29,10 @@
 .button span i {
   font-size: 14px;
 }
+
+@media (max-width: 416px) {
+  .button {
+    border-color: black;
+    color: black;
+  }
+}

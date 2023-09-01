@@ -45,5 +45,6 @@ a {
 @media (max-width: 528px) {
   .mobile-nav {
     display: flex;
+    z-index: 21;
   }
 }

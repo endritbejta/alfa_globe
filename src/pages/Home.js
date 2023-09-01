@@ -11,7 +11,7 @@ const Home = () => {
         <h1>
           We buy,{" "}
           <div style={{ display: "inline-block" }} className="highlight">
-            <p>transport</p>
+            <p>transports</p>
           </div>
           , store and deliver oil all over Kosovo
         </h1>

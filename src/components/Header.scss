@@ -30,16 +30,12 @@
         rgba(255, 50, 0, 1) 0%,
         rgb(255, 214, 8) 100%
       );
-      transform: skew(-15deg) skewY(-2deg);
-      color: white;
       padding-inline: 15px;
-
-      p {
-        font-size: 26px;
-        letter-spacing: 1px;
-        font-weight: 700;
-        transform: skew(15deg) skewY(2deg);
-      }
+      color: transparent;
+      font-weight: 700;
+      font-size: 26px;
+      -webkit-background-clip: text;
+      background-clip: text;
     }
   }
 
@@ -191,9 +187,7 @@
 
 @media (max-width: 940px) {
   .name {
-    p {
-      font-size: 24px;
-    }
+    font-size: 24px;
   }
 
   .logo {
@@ -208,9 +202,7 @@
 
 @media (max-width: 714px) {
   .name {
-    p {
-      font-size: 22px;
-    }
+    font-size: 22px;
   }
   .logo {
     width: 70px;
@@ -250,9 +242,7 @@
     .company {
       gap: 10px;
       .name {
-        p {
-          font-size: 20px;
-        }
+        font-size: 20px;
       }
 
       .logo {
@@ -284,9 +274,7 @@
     padding: 15px 30px;
     .company {
       .name {
-        p {
-          font-size: 18px;
-        }
+        font-size: 18px;
       }
 
       .logo {
@@ -301,9 +289,7 @@
     padding: 15px 20px;
     .company {
       .name {
-        p {
-          font-size: 20px;
-        }
+        font-size: 20px;
       }
 
       .logo {

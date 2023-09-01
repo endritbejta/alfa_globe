@@ -11,9 +11,7 @@ const Header = ({ setShowOptions, showOptions }) => {
         <div className="logo">
           <img src={alfalogo} alt="alfa globe logo" />
         </div>
-        <div className="name">
-          <p>ALFA GLOBE</p>
-        </div>
+        <p className="name">ALFA GLOBE</p>
       </div>
       <div onClick={handleClick} className="hamburger">
         <i className="fa-solid fa-bars-staggered"></i>

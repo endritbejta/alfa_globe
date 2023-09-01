@@ -8,7 +8,13 @@ const Home = () => {
   return (
     <div className="Home-container">
       <div className="Home">
-        <h1>We buy, transport, store and deliver oil all over Kosovo</h1>
+        <h1>
+          We buy,{" "}
+          <div style={{ display: "inline-block" }} className="highlight">
+            <p>transport</p>
+          </div>
+          , store and deliver oil all over Kosovo
+        </h1>
         <p className="description">
           We source oil from a variety of counterparties including privately
           owned production companies, public, production companies, oil majors

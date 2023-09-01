@@ -42,3 +42,21 @@ code {
   background: #333; /* Set the thumb background color */
   border-radius: 4px;
 }
+
+.highlight {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 50, 0, 1) 0%,
+    rgb(255, 214, 8) 100%
+  );
+  transform: skew(-15deg) skewY(-2deg);
+  color: white;
+  padding-inline: 15px;
+
+  p {
+    // font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transform: skew(15deg) skewY(2deg);
+  }
+}

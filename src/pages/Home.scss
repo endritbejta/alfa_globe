@@ -87,8 +87,11 @@
 
 @media (max-width: 675px) {
   .Home-container {
-    background-position: center;
-    background-attachment: fixed;
+    background-size: cover;
+    background-size: 250%;
+    // background-position: center;
+    background-position: 40% 120%;
+
     .Home {
       padding: 30px 50px 5px 50px;
       width: 100%;
@@ -101,8 +104,8 @@
 
 @media (max-width: 528px) {
   .Home-container {
-    background-position: 50% 100%;
-    background-attachment: fixed;
+    // background-position: 50% 100%;
+    // background-attachment: fixed;
 
     .Home {
       padding: 30px 40px 0px 40px;
@@ -115,7 +118,7 @@
 
 @media (max-width: 416px) {
   .Home-container {
-    background: white;
+    // background: white;
 
     background-attachment: fixed;
 

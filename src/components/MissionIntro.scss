@@ -87,6 +87,9 @@
     padding-left: 70px;
     .title {
       font-size: 28px;
+      p {
+        display: inline-block;
+      }
     }
     .description {
       font-size: 16px;

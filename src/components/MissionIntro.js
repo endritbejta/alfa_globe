@@ -4,10 +4,13 @@ const MissionIntro = () => {
   return (
     <div className="mission-container">
       <div className="mission">
-        <p className="title">
-          We are focused on real-time trading that creates real, long-term
-          value.
-        </p>
+        <div className="title">
+          <p>We are focused on </p>
+          <div className="highlight">
+            <p>real-time </p>
+          </div>
+          <p>trading that creates real, long-term value.</p>
+        </div>
         <p className="description">
           Before crude oil, refined petroleum products, natural gas, Naphtha,
           and other valued commodieties can be put to good use, the must be

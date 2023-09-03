@@ -1,5 +1,5 @@
 import "./Header.scss";
-import alfalogo from "../assets/image/alfalogored.png";
+import alfalogo from "../assets/image/alfalogoyellow.png";
 const Header = ({ setShowOptions, showOptions }) => {
   const handleClick = () => {
     setShowOptions(!showOptions);

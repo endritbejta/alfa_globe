@@ -17,8 +17,8 @@ code {
 :root {
   --linear-grad: linear-gradient(
     90deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 255, 0, 1) 100%
+    rgb(255, 0, 0) 0%,
+    rgb(255, 214, 8) 100%
   );
 }
 
@@ -48,19 +48,12 @@ code {
 }
 
 .highlight {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 50, 0, 1) 0%,
-    rgb(255, 214, 8) 100%
-  );
+  background: var(--linear-grad);
   transform: skew(-15deg) skewY(-2deg);
   color: white;
-  padding-inline: 15px;
-
+  padding: 3px 15px;
+  display: inline-block;
   p {
-    // font-size: 26px;
-    letter-spacing: 1px;
-    font-weight: 700;
     transform: skew(15deg) skewY(2deg);
   }
 }

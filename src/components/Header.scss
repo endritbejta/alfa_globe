@@ -21,13 +21,13 @@
       align-items: center;
       justify-content: center;
       background-color: red;
-      height: 55px;
+      width: 50px;
       aspect-ratio: 1/1;
-      border-radius: 99999px;
+      border-radius: 100%;
       margin-right: 5px;
       img {
         transform: translateX(2px);
-        height: 50px;
+        height: 45px;
         aspect-ratio: 1/0.89;
       }
     }
@@ -223,9 +223,9 @@
   .name {
     font-size: 22px;
   }
-  .logo {
-    width: 70px;
-  }
+  // .logo {
+  //   width: 70px;
+  // }
   .header nav {
     position: absolute;
     top: 0;
@@ -265,9 +265,9 @@
         font-size: 20px;
       }
 
-      .logo {
-        width: 60px;
-      }
+      // .logo {
+      //   width: 60px;
+      // }
     }
     ul {
       gap: 10px;

@@ -8,11 +8,12 @@
   gap: 20px;
   .image-container {
     flex: 2;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     height: 400px;
     // width: 50%;
     align-self: center;
     img {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
       height: 100%;
       width: 100%;
       object-fit: cover;

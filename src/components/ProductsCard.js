@@ -5,10 +5,8 @@ import "./ProductsCard.scss";
 const ProductsCard = ({ title, description, url }) => {
   return (
     <div className="products-card">
-      <div
-        style={{ background: `url(${url}) center no-repeat` }}
-        className="card-image"
-      ></div>
+      {/* <div style={{ background: `url(${url})` }} className="card-image"></div> */}
+      <img className="card-image" src={`${url}`} alt={`${description}`} />
       <div className="tint"></div>
       <div className="content">
         <h3>{title}</h3>

@@ -90,6 +90,7 @@
     width: 85%;
     aspect-ratio: 16/13;
     margin-bottom: 5%;
+    transition: none;
     .content {
       display: flex;
       flex-direction: column;
@@ -98,6 +99,13 @@
     }
     .description {
       margin-bottom: 10px;
+    }
+
+    &:hover {
+      .card-image {
+        scale: 1;
+        transition: none;
+      }
     }
   }
 }

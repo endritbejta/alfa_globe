@@ -1,5 +1,6 @@
 import "./Header.scss";
 import alfalogo from "../assets/image/alfalogoyellow.png";
+import { NavLink } from "react-router-dom";
 const Header = ({ setShowOptions, showOptions }) => {
   const handleClick = () => {
     setShowOptions(!showOptions);
@@ -19,22 +20,22 @@ const Header = ({ setShowOptions, showOptions }) => {
       <nav className={showOptions ? "open" : ""}>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <NavLink to="">Home</NavLink>
           </li>
           <li>
-            <a href="#about">About Us</a>
+            <NavLink to="about-us">About us</NavLink>
           </li>
           <li>
-            <a href="#mission">Mission</a>
+            <NavLink to="mission">Mission</NavLink>
           </li>
           <li>
-            <a href="#products">Products</a>
+            <NavLink to="agriculture">Agriculture</NavLink>
           </li>
           <li>
-            <a href="#location">Location</a>
+            <NavLink to="construction">Construction</NavLink>
           </li>
           <li>
-            <a href="#career">Career</a>
+            <NavLink to="">Career</NavLink>
           </li>
         </ul>
       </nav>

@@ -1,8 +1,9 @@
 import "./App.scss";
 import Home from "./pages/Home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import AboutUsIntro from "./components/AboutIntro";
 import Layout from "./Layout/Layout";
+import AboutUs from "./pages/AboutUs";
+import Mission from "./pages/Mission";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/about-us",
-        element: <AboutUsIntro />,
+        path: "about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "mission",
+        element: <Mission />,
       },
     ],
   },

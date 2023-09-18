@@ -1,10 +1,17 @@
 .about-us-container {
   display: flex;
+  flex-direction: column;
   margin-left: 120px;
   padding: 80px 20px 80px 40px;
   background-color: white;
   gap: 10px;
   margin-bottom: 80px;
+
+  .about-us-content {
+    display: flex;
+    gap: 10px;
+  }
+
   .about {
     display: flex;
     flex-direction: column;
@@ -70,7 +77,6 @@
 
 @media (max-width: 988px) {
   .about-us-container {
-    flex-direction: row;
     .about {
       width: 60%;
     }
@@ -103,12 +109,15 @@
 
 @media (max-width: 675px) {
   .about-us-container {
-    flex-direction: column;
     width: 100%;
     margin-left: 10px;
-    position: relative;
     padding-top: 30px;
+    position: relative;
+    margin-bottom: 0px;
 
+    .about-us-content {
+      flex-direction: column;
+    }
     .about {
       width: 100%;
       max-width: 100%;

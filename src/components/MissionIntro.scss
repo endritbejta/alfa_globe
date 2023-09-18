@@ -4,8 +4,15 @@
   padding-left: 120px;
   padding-bottom: 80px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   gap: 20px;
+
+  .mission-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+
   .image-container {
     flex: 2;
     height: 400px;
@@ -113,10 +120,13 @@
 
 @media (max-width: 675px) {
   .mission-container {
-    flex-direction: column;
     width: 100%;
     padding-left: 50px;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .mission-content {
+      flex-direction: column;
+    }
     .mission {
       width: 100%;
     }

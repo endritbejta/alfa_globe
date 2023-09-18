@@ -126,6 +126,7 @@
 
     .image-container {
       display: flex;
+      height: 200px;
       width: 90%;
       align-self: self-start;
     }
@@ -137,6 +138,10 @@
     padding: 20px 20px 20px 40px;
     .title {
       font-size: 26px;
+    }
+
+    .image-container {
+      height: 200px;
     }
   }
 }

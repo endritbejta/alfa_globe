@@ -5,16 +5,16 @@ import { NavLink } from "react-router-dom";
 const MobileNavBar = ({ setShowOptions, showOptions }) => {
   return (
     <div className="mobile-nav">
-      <NavLink href="#home" className="mobile-nav__item">
+      <NavLink to="" className="mobile-nav__item">
         <i className="fa-solid fa-house"></i>
       </NavLink>
-      <NavLink href="#about" className="mobile-nav__item">
+      <NavLink to="agriculture" className="mobile-nav__item">
         <i className="fa-solid fa-tractor"></i>
       </NavLink>
-      <NavLink href="#about" className="mobile-nav__item">
+      <NavLink to="derivate" className="mobile-nav__item">
         <i className="fa-solid fa-gas-pump"></i>
       </NavLink>
-      <NavLink href="#contact" className="mobile-nav__item">
+      <NavLink to="construction" className="mobile-nav__item">
         <i className="fa-regular fa-building"></i>
       </NavLink>
       <div

@@ -4,9 +4,9 @@
   max-width: 2200px;
   background: url("../assets/image/highway3.jpg") no-repeat bottom fixed;
   transition: scroll ease;
-  position: sticky;
   overflow-x: hidden;
   z-index: 20;
+  padding-top: 60px;
   @media (min-width: 1745px) {
     background-size: 150%;
     background-position: 50% 140%;
@@ -108,7 +108,6 @@
   .Home-container {
     // background-position: 50% 100%;
     // background-attachment: fixed;
-    padding-top: 0;
     .Home {
       padding: 30px 40px 0px 40px;
       h1 {

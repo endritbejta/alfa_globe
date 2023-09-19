@@ -91,9 +91,10 @@
     padding-top: 60px;
     .Home {
       color: white;
-      background: url("../assets/image/highway3.jpg") center fixed;
-      background-position: 50% 120%;
-      padding: 30px 50px 5px 50px;
+      background: url("../assets/image/highway3.jpg") fixed;
+      background-size: 200%;
+      background-position: 75% 180%;
+      padding: 20px 50px 5px 50px;
       width: 100%;
       h1 {
         font-size: 42px;
@@ -106,7 +107,7 @@
   .Home-container {
     // background-position: 50% 100%;
     // background-attachment: fixed;
-
+    padding-top: 0;
     .Home {
       padding: 30px 40px 0px 40px;
       h1 {

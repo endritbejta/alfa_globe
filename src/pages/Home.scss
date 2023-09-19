@@ -92,10 +92,9 @@
     padding-top: 60px;
     .Home {
       color: white;
-      background: url("../assets/image/highway3.jpg") fixed;
-      background-size: 200%;
-      background-repeat: no-repeat;
-      background-position: 75% 190%;
+      background: url("../assets/image/highway3.jpg");
+      background-size: cover;
+      background-position: 50% 190%;
       padding: 20px 50px 5px 50px;
       width: 100%;
       h1 {

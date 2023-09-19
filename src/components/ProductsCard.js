@@ -2,7 +2,7 @@ import React from "react";
 import ProductsButton from "./ProductsButton";
 import "./ProductsCard.scss";
 
-const ProductsCard = ({ title, description, url }) => {
+const ProductsCard = ({ title, description, url, to }) => {
   return (
     <div className="products-card">
       {/* <div style={{ background: `url(${url})` }} className="card-image"></div> */}
@@ -11,7 +11,7 @@ const ProductsCard = ({ title, description, url }) => {
       <div className="content">
         <h3>{title}</h3>
         <p className="description">{description}</p>
-        <ProductsButton to="derivate" />
+        <ProductsButton to={to} />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   max-width: 2200px;
-  margin-inline: auto;
   display: flex;
   padding: 0 20px 0 120px;
   justify-content: space-between;
@@ -11,7 +10,6 @@
   // border-bottom: 1px solid #b3afaf;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2.4px 3.2px;
   height: 60px;
-  position: relative;
   z-index: 22;
   .company {
     display: flex;
@@ -69,10 +67,14 @@
       position: relative;
       overflow: hidden;
       a {
+        border: 3px solid transparent;
         text-decoration: none;
         align-self: center;
         color: black;
         height: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
         display: inline-block;
         display: flex;
         align-items: center;
@@ -82,39 +84,43 @@
       }
       .active {
         color: orangered;
-      }
-      &::before,
-      &::after {
-        content: "";
-        transition: all 200ms;
-        width: 100%;
-        background-color: orangered;
-        height: 2px;
-        scale: 1 1;
-        position: absolute;
-        left: -200%;
-        transition: transform 0.4s ease 0.1s;
-        animation-fill-mode: forwards;
-        bottom: 0;
-        border-radius: 4px 4px 0 0;
+        border-bottom: 3px solid orangered;
+        // transition: all 0.2s ease;
       }
 
-      &::after {
-        left: -100%;
-        transition: transform 0.8s ease 0.1s;
-      }
+      //// uncomment for a hover effect
+      // &::before,
+      // &::after {
+      //   content: "";
+      //   transition: all 200ms;
+      //   width: 100%;
+      //   background-color: orangered;
+      //   height: 2.5px;
+      //   scale: 1 1;
+      //   position: absolute;
+      //   left: -200%;
+      //   transition: transform 0.4s ease 0.1s;
+      //   animation-fill-mode: forwards;
+      //   bottom: 0px;
+      //   border-radius: 4px 4px 0 0;
+      // }
 
-      &:hover::after {
-        transition: transform 0.4s ease 0s;
-        transform-origin: left;
-        transform: translateX(210%);
-      }
+      // &::after {
+      //   left: -100%;
+      //   transition: transform 0.8s ease 0.1s;
+      // }
 
-      &:hover::before {
-        transition: transform 0.4s ease 0.2s;
-        transform-origin: left;
-        transform: translateX(200%);
-      }
+      // &:hover::after {
+      //   transition: transform 0.4s ease 0s;
+      //   transform-origin: left;
+      //   transform: translateX(210%);
+      // }
+
+      // &:hover::before {
+      //   transition: transform 0.4s ease 0.2s;
+      //   transform-origin: left;
+      //   transform: translateX(200%);
+      // }
 
       &:active,
       &:hover {
@@ -128,90 +134,23 @@
   }
 }
 
-// .Header .company .logo {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+@media (max-width: 1280px) {
+  .header {
+    padding-left: 100px;
+  }
+}
 
-// .Header .company .name {
-//   background: linear-gradient(
-//     90deg,
-//     rgba(255, 50, 0, 1) 0%,
-//     rgba(255, 255, 0, 1) 100%
-//   );
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
+@media (max-width: 1180px) {
+  .header {
+    padding-left: 90px;
+  }
+}
 
-// .Header .hamburger {
-//   display: none;
-//   cursor: pointer;
-//   z-index: 10;
-// }
+@media (max-width: 920px) {
+  .header {
+    padding-left: 80px;
+  }
 
-// .header nav {
-//   display: flex;
-//   align-items: center;
-//   height: 100%;
-//   transition: all 0.2s ease;
-// }
-
-// .header nav ul {
-//   display: flex;
-//   list-style: none;
-//   align-items: center;
-//   gap: 10px;
-//   height: 100%;
-// }
-
-// .header nav ul li {
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   position: relative;
-// }
-
-// nav ul li a {
-//   text-decoration: none;
-//   align-self: center;
-//   color: black;
-//   height: 100%;
-//   display: inline-block;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   /* padding: 28px 0; */
-//   border: 2px solid transparent;
-// }
-
-// nav ul li::after {
-//   content: "";
-//   transition: all 200ms;
-//   width: 100%;
-//   background-color: orangered;
-//   height: 2px;
-//   scale: 0 1;
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   border-radius: 4px 4px 0 0;
-// }
-
-// nav ul li:hover::after {
-//   scale: 1 1;
-//   transform-origin: center;
-// }
-
-// nav ul li a:hover,
-// nav ul li a:active {
-//   transform-origin: center;
-//   color: orangered;
-// }
-
-@media (max-width: 940px) {
   .name {
     font-size: 24px;
   }
@@ -226,7 +165,16 @@
   }
 }
 
+@media (max-width: 822px) {
+  .header {
+    padding-left: 70px;
+  }
+}
+
 @media (max-width: 714px) {
+  .header {
+    padding-left: 60px;
+  }
   .name {
     font-size: 22px;
   }
@@ -242,7 +190,6 @@
     width: 100vw;
     background-color: white;
     z-index: 0;
-    display: none;
   }
 
   .header nav ul {
@@ -297,9 +244,9 @@
     display: none;
   }
 
-  .header nav {
-    display: none;
-  }
+  // .header nav {
+  //   display: none;
+  // }
 }
 
 @media (max-width: 416px) {

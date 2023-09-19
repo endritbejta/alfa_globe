@@ -20,6 +20,7 @@ const Products = () => {
           url={
             "https://images.unsplash.com/photo-1610491462702-42e6ecdabaa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80"
           }
+          to="derivate"
         />
         <ProductsCard
           title="Agriculture"
@@ -27,6 +28,7 @@ const Products = () => {
           url={
             "https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
           }
+          to="agriculture"
         />
         <ProductsCard
           title="Contruction"
@@ -34,6 +36,7 @@ const Products = () => {
           url={
             "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
           }
+          to="construction"
         />
 
         <ProductsCard
@@ -42,6 +45,7 @@ const Products = () => {
           url={
             "https://images.unsplash.com/photo-1601599561096-f87c95fff1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
           }
+          to="markets"
         />
       </div>
     </div>

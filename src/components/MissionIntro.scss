@@ -13,6 +13,10 @@
     gap: 20px;
   }
 
+  .bulletPoint {
+    margin-left: 40px;
+  }
+
   .image-container {
     flex: 2;
     height: 400px;
@@ -124,6 +128,10 @@
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    .bulletPoint {
+      margin-left: 0px;
+    }
     .mission-content {
       flex-direction: column;
     }
@@ -161,5 +169,11 @@
       height: 150px;
       aspect-ratio: 16/10;
     }
+  }
+}
+
+@media (max-width: 528px) {
+  .mission-container {
+    padding-left: 30px;
   }
 }

@@ -8,13 +8,13 @@ const MobileNavBar = ({ setShowOptions, showOptions }) => {
         <i className="fa-solid fa-house"></i>
       </a>
       <a href="#about" className="mobile-nav__item">
-        <i className="fa-solid fa-gas-pump"></i>
+        <i className="fa-solid fa-tractor"></i>
       </a>
       <a href="#about" className="mobile-nav__item">
         <i className="fa-solid fa-gas-pump"></i>
       </a>
       <a href="#contact" className="mobile-nav__item">
-        <i className="fa-solid fa-phone"></i>
+        <i className="fa-regular fa-building"></i>
       </a>
       <div
         onClick={() => setShowOptions(!showOptions)}

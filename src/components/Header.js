@@ -20,10 +20,12 @@ const Header = ({ setShowOptions, showOptions }) => {
       <nav className={showOptions ? "open" : ""}>
         <ul>
           <li>
-            <NavLink to="">Home</NavLink>
+            <NavLink to="" onClick={() => window.scrollTo(0, 0)}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="about-us">About us</NavLink>
+            <NavLink to="about-us">About</NavLink>
           </li>
           <li>
             <NavLink to="mission">Mission</NavLink>
@@ -35,7 +37,10 @@ const Header = ({ setShowOptions, showOptions }) => {
             <NavLink to="construction">Construction</NavLink>
           </li>
           <li>
-            <NavLink to="">Career</NavLink>
+            <NavLink to="derivate">Derivate</NavLink>
+          </li>
+          <li>
+            <NavLink to="markets">Markets</NavLink>
           </li>
         </ul>
       </nav>

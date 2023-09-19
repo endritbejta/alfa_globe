@@ -194,9 +194,12 @@
 
   .header nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 30%;
+    padding-bottom: 100px;
+    padding-right: 50px;
   }
 
   .header nav ul li {
@@ -280,4 +283,6 @@
 
 .header .open {
   transform: translateX(0);
+  display: flex;
+  justify-content: flex-end;
 }

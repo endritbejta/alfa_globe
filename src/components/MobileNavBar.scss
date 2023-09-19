@@ -19,11 +19,14 @@
   cursor: pointer;
 }
 
-.mobile-nav__item.active,
 .mobile-nav__item:visited,
 .mobile-nav__item:active {
   text-decoration: none;
   color: black;
+}
+
+.mobile-nav__item.active {
+  color: orangered;
 }
 
 .mobile-nav__item::after {

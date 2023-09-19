@@ -61,3 +61,7 @@ code {
     transform: skew(15deg) skewY(2deg);
   }
 }
+
+.hidden {
+  overflow-y: hidden;
+}

@@ -5,6 +5,7 @@
   background: url("../assets/image/highway3.jpg") no-repeat bottom fixed;
   transition: scroll ease;
   position: sticky;
+  overflow-x: hidden;
   z-index: 20;
   @media (min-width: 1745px) {
     background-size: 150%;

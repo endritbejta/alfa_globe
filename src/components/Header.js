@@ -6,6 +6,13 @@ const Header = ({ setShowOptions, showOptions }) => {
     setShowOptions(!showOptions);
   };
 
+  const handleNavigationClick = () => {
+    if (window.innerWidth < 676) {
+      window.scrollTo(0, 0);
+      setShowOptions((showOptions) => !showOptions);
+    }
+  };
+
   return (
     <header className="header">
       <div className="company">
@@ -18,11 +25,9 @@ const Header = ({ setShowOptions, showOptions }) => {
         <i className="fa-solid fa-bars-staggered"></i>
       </div>
       <nav className={showOptions ? "open" : ""}>
-        <ul>
+        <ul onClick={handleNavigationClick}>
           <li>
-            <NavLink to="" onClick={() => window.scrollTo(0, 0)}>
-              Home
-            </NavLink>
+            <NavLink to="">Home</NavLink>
           </li>
           <li>
             <NavLink to="about-us">About</NavLink>

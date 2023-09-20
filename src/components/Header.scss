@@ -79,8 +79,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding: 28px 0; */
-        border: 2px solid transparent;
       }
       .active {
         color: orangered;
@@ -190,20 +188,51 @@
     width: 100vw;
     background-color: white;
     z-index: 0;
+
+    // background: radial-gradient(
+    //     circle at 20% 0%,
+    //     rgba(255, 0, 0, 1) 29%,
+    //     rgba(255, 239, 0, 1) 100%
+    //   ),
+    //   radial-gradient(
+    //     circle at 100% 0%,
+    //     rgb(7, 30, 184) 29%,
+    //     rgb(0, 213, 255) 100%
+    //   );
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 1) 0% 15%,
+      rgb(255, 255, 255) 15% 18%,
+      rgb(255, 0, 0) 18% 20%,
+      rgb(255, 255, 255) 20% 73%,
+      rgb(255, 239, 0) 73% 75%,
+      rgb(255, 255, 255) 75% 78%,
+      rgb(255, 239, 0) 78% 10%
+    );
+
+    padding-bottom: 50px;
   }
 
   .header nav ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    width: 30%;
-    padding-bottom: 100px;
-    padding-right: 50px;
+    justify-content: center;
+    margin-right: 10px;
+    padding-top: 35%;
   }
 
   .header nav ul li {
     height: auto;
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+    a.active {
+      border-bottom: 3px solid transparent;
+    }
   }
 
   .header .hamburger {

@@ -71,6 +71,7 @@
         text-decoration: none;
         align-self: center;
         color: black;
+        color: #343a40;
         height: 100%;
         font-size: 18px;
         font-weight: 400;
@@ -202,11 +203,11 @@
     background: linear-gradient(
       135deg,
       rgba(255, 0, 0, 1) 0% 15%,
-      rgb(255, 255, 255) 15% 18%,
+      #fffafa 15% 18%,
       rgb(255, 0, 0) 18% 20%,
-      rgb(255, 255, 255) 20% 63%,
+      #fffafa 20% 63%,
       rgb(255, 239, 0) 63% 65%,
-      rgb(255, 255, 255) 65% 68%,
+      #fffafa 65% 68%,
       rgb(255, 239, 0) 68% 10%
     );
 
@@ -226,13 +227,21 @@
     transition: opacity 0.2s;
   }
 
+  .header nav img {
+    position: absolute;
+    width: 60%;
+    aspect-ratio: 1/0.89;
+    top: 12%;
+    right: 0%;
+  }
+
   .header nav ul li {
     height: auto;
     a {
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 2px;
-      font-size: 20px;
+      font-size: 18px;
     }
     a.active {
       border-bottom: 3px solid transparent;

@@ -1,6 +1,7 @@
 import "./Header.scss";
 import alfalogo from "../assets/image/alfalogoyellow.png";
 import { NavLink } from "react-router-dom";
+import alfared from "../assets/image/alfalogored.png";
 const Header = ({ setShowOptions, showOptions }) => {
   const handleClick = () => {
     setShowOptions(!showOptions);
@@ -25,6 +26,7 @@ const Header = ({ setShowOptions, showOptions }) => {
         <i className="fa-solid fa-bars-staggered"></i>
       </div>
       <nav className={showOptions ? "open" : ""}>
+        <img src={alfared} alt="alfaglobe_logo" />
         <ul onClick={handleNavigationClick}>
           <li>
             <NavLink to="">Home</NavLink>

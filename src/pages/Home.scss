@@ -22,7 +22,7 @@
     flex-direction: column;
     /* justify-content: center; */
     gap: 30px;
-    color: white;
+    color: #fffafa;
     font: inherit;
     margin-bottom: 0px;
 
@@ -88,10 +88,10 @@
 
 @media (max-width: 675px) {
   .Home-container {
-    background: white;
+    background: #fffafa;
     padding-top: 60px;
     .Home {
-      color: white;
+      color: #fffafa;
       background: url("../assets/image/highway3.jpg");
       background-size: cover;
       background-position: 50% 190%;

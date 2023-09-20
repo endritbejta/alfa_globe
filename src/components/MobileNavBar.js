@@ -40,7 +40,7 @@ const MobileNavBar = ({ setShowOptions, showOptions }) => {
         // onClick={handleNavClicks}
         className="mobile-nav__item navigation_item"
       >
-        <i className="fa-solid fa-tractor"></i>
+        <i className="fa-solid fa-seedling"></i>
       </NavLink>
       <NavLink
         to="derivate"

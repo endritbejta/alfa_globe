@@ -204,10 +204,10 @@
       rgba(255, 0, 0, 1) 0% 15%,
       rgb(255, 255, 255) 15% 18%,
       rgb(255, 0, 0) 18% 20%,
-      rgb(255, 255, 255) 20% 73%,
-      rgb(255, 239, 0) 73% 75%,
-      rgb(255, 255, 255) 75% 78%,
-      rgb(255, 239, 0) 78% 10%
+      rgb(255, 255, 255) 20% 63%,
+      rgb(255, 239, 0) 63% 65%,
+      rgb(255, 255, 255) 65% 68%,
+      rgb(255, 239, 0) 68% 10%
     );
 
     padding-bottom: 50px;
@@ -223,6 +223,7 @@
     transform: translateX(100%);
     // opacity: 0;
     animation-fill-mode: none;
+    transition: opacity 0.2s;
   }
 
   .header nav ul li {
@@ -320,7 +321,7 @@
 
   ul {
     animation: comeIntoView 0.3s 1;
-    animation-delay: 0.1s;
+    animation-delay: 0.15s;
     animation-fill-mode: forwards;
   }
 }
@@ -331,7 +332,7 @@
   }
 
   60% {
-    transform: translateX(-10%);
+    transform: translateX(-30%);
     opacity: 1;
   }
 

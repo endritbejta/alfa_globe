@@ -339,7 +339,7 @@
     opacity: 0;
     animation: comeIntoView 0.3s 1;
     animation-delay: 0.15s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
   }
 
   ul {

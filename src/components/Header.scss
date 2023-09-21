@@ -331,11 +331,19 @@
   transform: translateX(0);
   display: flex;
   justify-content: flex-end;
-
-  ul {
+  img {
+    transform: translateX(100%);
+  }
+  ul,
+  img {
+    opacity: 0;
     animation: comeIntoView 0.3s 1;
     animation-delay: 0.15s;
     animation-fill-mode: forwards;
+  }
+
+  ul {
+    animation-delay: 0.25s;
   }
 }
 

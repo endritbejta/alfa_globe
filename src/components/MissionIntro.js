@@ -8,11 +8,11 @@ const MissionIntro = () => {
       <div className="mission-content">
         <div className="mission">
           <div className="title">
-            <p>We are focused on </p>
+            We are focused on
             <div className="highlight">
               <p>real-time </p>
             </div>
-            <p>trading that creates real, long-term value.</p>
+            trading that creates real, long-term value.
           </div>
           <p className="description">
             Before crude oil, refined petroleum products, natural gas, Naphtha,

@@ -51,6 +51,9 @@
     align-items: center;
     height: 100%;
     transition: all 0.2s ease;
+    img {
+      display: none;
+    }
   }
 
   ul {
@@ -228,6 +231,7 @@
   }
 
   .header nav img {
+    display: inline-block;
     position: absolute;
     width: 60%;
     aspect-ratio: 1/0.89;
@@ -340,12 +344,13 @@
     opacity: 0;
   }
 
-  60% {
-    transform: translateX(-30%);
-    opacity: 1;
-  }
+  // 60% {
+  //   transform: translateX(-30%);
+  //   opacity: 1;
+  // }
 
   100% {
+    opacity: 1;
     transform: translateX(0%);
   }
 }

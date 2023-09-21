@@ -33,13 +33,12 @@
 .navigation_item.active::after {
   content: "";
   width: 70%;
-  transform: translateX(15%);
   height: 3px;
   border-radius: 0px 0 2px 2px;
   position: absolute;
   top: 0;
-  left: 0;
-  background-color: red;
+  left: 15%;
+  background-color: orangered;
 }
 
 a {

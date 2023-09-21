@@ -5,6 +5,7 @@ import MissionIntro from "../components/MissionIntro";
 import Products from "../components/Products";
 
 const Home = () => {
+  console.log("experiment");
   return (
     <div className="Home-container">
       <div className="Home">

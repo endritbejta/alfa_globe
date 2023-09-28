@@ -14,8 +14,13 @@ const Map = () => {
       iconSize: [30, 51],
       shadowAnchor: iconShadow,
     });
+    let zoomLevel = 9;
+
+    if (window.innerWidth <= 675) {
+      zoomLevel = 8;
+    }
     // Create a map instance and specify the center and zoom level
-    const map = L.map("map").setView([42.6022, 20.902], 9);
+    const map = L.map("map").setView([42.6022, 20.902], zoomLevel);
 
     // Add a tile layer (you can use different map tile providers)
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);

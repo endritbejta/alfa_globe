@@ -3,6 +3,7 @@ import "./Home.scss";
 import AboutUsIntro from "../components/AboutIntro";
 import MissionIntro from "../components/MissionIntro";
 import Products from "../components/Products";
+import Map from "../components/Map";
 
 const Home = () => {
   return (
@@ -25,6 +26,12 @@ const Home = () => {
       <AboutUsIntro />
       <MissionIntro />
       <Products />
+      <div className="map">
+        <div className="map-title">
+          <p>Visit us on our multiple stations</p>
+        </div>
+        <Map />
+      </div>
     </div>
   );
 };

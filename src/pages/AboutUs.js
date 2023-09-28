@@ -2,7 +2,7 @@ import "./AboutUs.scss";
 
 const AboutUs = () => {
   return (
-    <div className="container page">
+    <div className="page about-page">
       <div className="about">
         <p className="title">
           Our business model relies on being able to deliver oil and petroleum

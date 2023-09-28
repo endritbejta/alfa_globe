@@ -1,0 +1,35 @@
+.map-container {
+  height: 80vh;
+  /* aspect-ratio: 1/1; */
+  width: 80vw;
+  margin-inline: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+  a {
+    display: none;
+  }
+}
+
+.leaflet-touch .leaflet-bar a {
+  display: block;
+}
+
+#map {
+  flex: 1;
+}
+.custom-marker {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  display: block; /* Make the image a block element for proper sizing */
+  overflow: hidden;
+  background-color: red;
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: orangered;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+}

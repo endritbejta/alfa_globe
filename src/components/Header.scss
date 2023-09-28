@@ -10,7 +10,7 @@
   // border-bottom: 1px solid #b3afaf;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2.4px 3.2px;
   height: 60px;
-  z-index: 22;
+  z-index: 500;
   .company {
     display: flex;
     align-items: center;
@@ -208,10 +208,10 @@
       rgba(255, 0, 0, 1) 0% 15%,
       #fffafa 15% 18%,
       rgb(255, 0, 0) 18% 20%,
-      #fffafa 20% 63%,
-      rgb(255, 239, 0) 63% 65%,
-      #fffafa 65% 68%,
-      rgb(255, 239, 0) 68% 10%
+      #fffafa 20% 73%,
+      rgb(255, 239, 0) 73% 75%,
+      #fffafa 75% 78%,
+      rgb(255, 239, 0) 78% 10%
     );
 
     padding-bottom: 50px;
@@ -222,7 +222,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 10%;
     padding-top: 35%;
     transform: translateX(100%);
     // opacity: 0;
@@ -233,10 +233,10 @@
   .header nav img {
     display: inline-block;
     position: absolute;
-    width: 60%;
+    width: 40%;
     aspect-ratio: 1/0.89;
     top: 12%;
-    right: 0%;
+    right: 10%;
   }
 
   .header nav ul li {
@@ -287,6 +287,9 @@
     z-index: 22;
     background-color: white;
   }
+  .header nav ul {
+    margin-right: 5%;
+  }
 
   .header nav img {
     width: 50%;
@@ -305,6 +308,7 @@
 @media (max-width: 416px) {
   .header {
     padding: 15px 30px;
+
     .company {
       .name {
         font-size: 18px;
@@ -314,6 +318,18 @@
         width: 20;
       }
     }
+  }
+  .header nav  {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 1) 0% 15%,
+      #fffafa 15% 18%,
+      rgb(255, 0, 0) 18% 20%,
+      #fffafa 20% 63%,
+      rgb(255, 239, 0) 63% 65%,
+      #fffafa 65% 68%,
+      rgb(255, 239, 0) 68% 10%
+    );
   }
 }
 

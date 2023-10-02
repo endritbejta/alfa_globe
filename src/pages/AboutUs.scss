@@ -1,11 +1,13 @@
 .about-page {
   position: relative;
+  height: auto;
   z-index: 1020;
   background-color: white;
   width: 90%;
   margin: 0 auto;
   padding-top: 120px;
   display: flex;
+  overflow-y: scroll;
   gap: 20px;
   flex-direction: column;
   h1 {

@@ -239,19 +239,17 @@
     right: 10%;
   }
 
-  .header nav ul li {
-    height: auto;
-    a {
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 2px;
-      font-size: 18px;
-    }
-    a.active {
-      border-bottom: 3px solid transparent;
-    }
+  .header nav ul a {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: inherit;
   }
 
+  .header nav ul a.active {
+    color: orangered;
+  }
   .header .hamburger {
     display: block;
     cursor: pointer;

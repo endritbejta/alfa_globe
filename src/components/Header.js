@@ -27,28 +27,28 @@ const Header = ({ setShowOptions, showOptions }) => {
       </div>
       <nav className={showOptions ? "open" : ""}>
         <img src={alfared} alt="alfaglobe_logo" />
-        <ul onClick={handleNavigationClick}>
-          <li>
-            <NavLink to="">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="about-us">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="mission">Mission</NavLink>
-          </li>
-          <li>
-            <NavLink to="agriculture">Agriculture</NavLink>
-          </li>
-          <li>
-            <NavLink to="construction">Construction</NavLink>
-          </li>
-          <li>
-            <NavLink to="derivate">Derivate</NavLink>
-          </li>
-          <li>
-            <NavLink to="markets">Markets</NavLink>
-          </li>
+        <ul>
+          <NavLink onClick={handleNavigationClick} to="">
+            Home
+          </NavLink>
+          <NavLink onClick={handleNavigationClick} to="about-us">
+            About
+          </NavLink>
+          <NavLink onClick={handleNavigationClick} to="mission">
+            Mission
+          </NavLink>
+          <NavLink onClick={handleNavigationClick} to="agriculture">
+            Agriculture
+          </NavLink>
+          <NavLink onClick={handleNavigationClick} to="construction">
+            Construction
+          </NavLink>
+          <NavLink onClick={handleNavigationClick} to="derivate">
+            Derivate
+          </NavLink>
+          <NavLink onClick={handleNavigationClick} to="markets">
+            Markets
+          </NavLink>
         </ul>
       </nav>
     </header>

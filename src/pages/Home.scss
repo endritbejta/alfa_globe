@@ -1,5 +1,5 @@
 .Home-container {
-  width: 100vw;
+  width: 100%;
   margin-inline: auto;
   max-width: 2200px;
   background: url("../assets/image/highway3.jpg") no-repeat bottom fixed;
@@ -27,10 +27,11 @@
     margin-bottom: 0px;
 
     h1 {
-      font-size: 50px;
+      font-size: 56px;
     }
     .description {
       margin-bottom: 30px;
+      font-size: 22px;
     }
   }
   &:nth-child(3) {
@@ -153,10 +154,6 @@
       h1 {
         font-size: 34px;
       }
-
-      // p {
-      //   font-size: 16px;
-      // }
     }
   }
 }

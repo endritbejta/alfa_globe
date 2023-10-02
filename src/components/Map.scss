@@ -33,3 +33,9 @@
   border-radius: 5px;
   padding-right: 0.6rem;
 }
+
+@media (max-width: 675px) {
+  .map-container {
+    width: 100%;
+  }
+}

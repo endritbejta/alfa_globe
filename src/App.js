@@ -35,7 +35,11 @@ const router = createBrowserRouter([
       },
       {
         path: "derivate",
-        element: <h1>Derivate</h1>,
+        element: <h1 className="page">Derivate</h1>,
+      },
+      {
+        path: "markets",
+        element: <h1 className="page">Markets</h1>,
       },
     ],
   },

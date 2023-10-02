@@ -1,6 +1,39 @@
-.about-us-page {
-  height: 100vh;
+.about-page {
   position: relative;
   z-index: 1020;
   background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 120px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  h1 {
+    max-width: 60%;
+    font-size: 56px;
+  }
+  p {
+    //   max-width: 70%;
+    font-size: 24px;
+  }
+  img {
+    width: 110%;
+    aspect-ratio: 16/6;
+    // background-size: cover;
+  }
+
+  .our-development {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    h3 {
+      width: 60%;
+      font-size: 30px;
+    }
+    .article {
+      display: flex;
+      gap: 20px;
+    }
+  }
 }

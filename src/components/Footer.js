@@ -74,14 +74,21 @@ const Footer = () => {
         <BulletPoint text="Contact" />
         <a href="mailto:alphaglobe.ks@gmail.com">alphaglobe.ks@gmail.com</a>
         <a href="tel:+3834944192422">044 192 422</a>
-        <a href="https://api.whatsapp.com/send?phone=0038349487989">
-          <img src={whatsapp} alt="whatsapp logo" width={20} />
-        </a>
-        <a href="viber://chat?number=%0038349487989">
-          <img src={viber} alt="viberlogo" width={18} />
-        </a>
+        <div style={{ display: "flex", gap: "5px" }}>
+          <a href="https://api.whatsapp.com/send?phone=0038344192422">
+            <img src={whatsapp} alt="whatsapp logo" width={20} />
+          </a>
+          <a href="viber://chat?number=%0038344192422">
+            <img src={viber} alt="viberlogo" width={18} />
+          </a>
+        </div>
       </div>
-      <address>Vetenik, rruga e re me tulla, 5200</address>
+      <div>
+        <address>Cagllavice, Rr. Rrafshi i Kosovës</address>
+        <address>Klinë e Ulët, Rr. Deshmorët e Kombit</address>
+        <address>Polac, Rr. Kodra e Polacit</address>
+        <address>Kcic, Rr. Mbreti Agron</address>
+      </div>
     </footer>
   );
 };

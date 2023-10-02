@@ -11,6 +11,11 @@
   z-index: 1001;
   overflow: hidden;
 
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   h3 {
     letter-spacing: 1px;
   }
@@ -18,6 +23,7 @@
   .contact {
     display: flex;
     flex-direction: column;
+    gap: 5px;
   }
 
   .contact a {
@@ -119,7 +125,7 @@
   }
 }
 
-@media (max-width: 528px) {
+@media (max-width: 850px) {
   .footer {
     display: flex;
     flex-direction: column;

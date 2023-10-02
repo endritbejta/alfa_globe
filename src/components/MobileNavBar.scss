@@ -14,10 +14,18 @@
 .mobile-nav__item {
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
   align-items: center;
   justify-content: center;
   position: relative;
   cursor: pointer;
+  i {
+    font-size: 18px;
+  }
+  span {
+    font-size: 14px;
+  }
 }
 
 .mobile-nav__item:visited,

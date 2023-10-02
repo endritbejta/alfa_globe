@@ -5,6 +5,7 @@
   background-color: white;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 40px;
   padding-top: 120px;
   display: flex;
   overflow-y: scroll;
@@ -36,6 +37,28 @@
     .article {
       display: flex;
       gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .about-page {
+    width: 90%;
+    h1 {
+      font-size: 24px;
+      max-width: 100%;
+    }
+    .our-development {
+      h3 {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+    .article {
+      flex-direction: column;
     }
   }
 }

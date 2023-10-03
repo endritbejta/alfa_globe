@@ -60,6 +60,8 @@ code {
   transform: skew(-15deg) skewY(-2deg);
   color: white;
   padding: 3px 15px;
+  // font-size: 28px;
+  min-width: max-content;
   display: inline-block;
   p {
     transform: skew(15deg) skewY(2deg);

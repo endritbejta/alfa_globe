@@ -28,7 +28,7 @@ const Home = () => {
       <Products />
       <div className="map">
         <div className="map-title">
-          <p>Visit us on our multiple stations</p>
+          <h1>Visit us on our multiple stations</h1>
         </div>
         <Map />
       </div>

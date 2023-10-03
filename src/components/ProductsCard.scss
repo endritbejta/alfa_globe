@@ -89,6 +89,12 @@
   }
 }
 
+@media (max-width: 675px) {
+  .products-card {
+    margin-bottom: 2%;
+  }
+}
+
 @media (max-width: 528px) {
   .products-card {
     width: 85%;
@@ -110,6 +116,16 @@
         scale: 1;
         transition: none;
       }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .products-card {
+    font-size: 15px;
+    .content {
+      gap: 0;
+      font-size: 13px;
     }
   }
 }

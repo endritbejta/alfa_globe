@@ -6,9 +6,10 @@
   width: 90%;
   margin: 0 auto;
   padding-bottom: 40px;
-  padding-top: 120px;
+  padding-top: 80px;
   display: flex;
   overflow-y: scroll;
+  overflow-x: hidden;
   gap: 20px;
   flex-direction: column;
   h1 {
@@ -41,6 +42,106 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .about-page {
+    // width: 70%;
+    h1 {
+      font-size: 40px;
+      width: 70%;
+      max-width: 100%;
+    }
+    .our-development {
+      h3 {
+        width: 80%;
+        font-size: 24px;
+      }
+    }
+
+    p {
+      width: 70%;
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .about-page {
+    h1 {
+      font-size: 38px;
+      max-width: 100%;
+      width: 65%;
+    }
+    .our-development {
+      h3 {
+        width: 70%;
+        font-size: 22px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .about-page {
+    h1 {
+      width: 65%;
+      font-size: 36px;
+    }
+    .our-development {
+      h3 {
+        width: 75%;
+        font-size: 22px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 822px) {
+  .about-page {
+    h1 {
+      font-size: 34px;
+      max-width: 100%;
+      width: 70%;
+    }
+    .our-development {
+      h3 {
+        width: 70%;
+      }
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 714px) {
+  .about-page {
+    h1 {
+      font-size: 32px;
+      max-width: 100%;
+      width: 80%;
+    }
+    .our-development {
+      h3 {
+        width: 90%;
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
 @media (max-width: 675px) {
   .about-page {
     width: 90%;
@@ -48,17 +149,58 @@
       font-size: 24px;
       max-width: 100%;
     }
-    .our-development {
-      h3 {
-        width: 100%;
-      }
-    }
 
     p {
       font-size: 18px;
+      width: 90%;
     }
     .article {
       flex-direction: column;
+      gap: 26px;
+    }
+  }
+}
+
+@media (max-width: 528px) {
+  .about-page {
+    width: 90%;
+    h1 {
+      font-size: 24px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 416px) {
+  .about-page {
+    width: 90%;
+    gap: 20px;
+    h1 {
+      font-size: 22px;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 16px;
+    }
+    .article {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .Home-container {
+    .Home {
+      padding: 30px 20px 0px 20px;
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    .button {
+      font-size: 12px;
     }
   }
 }

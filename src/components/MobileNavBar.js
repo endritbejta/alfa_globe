@@ -5,7 +5,11 @@ import { NavLink } from "react-router-dom";
 const MobileNavBar = ({ setShowOptions, showOptions }) => {
   const handleShowNavigation = () => {
     setShowOptions((showOptions) => !showOptions);
-    document.body.classList.toggle("hidden");
+    if (showOptions) {
+      document.body.classList.remove("hidden");
+    } else {
+      document.body.classList.add("hidden");
+    }
     document
       .querySelector(".mobile-nav__item--menu")
       .classList.toggle("active");
@@ -17,20 +21,7 @@ const MobileNavBar = ({ setShowOptions, showOptions }) => {
     document
       .querySelector(".mobile-nav__item--menu")
       .classList.remove("active");
-    document.body.classList.remove("hidden");
   };
-
-  // const handleNavigationClicks = (e) => {
-  //   console.log(e.target);
-  //   if (
-  //     e.target.classList.contains("fa-bars") ||
-  //     e.target.classList.contains("mobile-nav__item--menu")
-  //   ) {
-  //     handleShowNavigation();
-  //   } else {
-  //     handleNavClicks();
-  //   }
-  // };
 
   return (
     <div className="mobile-nav">

@@ -12,6 +12,7 @@ const Header = ({ setShowOptions, showOptions }) => {
       window.scrollTo(0, 0);
       setShowOptions((showOptions) => !showOptions);
     }
+    document.body.classList.remove("hidden");
   };
 
   return (

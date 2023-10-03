@@ -1,9 +1,38 @@
+import { useEffect, useRef } from "react";
 import BulletPoint from "./BulletPoint";
 import "./MissionIntro.scss";
 
 const MissionIntro = () => {
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const elementRefCurrent = elementRef.current;
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: "10px", // No margin around the root
+      threshold: 0.3, // When 50% of the element is visible
+    };
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        elementRef.current.classList.add("visible");
+      } else {
+      }
+    }, options);
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    // Cleanup the observer when the component unmounts
+    return () => {
+      if (elementRefCurrent) {
+        observer.unobserve(elementRefCurrent);
+      }
+    };
+  }, []);
   return (
-    <div className="mission-container">
+    <div className="mission-container come-into-view-element" ref={elementRef}>
       <BulletPoint text="Our mission" />
       <div className="mission-content">
         <div className="mission">

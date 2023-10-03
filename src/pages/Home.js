@@ -47,7 +47,7 @@ const Home = () => {
   }, []);
   return (
     <div className="Home-container">
-      <div className="Home">
+      <div className="Home come-into-view-element" ref={elementRef1}>
         <h1>
           We buy,{" "}
           <div style={{ display: "inline-block" }} className="highlight">
@@ -65,7 +65,7 @@ const Home = () => {
       <AboutUsIntro />
       <MissionIntro />
       <Products />
-      <div className="map">
+      <div className="map come-into-view-element" ref={elementRef2}>
         <div className="map-title">
           <h1>Visit us on our multiple stations</h1>
         </div>

@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   scrollbar-gutter: 0px;
+  overflow-y: auto;
 }
 
 html {
@@ -76,16 +77,4 @@ code {
 .page {
   padding-top: 80px;
   min-height: 100vh;
-}
-
-.come-into-view-element {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease, transform 0.5s ease;
-  transition: all 1s ease;
-}
-
-.come-into-view-element.visible {
-  opacity: 1;
-  transform: translateY(0);
 }

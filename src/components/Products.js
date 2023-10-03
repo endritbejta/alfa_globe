@@ -1,38 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import ProductsCard from "./ProductsCard";
 import "./Products.scss";
 
 const Products = () => {
-  const elementRef = useRef(null);
-
-  useEffect(() => {
-    const elementRefCurrent = elementRef.current;
-    const options = {
-      root: null, // Use the viewport as the root
-      rootMargin: "0px", // No margin around the root
-      threshold: 0.1, // When 50% of the element is visible
-    };
-
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        elementRef.current.classList.add("visible");
-      } else {
-      }
-    }, options);
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    // Cleanup the observer when the component unmounts
-    return () => {
-      if (elementRefCurrent) {
-        observer.unobserve(elementRefCurrent);
-      }
-    };
-  }, []);
   return (
-    <div className="Products come-into-view-element" ref={elementRef}>
+    <div className="Products come-into-view-element">
       <div className="Products__title">Our services</div>
       <p className="Products__description">
         Explore our diverse range of services catering to the dynamic world of

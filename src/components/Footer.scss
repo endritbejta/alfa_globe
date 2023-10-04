@@ -10,6 +10,18 @@
   justify-content: space-around;
   z-index: 1001;
   overflow: hidden;
+  p:hover,
+  address:hover,
+  .contact a:hover {
+    color: orangered;
+  }
+  i {
+    transition: transform 0.2s ease;
+  }
+  i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 
   hr {
     margin-top: 10px;

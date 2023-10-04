@@ -7,7 +7,7 @@ const AboutUs = () => {
       <BulletPoint text="About us" />
       <h1>
         Founded by senior traders with significant experience across the oil
-        spectrum.
+        spectrum
       </h1>
       <p>
         We source oil from a variety of counterparties including privately owned

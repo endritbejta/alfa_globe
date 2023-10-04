@@ -1,6 +1,93 @@
 .agriculture-page {
-  height: 100vh;
   background-color: white;
   position: relative;
   z-index: 1020;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .highlight p {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .agriculture-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .agriculture-intro .agriculture-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .agriculture-intro img {
+    // width: 60%;
+    object-fit: cover;
+    height: 400px;
+    align-self: center;
+    aspect-ratio: 5/3;
+    position: relative;
+    box-shadow: var(--shadow-primary);
+  }
+
+  .agriculture-seeds {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .articles {
+      display: flex;
+      gap: 10%;
+      text-align: justify;
+    }
+  }
+
+  .agriculture-fertilizer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fertilizer-holder {
+    display: flex;
+    gap: 10px;
+  }
+
+  .fertilizer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #a2f;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    div {
+      padding: 10px;
+    }
+
+    span {
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .fertilizer-card img {
+    width: 250px;
+    aspect-ratio: 4/3;
+  }
 }

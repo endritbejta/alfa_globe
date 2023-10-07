@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Agriculture.scss";
 import agriculture1 from "../assets/image/agriculture1.jpg";
 import fertilizer1 from "../assets/image/fertilizer1.jpg";
+import wheat from "../assets/image/wheat.jpg";
 
 const Agriculture = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="agriculture-page page">
       <section className="agriculture-intro">
@@ -46,6 +50,7 @@ const Agriculture = () => {
             our range today and plant the seeds of a brighter tomorrow.
           </p>
         </div>
+        <img src={wheat} alt="wheat" />
       </section>
       <section className="agriculture-fertilizer">
         <h1>Fertilizer types and benefits</h1>

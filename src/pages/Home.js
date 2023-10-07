@@ -4,8 +4,13 @@ import AboutUsIntro from "../components/AboutIntro";
 import MissionIntro from "../components/MissionIntro";
 import Products from "../components/Products";
 import Map from "../components/Map";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Home-container">
       <div className="Home">

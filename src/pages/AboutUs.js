@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import BulletPoint from "../components/BulletPoint";
 import "./AboutUs.scss";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about-page page">
       <BulletPoint text="About us" />

@@ -135,6 +135,20 @@
       background: unset;
     }
   }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: orangered;
+    }
+  }
 }
 
 @media (max-width: 850px) {

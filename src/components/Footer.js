@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Footer.scss";
 
 import whatsapp from "../assets/svg/whatsapp.svg";
@@ -10,59 +10,31 @@ import alfapink from "../assets/image/alfapink.png";
 import alfagreen from "../assets/image/alfagreen.png";
 import alfablue from "../assets/image/alfablue.png";
 import BulletPoint from "./BulletPoint";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  const elementRef = useRef(null);
-
-  useEffect(() => {
-    const elementRefCurrent = elementRef.current;
-    const options = {
-      root: null, // Use the viewport as the root
-      rootMargin: "10px", // No margin around the root
-      threshold: 0.5, // When 50% of the element is visible
-    };
-
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        elementRef.current.classList.add("visible");
-      } else {
-      }
-    }, options);
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    // Cleanup the observer when the component unmounts
-    return () => {
-      if (elementRefCurrent) {
-        observer.unobserve(elementRefCurrent);
-      }
-    };
-  }, []);
-
-  const handleClick = () => {
-    const coloredLogos = document.querySelectorAll(".colored-logo");
-    coloredLogos.forEach((logo) => {
-      logo.animate(
-        [
-          { transform: "scale(1) translate(0,0)" },
-          { transform: "scale(0.8) translate(0,0)" },
-          { transform: "scale(1) translate(0,0)" },
-        ],
-        {
-          duration: 400,
-          fill: "forwards",
-          easing: "ease",
-        }
-      );
-    });
-  };
+  // const handleClick = () => {
+  //   const coloredLogos = document.querySelectorAll(".colored-logo");
+  //   coloredLogos.forEach((logo) => {
+  //     logo.animate(
+  //       [
+  //         { transform: "scale(1) translate(0,0)" },
+  //         { transform: "scale(0.8) translate(0,0)" },
+  //         { transform: "scale(1) translate(0,0)" },
+  //       ],
+  //       {
+  //         duration: 400,
+  //         fill: "forwards",
+  //         easing: "ease",
+  //       }
+  //     );
+  //   });
+  // };
 
   return (
-    <footer className="footer come-into-view-element" ref={elementRef}>
+    <footer className="footer">
       <div>
-        <div onClick={handleClick} className="logo">
+        <div className="logo">
           <div className="colored-logo">
             <img src={alfared} alt="alfalogo" />
           </div>
@@ -94,9 +66,10 @@ const Footer = () => {
       <hr />
       <div className="products">
         <BulletPoint text="Products" />
-        <p>Derivate</p>
-        <p>Vajra</p>
-        <p>Agrokulture</p>
+        <NavLink to="derivate">Derivatives</NavLink>
+        <NavLink to="construction">Construction</NavLink>
+        <NavLink to="agriculture">Agriculture</NavLink>
+        <NavLink to="markets">Markets</NavLink>
       </div>
       <hr />
       <div className="contact">

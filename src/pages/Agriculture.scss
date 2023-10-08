@@ -68,14 +68,17 @@
 
   .fertilizer-holder {
     display: flex;
-    gap: 10px;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
   }
 
   .fertilizer-card {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: #a2f;
+    background-color: #eeeeee;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 10px;

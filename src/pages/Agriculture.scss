@@ -2,11 +2,12 @@
   background-color: white;
   position: relative;
   z-index: 1020;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
+
   .highlight p {
     font-size: 40px;
   }
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
+    padding-left: 40px;
     align-items: center;
   }
 
@@ -33,9 +35,10 @@
   }
 
   .agriculture-intro img {
-    // width: 60%;
+    width: 60%;
+    max-width: 800px;
     object-fit: cover;
-    height: 400px;
+    // height: 400px;
     align-self: center;
     aspect-ratio: 5/3;
     position: relative;
@@ -46,6 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 40px;
     .articles {
       display: flex;
       gap: 10%;
@@ -64,6 +68,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0 40px;
   }
 
   .fertilizer-holder {
@@ -99,5 +104,48 @@
   .fertilizer-card img {
     width: 250px;
     aspect-ratio: 4/3;
+  }
+}
+
+@media (max-width: 1080px) {
+  .agriculture-page {
+    .agriculture-intro {
+      flex-direction: column-reverse;
+      padding-left: 0;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .agriculture-intro img {
+      width: 100%;
+      max-width: unset;
+      aspect-ratio: 16/9;
+    }
+
+    .agriculture-seeds {
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 808px) {
+  .agriculture-page {
+    .fertilizer-holder {
+      display: grid;
+      grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    }
+
+    .fertilizer-card img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .agriculture-page {
+    .agriculture-fertilizer {
+      padding: 0 10px;
+    }
   }
 }

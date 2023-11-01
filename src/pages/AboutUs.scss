@@ -22,7 +22,9 @@
   }
   img {
     width: 110%;
-    aspect-ratio: 16/6;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    max-height: 600px;
     // background-size: cover;
   }
 

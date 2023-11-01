@@ -147,5 +147,24 @@
     .agriculture-fertilizer {
       padding: 0 10px;
     }
+
+    .agriculture-seeds {
+      .articles {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 444px) {
+  .agriculture-page {
+    .fertilizer-holder {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+      gap: 15px;
+    }
   }
 }

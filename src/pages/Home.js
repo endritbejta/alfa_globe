@@ -31,12 +31,6 @@ const Home = () => {
       <AboutUsIntro />
       <MissionIntro />
       <Products />
-      <div className="map">
-        <div className="map-title">
-          <h1>Visit us on our multiple stations</h1>
-        </div>
-        <Map />
-      </div>
     </div>
   );
 };

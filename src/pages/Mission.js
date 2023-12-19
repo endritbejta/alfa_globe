@@ -31,35 +31,44 @@ const Mission = () => {
           <h3>Targets</h3>
           <ul>
             <li>
-              <VscDebugBreakpointLog />
-              Prioritizing the well-being of people and the environment in every
-              action we take.
+              <p>
+                Prioritizing the well-being of people and the environment in
+                every action we take.
+              </p>
             </li>
             <li>
-              <VscDebugBreakpointLog />
-              Motivating our employees to work together andcontinuously improve
-              performance.
+              <p>
+                Motivating our employees to work together andcontinuously
+                improve performance.
+              </p>
             </li>
             <li>
-              <VscDebugBreakpointLog />
-              Understanding and meeting the expectations and needs of our
-              customers.
-            </li>
-            <li>Employing effective processes and technologies.</li>
-            <li>
-              <VscDebugBreakpointLog />
-              Being good corporate citizens, offering employment opportunities,
-              and supporting the community in which we live and operate.
+              <p>
+                Understanding and meeting the expectations and needs of our
+                customers.
+              </p>
             </li>
             <li>
-              <VscDebugBreakpointLog />
-              Striving to uphold the highest standards of environmental and
-              social responsibility.
+              <p>Employing effective processes and technologies.</p>
             </li>
             <li>
-              <VscDebugBreakpointLog />
-              Embracing innovation and sustainable practices in all aspects of
-              our business.
+              <p>
+                Being good corporate citizens, offering employment
+                opportunities, and supporting the community in which we live and
+                operate.
+              </p>
+            </li>
+            <li>
+              <p>
+                Striving to uphold the highest standards of environmental and
+                social responsibility.
+              </p>
+            </li>
+            <li>
+              <p>
+                Embracing innovation and sustainable practices in all aspects of
+                our business.
+              </p>
             </li>
           </ul>
         </div>

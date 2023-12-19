@@ -47,8 +47,8 @@ const Header = ({ setShowOptions, showOptions }) => {
           <NavLink onClick={handleNavigationClick} to="derivate">
             Derivate
           </NavLink>
-          <NavLink onClick={handleNavigationClick} to="markets">
-            Markets
+          <NavLink onClick={handleNavigationClick} to="locations">
+            Location
           </NavLink>
         </ul>
       </nav>

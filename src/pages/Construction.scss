@@ -4,3 +4,16 @@
   position: relative;
   z-index: 1020;
 }
+
+.construction-history {
+  display: flex;
+  align-items: center;
+  &-holder {
+    width: 40%;
+  }
+  img {
+    width: 60%;
+    max-height: 500px;
+    aspect-ratio: 16/9;
+  }
+}

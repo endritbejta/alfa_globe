@@ -21,6 +21,9 @@ const MobileNavBar = ({ setShowOptions, showOptions }) => {
     document
       .querySelector(".mobile-nav__item--menu")
       .classList.remove("active");
+    if (showOptions) {
+      document.body.classList.remove("hidden");
+    }
   };
 
   return (

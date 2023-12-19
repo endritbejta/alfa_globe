@@ -6,6 +6,7 @@ import AboutUs from "./pages/AboutUs";
 import Mission from "./pages/Mission";
 import Agriculture from "./pages/Agriculture";
 import Construction from "./pages/Construction";
+import Map from "./pages/Map";
 
 const router = createBrowserRouter([
   {
@@ -39,8 +40,8 @@ const router = createBrowserRouter([
         element: <h1 className="page">Derivate</h1>,
       },
       {
-        path: "markets",
-        element: <h1 className="page">Markets</h1>,
+        path: "locations",
+        element: <Map />,
       },
     ],
   },

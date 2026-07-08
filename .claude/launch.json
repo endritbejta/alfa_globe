@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "alfa-globe",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/endritbejta/Desktop/alfa_globe",
+      "port": 3000
+    }
+  ]
+}

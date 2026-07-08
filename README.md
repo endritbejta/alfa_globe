@@ -1,76 +1,63 @@
-# Live site
-https://alfaglobe.netlify.app/
+# Alfa Globe — Corporate Website
 
+Premium corporate website for **Alfa Globe**, a petroleum and energy company operating fuel
+stations and a bulk-delivery network across Kosovo.
 
+**Live site:** https://alfaglobe.netlify.app/
 
+![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646cff?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06b6d4?logo=tailwindcss&logoColor=white)
 
-# Getting Started with Create React App
+## Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A complete redesign (v2) of the original Alfa Globe site: migrated from Create React App + SCSS
+to **Vite + Tailwind CSS v4**, rebuilt around a consistent design system, and filled with
+realistic corporate content — services, product catalog with specifications, fleet programme,
+sustainability strategy, careers and a station map with real coordinates.
 
-## Available Scripts
+### Pages
 
-In the project directory, you can run:
+| Route | Page |
+| --- | --- |
+| `/` | Home — hero, services, industries, stats, products, testimonials, news |
+| `/about` | Company story, mission/vision, values, milestones timeline, leadership |
+| `/services` | Eight services with benefits, process steps and FAQ |
+| `/products` | Product catalog |
+| `/products/:slug` | Product detail with specifications and applications |
+| `/fleet` | Fleet fuel programme (cards, reporting, invoicing) |
+| `/sustainability` | Commitments and operational pillars |
+| `/careers` | Benefits, hiring process, open positions, application form |
+| `/contact` | Contact channels, inquiry form, office hours, station map |
+| `/locations` | Interactive Leaflet map of all four stations |
 
-### `npm start`
+### Tech
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** with **React Router 6** (route-level code splitting via `React.lazy`)
+- **Tailwind CSS v4** — brand tokens defined in `@theme` (`src/index.css`)
+- **Framer Motion** — scroll reveals, staggered grids, drawer navigation
+- **Lucide React** — icon system
+- **Leaflet** — station map (loaded only on pages that need it)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Architecture
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── layout/     # Navbar, Footer, BackToTop, Layout shell
+│   ├── sections/   # Composable page sections (Hero, StatsBand, StationsMap…)
+│   └── ui/         # Primitives (Button, SectionTitle, cards, FAQAccordion…)
+├── data/           # All content as data — copy lives here, not in components
+├── hooks/          # usePageMeta, useCountUp
+├── lib/            # Shared Framer Motion presets
+└── pages/          # Route components composing sections
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Development
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+npm run dev      # dev server on :3000
+npm run build    # production build to /dist
+npm run preview  # preview the production build
+```

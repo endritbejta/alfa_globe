@@ -7,7 +7,7 @@ import CTASection from "../components/ui/CTASection";
 import Reveal from "../components/ui/Reveal";
 import { pillars, commitments } from "../data/sustainability";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
-import wheat from "../assets/img/wheat.jpg";
+import highway2 from "../assets/img/highway2.jpg";
 
 const Sustainability = () => {
   usePageMeta(
@@ -21,7 +21,7 @@ const Sustainability = () => {
         eyebrow="Sustainability"
         title="Responsibility is an operating standard, not a slogan"
         lead="We move dangerous goods through communities we live in ourselves. That reality shapes how we source, transport and sell energy — and the targets we hold ourselves to."
-        image={wheat}
+        image={highway2}
         crumbs={[{ label: "Sustainability" }]}
       />
 

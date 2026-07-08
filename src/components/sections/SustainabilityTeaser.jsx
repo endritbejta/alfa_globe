@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 import Reveal from "../ui/Reveal";
 import { pillars } from "../../data/sustainability";
 import { fadeUp, stagger, viewportOnce } from "../../lib/motion";
-import wheat from "../../assets/img/wheat.jpg";
+import highway2 from "../../assets/img/highway2.jpg";
 
 const SustainabilityTeaser = () => (
   <section className="container-x py-20 sm:py-28">
@@ -48,8 +48,8 @@ const SustainabilityTeaser = () => (
       <Reveal className="relative">
         <div className="overflow-hidden rounded-2xl shadow-card-hover">
           <img
-            src={wheat}
-            alt="Wheat field at harvest"
+            src={highway2}
+            alt="Modern highway — efficient transport routes"
             loading="lazy"
             className="aspect-[4/3] w-full object-cover"
           />

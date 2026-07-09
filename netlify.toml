@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  # Vite 6 / Tailwind v4 need modern Node; old CRA-era sites default to Node 16.
+  NODE_VERSION = "20"
+
 # SPA fallback: serve index.html for every route so React Router
 # handles /about, /products/diesel, etc. on direct visits and refreshes.
 [[redirects]]

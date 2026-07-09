@@ -33,6 +33,7 @@ const Navbar = () => {
     }`;
 
   return (
+    <>
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
@@ -71,7 +72,10 @@ const Navbar = () => {
           <Menu size={24} />
         </button>
       </div>
+    </header>
 
+      {/* Drawer lives outside <header>: its backdrop-blur would otherwise
+          become the containing block for these fixed elements. */}
       <AnimatePresence>
         {open && (
           <>
@@ -79,7 +83,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-40 bg-night-950/60 backdrop-blur-sm xl:hidden"
+              className="fixed inset-0 z-[55] bg-night-950/60 backdrop-blur-sm xl:hidden"
               onClick={() => setOpen(false)}
             />
             <motion.div
@@ -87,7 +91,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
-              className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col bg-night-950 px-7 py-6 xl:hidden"
+              className="fixed inset-y-0 right-0 z-[60] flex w-full max-w-sm flex-col bg-night-950 px-7 py-6 xl:hidden"
               role="dialog"
               aria-modal="true"
               aria-label="Menu"
@@ -149,7 +153,7 @@ const Navbar = () => {
           </>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };
 

@@ -24,7 +24,6 @@ export const navLinks = [
   { label: "Products", to: "/products" },
   { label: "Fleet", to: "/fleet" },
   { label: "Agriculture", to: "/agriculture" },
-  { label: "Sustainability", to: "/sustainability" },
   { label: "Careers", to: "/careers" },
   { label: "Locations", to: "/locations" },
 ];
@@ -32,7 +31,7 @@ export const navLinks = [
 export const footerLinks = {
   company: [
     { label: "About us", to: "/about" },
-    { label: "Sustainability", to: "/sustainability" },
+    { label: "Sustainability", to: "/#sustainability" },
     { label: "Careers", to: "/careers" },
     { label: "News & insights", to: "/#news" },
     { label: "Contact", to: "/contact" },

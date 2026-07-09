@@ -9,12 +9,15 @@ const Layout = () => {
 
   useEffect(() => {
     if (hash) {
-      // Let the page render, then scroll to the anchored section.
-      const el = document.getElementById(hash.slice(1));
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        return;
-      }
+      // Jump instantly ("instant" bypasses the CSS smooth-scroll, which would
+      // drift as below-the-fold images load), then correct once layout settles.
+      const scrollToTarget = () => {
+        const el = document.getElementById(hash.slice(1));
+        if (el) el.scrollIntoView({ behavior: "instant", block: "start" });
+      };
+      scrollToTarget();
+      const settle = setTimeout(scrollToTarget, 400);
+      return () => clearTimeout(settle);
     }
     window.scrollTo(0, 0);
   }, [pathname, hash]);

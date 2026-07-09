@@ -3,12 +3,13 @@ import { Leaf } from "lucide-react";
 import SectionTitle from "../ui/SectionTitle";
 import Button from "../ui/Button";
 import Reveal from "../ui/Reveal";
-import { pillars } from "../../data/sustainability";
+import { pillars, commitments } from "../../data/sustainability";
 import { fadeUp, stagger, viewportOnce } from "../../lib/motion";
 import highway2 from "../../assets/img/highway2.jpg";
 
+/** Full sustainability section on the home page (no separate page). */
 const SustainabilityTeaser = () => (
-  <section className="container-x py-20 sm:py-28">
+  <section id="sustainability" className="container-x scroll-mt-24 py-20 sm:py-28">
     <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
       <div>
         <SectionTitle
@@ -23,7 +24,7 @@ const SustainabilityTeaser = () => (
           viewport={viewportOnce}
           className="mt-8 grid gap-4 sm:grid-cols-2"
         >
-          {pillars.slice(0, 4).map((pillar) => {
+          {pillars.map((pillar) => {
             const Icon = pillar.icon;
             return (
               <motion.li key={pillar.title} variants={fadeUp} className="flex gap-3.5">
@@ -39,8 +40,8 @@ const SustainabilityTeaser = () => (
           })}
         </motion.ul>
         <Reveal delay={0.15} className="mt-9">
-          <Button to="/sustainability" withArrow variant="dark" size="lg">
-            Our commitments
+          <Button to="/contact" withArrow variant="dark" size="lg">
+            Ask about our practices
           </Button>
         </Reveal>
       </div>
@@ -65,6 +66,27 @@ const SustainabilityTeaser = () => (
         </div>
       </Reveal>
     </div>
+
+    {/* Published commitment targets */}
+    <motion.div
+      variants={stagger(0.1)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportOnce}
+      className="mt-20 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+    >
+      {commitments.map((c) => (
+        <motion.div
+          key={c.label}
+          variants={fadeUp}
+          className="rounded-2xl border border-night-100 bg-white p-7 text-center shadow-card"
+        >
+          <p className="text-4xl font-extrabold tracking-tight text-brand-600">{c.value}</p>
+          <p className="mt-2 font-bold tracking-tight text-night-950">{c.label}</p>
+          <p className="mt-1.5 text-sm text-night-500">{c.detail}</p>
+        </motion.div>
+      ))}
+    </motion.div>
   </section>
 );
 

@@ -45,7 +45,7 @@ export const products = [
     summary:
       "Unleaded 95-octane petrol to the EN 228 standard, filtered and quality-checked from terminal to nozzle for clean, dependable combustion.",
     description:
-      "Alfa Globe unleaded petrol meets the full EN 228 specification for modern spark-ignition engines. Strict housekeeping across our storage and station network — regular tank cleaning, filter changes and water checks — means the fuel that reaches your engine is as clean as the fuel that left the refinery.",
+      "Alfa Trade unleaded petrol meets the full EN 228 specification for modern spark-ignition engines. Strict housekeeping across our storage and station network — regular tank cleaning, filter changes and water checks — means the fuel that reaches your engine is as clean as the fuel that left the refinery.",
     applications: [
       "Passenger cars and motorcycles",
       "Light commercial vehicles",
@@ -91,7 +91,7 @@ export const products = [
       { label: "Base standard", value: "EN 590" },
       { label: "Cetane number", value: "≥ 55 (boosted)" },
       { label: "Detergency", value: "Keep-clean & clean-up" },
-      { label: "Availability", value: "All Alfa Globe stations" },
+      { label: "Availability", value: "All Alfa Trade stations" },
     ],
   },
   {
@@ -185,7 +185,7 @@ export const products = [
     icon: Truck,
     image: highway,
     summary:
-      "The cashless fuel card for businesses: refuel at any Alfa Globe station, control limits per vehicle and receive one consolidated monthly invoice.",
+      "The cashless fuel card for businesses: refuel at any Alfa Trade station, control limits per vehicle and receive one consolidated monthly invoice.",
     description:
       "The Alfa Fleet Card replaces cash and receipts with a single controlled payment method for your drivers. Set limits per card, per day or per product, see every transaction with vehicle, station and volume, and close the month with one invoice instead of a shoebox of receipts. It is the backbone of our fleet programme.",
     applications: [
@@ -201,7 +201,7 @@ export const products = [
       "Consolidated monthly invoicing with VAT detail",
     ],
     specs: [
-      { label: "Acceptance", value: "All Alfa Globe stations" },
+      { label: "Acceptance", value: "All Alfa Trade stations" },
       { label: "Controls", value: "Per card / day / product" },
       { label: "Reporting", value: "Online portal + monthly" },
     ],
@@ -209,7 +209,7 @@ export const products = [
 ];
 
 export const productsIntro = {
-  eyebrow: "Our products",
-  title: "Certified fuels and lubricants, tested at every step",
-  lead: "Every litre we sell is sourced from certified terminals, transported in our own sealed tankers and verified against European standards — because quality is a process, not a promise.",
+  eyebrow: "Products",
+  title: "The right petroleum product, in the right format",
+  lead: "Road fuels, AdBlue, automotive lubricants and industrial oils—available at station, in packs and drums, or delivered in bulk with the documentation your operation requires.",
 };

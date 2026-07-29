@@ -14,8 +14,8 @@ const SustainabilityTeaser = () => (
       <div>
         <SectionTitle
           eyebrow="Sustainability"
-          title="Moving energy responsibly, today and tomorrow"
-          lead="An energy company's environmental duty starts with how it operates. We invest in cleaner fuels, efficient logistics and spill-proof handling — and we hold ourselves to targets we publish."
+          title="Distributing fuel responsibly, today and tomorrow"
+          lead="A petroleum distributor's environmental duty starts with safe storage, transport and handling. We invest in cleaner fuels, efficient logistics and spill-prevention systems — and we hold ourselves to targets we publish."
         />
         <motion.ul
           variants={stagger(0.08)}

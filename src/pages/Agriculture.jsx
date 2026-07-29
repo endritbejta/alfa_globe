@@ -16,15 +16,15 @@ import fertilizer1 from "../assets/img/fertilizer1.jpg";
 const Agriculture = () => {
   usePageMeta(
     "Agriculture",
-    "Alfa Globe's agriculture division: UREA, NPK and phosphate fertilizers, certified seeds, agronomic advice and seasonal farm fuel across Kosovo."
+    "Alfa Trade's agriculture division: UREA, NPK and phosphate fertilizers, certified seeds, agronomic advice and seasonal farm fuel across Kosovo."
   );
 
   return (
     <>
       <PageHero
         eyebrow="Agriculture division"
-        title="Fertilizers, seeds and fuel — everything a season needs"
-        lead="Since 2020 our agriculture division has supplied Kosovo's farms with quality fertilizers, certified seeds and seasonal bulk fuel, backed by honest agronomic advice."
+        title="Farm inputs and fuel planned around the season"
+        lead="Fertilizers, certified seed and scheduled diesel delivery from one local supplier—planned around crop needs, fieldwork and harvest demand."
         image={agriculture1}
         crumbs={[{ label: "Agriculture" }]}
       />
@@ -95,7 +95,7 @@ const Agriculture = () => {
                 <motion.article
                   key={fertilizer.name}
                   variants={fadeUp}
-                  className="flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-card-hover"
+                  className="flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-300 hover:border-brand-200 hover:shadow-card-hover"
                 >
                   <div className="flex items-center justify-between">
                     <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600">
@@ -216,8 +216,8 @@ const Agriculture = () => {
       </section>
 
       <CTASection
-        title="Order fertilizers and seeds for the season"
-        lead="Tell us your crops and hectares — we'll quote fertilizer, seed and seasonal fuel in one plan, delivered to the farm."
+        title="Plan inputs and diesel before the busy weeks"
+        lead="Tell us the crop, hectares and machinery schedule. We will prepare one practical supply plan for fertilizer, seed and farm fuel."
         primary={{ label: "Get a season quote", to: "/contact" }}
         secondary={{ label: "Seasonal fuel planning", to: "/services#bulk-delivery" }}
       />

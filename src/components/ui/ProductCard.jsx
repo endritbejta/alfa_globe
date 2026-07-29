@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   return (
     <motion.article
       variants={fadeUp}
-      className="group relative overflow-hidden rounded-2xl border border-night-100 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
+      className="group relative overflow-hidden rounded-2xl border border-night-100 bg-white shadow-card transition-shadow duration-300 hover:shadow-card-hover"
     >
       <div className="relative h-44 overflow-hidden bg-night-900">
         {product.image ? (

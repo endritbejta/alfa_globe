@@ -21,7 +21,7 @@ const IndustriesGrid = () => (
             <motion.div
               key={industry.title}
               variants={fadeUp}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-brand-600/60 hover:bg-white/[0.08]"
+              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-[border-color,background-color] duration-300 hover:border-brand-600/60 hover:bg-white/[0.08]"
             >
               <Icon
                 size={26}

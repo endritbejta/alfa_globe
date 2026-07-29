@@ -44,7 +44,7 @@ export const leadership = [
     name: "Agron Bejta",
     initials: "AB",
     role: "Founder & Managing Director",
-    bio: "Founded Alfa Globe in 2014 and still walks the stations weekly. Two decades in regional fuel trading.",
+    bio: "Founded Alfa Trade in 2014 and still walks the stations weekly. Two decades in regional fuel trading.",
   },
   {
     name: "Vlora Hoxha",

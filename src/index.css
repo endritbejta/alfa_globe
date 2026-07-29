@@ -2,7 +2,7 @@
 @import "leaflet/dist/leaflet.css";
 
 @theme {
-  /* ── Alfa Globe brand ─────────────────────────────── */
+  /* ── Alfa Trade brand ─────────────────────────────── */
   --color-brand-50: #fef2f2;
   --color-brand-100: #fde3e3;
   --color-brand-200: #fbcdcd;
@@ -35,8 +35,10 @@
 
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
-  --shadow-card: 0 1px 2px rgb(13 13 15 / 0.05), 0 8px 24px -8px rgb(13 13 15 / 0.12);
-  --shadow-card-hover: 0 2px 4px rgb(13 13 15 / 0.06), 0 16px 40px -12px rgb(13 13 15 / 0.22);
+  --shadow-card:
+    0 1px 2px rgb(13 13 15 / 0.05), 0 8px 24px -8px rgb(13 13 15 / 0.12);
+  --shadow-card-hover:
+    0 2px 4px rgb(13 13 15 / 0.06), 0 16px 40px -12px rgb(13 13 15 / 0.22);
 
   --animate-marquee: marquee 32s linear infinite;
 
@@ -72,12 +74,18 @@
 
   /* Fine dotted industrial grid for dark sections */
   .bg-grid-dark {
-    background-image: radial-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px);
+    background-image: radial-gradient(
+      rgb(255 255 255 / 0.07) 1px,
+      transparent 1px
+    );
     background-size: 28px 28px;
   }
 
   .bg-grid-light {
-    background-image: radial-gradient(rgb(13 13 15 / 0.08) 1px, transparent 1px);
+    background-image: radial-gradient(
+      rgb(13 13 15 / 0.08) 1px,
+      transparent 1px
+    );
     background-size: 28px 28px;
   }
 
@@ -91,11 +99,154 @@
   font-family: inherit;
   z-index: 0;
 }
+
+.alfa-map-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgb(246 246 247 / 0.84);
+  color: var(--color-night-600);
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  backdrop-filter: blur(2px);
+  transition:
+    opacity 160ms ease,
+    visibility 160ms ease;
+}
+
+.alfa-map-loading.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alfa-map-loading__spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-brand-200);
+  border-top-color: var(--color-brand-600);
+  border-radius: 50%;
+  animation: alfa-map-spin 700ms linear infinite;
+}
+
+@keyframes alfa-map-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Crisp, scalable Alfa Trade station marker */
+.alfa-map-marker {
+  background: transparent;
+  border: 0;
+  filter: drop-shadow(0 5px 5px rgb(13 13 15 / 0.2));
+}
+
+.alfa-map-marker__pin {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  overflow: hidden;
+  border: 3px solid white;
+  border-radius: 50% 50% 50% 0;
+  background: linear-gradient(145deg, #f23e37 0%, #e10600 58%, #b70500 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.24),
+    0 1px 2px rgb(13 13 15 / 0.18);
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.alfa-map-marker__pin img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  pointer-events: none;
+  transform: rotate(45deg);
+  user-select: none;
+}
+
+.alfa-map-marker__shadow {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 16px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(13 13 15 / 0.2);
+  filter: blur(2px);
+  transform: translateX(-50%);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.alfa-map-marker:hover {
+  z-index: 1000 !important;
+}
+
+.alfa-map-marker:hover .alfa-map-marker__pin {
+  filter: brightness(1.05) saturate(1.05);
+  transform: translateY(-3px) rotate(-45deg) scale(1.06);
+}
+
+.alfa-map-marker:hover .alfa-map-marker__shadow {
+  opacity: 0.65;
+  transform: translateX(-50%) scale(0.82);
+}
+
+.alfa-map-marker.is-focused .alfa-map-marker__pin {
+  animation: alfa-marker-focus 550ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes alfa-marker-focus {
+  0%,
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+  45% {
+    transform: translateY(-8px) rotate(-45deg) scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .alfa-map-loading__spinner {
+    animation-duration: 1400ms;
+  }
+
+  .alfa-map-marker__pin,
+  .alfa-map-marker__shadow {
+    transition: none;
+  }
+
+  .alfa-map-marker.is-focused .alfa-map-marker__pin {
+    animation: none;
+  }
+}
+
 .leaflet-popup-content-wrapper {
   border-radius: 12px;
   box-shadow: var(--shadow-card-hover);
 }
+
 .leaflet-popup-content {
   font-family: inherit;
   margin: 12px 16px;
+}
+
+button {
+  cursor: pointer;
 }

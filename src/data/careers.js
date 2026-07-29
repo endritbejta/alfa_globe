@@ -60,7 +60,7 @@ export const openings = [
     location: "Çagllavicë HQ",
     type: "Full-time",
     description:
-      "Schedule tanker routes, coordinate terminal loading windows and keep the 98% on-time rate honest. Strong Excel and calm under pressure required.",
+      "Schedule tanker routes, coordinate terminal loading windows and keep customers informed when plans change. Strong Excel skills and calm judgment under pressure are required.",
   },
 ];
 

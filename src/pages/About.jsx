@@ -17,15 +17,15 @@ import tanker from "../assets/img/tanker.jpg";
 const About = () => {
   usePageMeta(
     "About us",
-    "The story of Alfa Globe: an independent Kosovar energy company built on reliable fuel supply, safety and long-term partnerships since 2014."
+    "The story of Alfa Trade: an independent Kosovar petroleum distributor built on certified products, reliable delivery, safety and long-term partnerships since 2014."
   );
 
   return (
     <>
       <PageHero
-        eyebrow="About Alfa Globe"
-        title="Built on one promise: the fuel is there when you need it"
-        lead="From a single truck in 2014 to four stations and a commercial supply network — our story is written in deliveries made on time."
+        eyebrow="About Alfa Trade"
+        title="A petroleum distributor built close to its customers"
+        lead="Alfa Trade grew from one truck into a station network and commercial supply operation by staying focused on product quality, safe handling and dependable delivery."
         image={highway2}
         crumbs={[{ label: "About" }]}
       />
@@ -36,8 +36,8 @@ const About = () => {
           <div>
             <SectionTitle
               eyebrow="Our story"
-              title="Independent, family-run, and proud of both"
-              lead="Alfa Globe was founded in Prishtina by people who had spent years in regional fuel trading and believed the market deserved a supplier that treated small customers like large ones."
+              title="Independent by ownership. Accountable by choice."
+              lead="Founded in Prishtina in 2014, Alfa Trade was built by people with regional fuel-trading experience and a belief that every customer deserves clear terms, correct volumes and serious service."
             />
             <div className="mt-7 space-y-5 leading-relaxed text-night-600">
               <p>
@@ -48,16 +48,16 @@ const About = () => {
                 four stations across central and western Kosovo.
               </p>
               <p>
-                Today Alfa Globe operates three supply divisions — petroleum, agriculture and
-                construction — moving over 45 million litres of fuel a year with our own
-                ADR-certified tanker fleet. We remain independently owned, which means our only
-                obligation is to the customers and communities we serve.
+                Today Alfa Trade operates across petroleum, agriculture and construction supply,
+                using its own ADR-certified tanker operations to serve retail, fleet, industrial
+                and seasonal customers. We remain independently owned and accountable to the
+                customers and communities we serve.
               </p>
             </div>
           </div>
           <Reveal className="lg:sticky lg:top-28">
             <div className="overflow-hidden rounded-2xl shadow-card-hover">
-              <img src={tanker} alt="Alfa Globe tanker fleet" loading="lazy" className="w-full object-cover" />
+              <img src={tanker} alt="Alfa Trade tanker fleet" loading="lazy" className="w-full object-cover" />
             </div>
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="rounded-2xl bg-night-950 p-6 text-white">
@@ -95,7 +95,7 @@ const About = () => {
               Our vision
             </h2>
             <p className="mt-4 text-xl font-semibold leading-relaxed text-white sm:text-2xl">
-              To be the region's most trusted independent energy partner — the supplier businesses
+              To be the region's most trusted independent petroleum distributor — the supplier businesses
               plan around, not the one they worry about.
             </p>
             <p className="mt-4 leading-relaxed text-white/60">
@@ -132,8 +132,8 @@ const About = () => {
           <div>
             <SectionTitle
               eyebrow="Milestones"
-              title="A decade of organic growth"
-              lead="No shortcuts, no leaps of faith — each stage of Alfa Globe was funded by the trust earned in the one before it."
+              title="Growth built one delivery at a time"
+              lead="Each new station, tanker and supply division followed a real customer need—not a change in fashion."
               className="lg:sticky lg:top-28"
             />
           </div>
@@ -207,8 +207,8 @@ const About = () => {
 
       <StatsBand />
       <CTASection
-        title="Work with a team that keeps its word"
-        lead="Whether you need one delivery or a five-year supply contract, it starts with a conversation."
+        title="Tell us how you buy fuel today"
+        lead="We will show you where station access, bulk delivery or a contracted supply plan can make it simpler."
       />
     </>
   );

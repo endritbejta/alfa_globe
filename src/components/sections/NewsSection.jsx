@@ -7,7 +7,7 @@ import { fadeUp, stagger, viewportOnce } from "../../lib/motion";
 const NewsCard = ({ item }) => (
   <motion.article
     variants={fadeUp}
-    className="group cursor-pointer overflow-hidden rounded-2xl border border-night-100 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
+    className="group cursor-pointer overflow-hidden rounded-2xl border border-night-100 bg-white shadow-card transition-shadow duration-300 hover:shadow-card-hover"
   >
     <div className="relative h-48 overflow-hidden">
       <img
@@ -42,8 +42,8 @@ const NewsSection = () => (
   <section id="news" className="container-x scroll-mt-24 py-20 sm:py-28">
     <SectionTitle
       eyebrow="News & insights"
-      title="The latest from Alfa Globe"
-      lead="Product launches, network updates and what's changing in the regional energy market."
+      title="The latest from Alfa Trade"
+      lead="Product launches, station updates and what's changing in the regional petroleum market."
       align="center"
     />
     <motion.div

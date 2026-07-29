@@ -10,7 +10,7 @@ import gasNozzle from "../assets/img/gasolinenozzle.jpg";
 const Products = () => {
   usePageMeta(
     "Products",
-    "Diesel, petrol, premium fuels, lubricants, industrial oils, AdBlue and fleet cards — the full Alfa Globe product catalog with specifications."
+    "Diesel, petrol, premium fuels, lubricants, industrial oils, AdBlue and fleet cards — the full Alfa Trade product catalog with specifications."
   );
 
   return (
@@ -36,8 +36,8 @@ const Products = () => {
         </motion.div>
       </section>
       <CTASection
-        title="Not sure which product fits your operation?"
-        lead="Tell us what you run and how you run it — our team will spec the right fuel and lubricants, with data sheets to back it up."
+        title="Need help matching product to equipment?"
+        lead="Tell us the vehicle, machine or application. We will identify the relevant specification, pack size and supply method."
         primary={{ label: "Talk to a specialist", to: "/contact" }}
         secondary={{ label: "See our services", to: "/services" }}
       />

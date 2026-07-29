@@ -27,7 +27,7 @@ export const pillars = [
   },
   {
     icon: Zap,
-    title: "Energy-smart facilities",
+    title: "Efficient fuel facilities",
     description:
       "LED lighting across all stations, and a phased rollout of rooftop solar to power station operations from 2027.",
   },

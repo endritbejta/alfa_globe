@@ -6,9 +6,9 @@ import { fadeUp, stagger } from "../../lib/motion";
 import tanker from "../../assets/img/tanker.jpg";
 
 const trustPoints = [
-  { icon: BadgeCheck, label: "EN 590 / EN 228 certified fuels" },
-  { icon: Timer, label: "98% on-time delivery rate" },
-  { icon: ShieldCheck, label: "ADR-certified tanker fleet" },
+  { icon: BadgeCheck, label: "Diesel EN 590 & petrol EN 228" },
+  { icon: Timer, label: "Retail, bulk & fleet supply" },
+  { icon: ShieldCheck, label: "ADR-certified transport" },
 ];
 
 const Hero = () => (
@@ -35,16 +35,16 @@ const Hero = () => (
     <div className="container-x relative pb-28 pt-40 sm:pb-32">
       <motion.div variants={stagger(0.12, 0.2)} initial="hidden" animate="visible" className="max-w-3xl">
         <motion.div variants={fadeUp}>
-          <Eyebrow light>Petroleum & energy solutions — Kosovo</Eyebrow>
+          <Eyebrow light>Fuel distribution across Kosovo</Eyebrow>
         </motion.div>
 
         <motion.h1
           variants={fadeUp}
           className="mt-5 text-balance text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
         >
-          Reliable energy for businesses{" "}
+          Fuel supply that keeps{" "}
           <span className="relative whitespace-nowrap">
-            <span className="relative z-10">that never stop</span>
+            <span className="relative z-10">business moving</span>
             <span
               className="absolute inset-x-0 bottom-1.5 z-0 h-3 -rotate-1 bg-brand-600 sm:bottom-2.5 sm:h-4"
               aria-hidden="true"
@@ -56,17 +56,16 @@ const Hero = () => (
           variants={fadeUp}
           className="mt-7 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg"
         >
-          We source, transport, store and deliver certified fuels across Kosovo — powering fleets,
-          farms, factories and families through four stations and a bulk-delivery network you can
-          set your schedule by.
+          Certified diesel, petrol, lubricants and AdBlue—available through four stations, delivered
+          in bulk to your site, or managed across your fleet with one clear account.
         </motion.p>
 
         <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-4">
           <Button to="/contact" size="lg" withArrow>
-            Request a quote
+            Get a fuel quote
           </Button>
           <Button to="/services" size="lg" variant="outline-light">
-            Explore our services
+            See how we supply
           </Button>
         </motion.div>
 

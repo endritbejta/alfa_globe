@@ -10,7 +10,7 @@ export const news = [
     category: "Products",
     image: highway3,
     excerpt:
-      "Our additivated premium diesel is now available at every Alfa Globe station, bringing enhanced detergency and cetane boost to fleets and private drivers alike.",
+      "Our additivated premium diesel is now available at every Alfa Trade station, bringing enhanced detergency and cetane boost to fleets and private drivers alike.",
   },
   {
     slug: "fleet-portal",

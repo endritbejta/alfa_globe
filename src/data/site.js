@@ -1,6 +1,6 @@
 export const site = {
-  name: "Alfa Globe",
-  tagline: "Reliable Energy Solutions for Businesses and Industries",
+  name: "Alfa Trade",
+  tagline: "Reliable Petroleum Distribution for Businesses and Industries",
   email: "alfaglobe.ks@gmail.com",
   phone: "+383 44 192 422",
   phoneDisplay: "+383 (0) 44 192 422",
@@ -23,7 +23,6 @@ export const navLinks = [
   { label: "Services", to: "/services" },
   { label: "Products", to: "/products" },
   { label: "Fleet", to: "/fleet" },
-  { label: "Agriculture", to: "/agriculture" },
   { label: "Careers", to: "/careers" },
   { label: "Locations", to: "/locations" },
 ];
@@ -40,8 +39,7 @@ export const footerLinks = {
     { label: "Fuel supply", to: "/services#fuel-supply" },
     { label: "Bulk delivery", to: "/services#bulk-delivery" },
     { label: "Fleet solutions", to: "/fleet" },
-    { label: "Agriculture supply", to: "/agriculture" },
-    { label: "Industrial energy", to: "/services#industrial-energy" },
+    { label: "Industrial fuel", to: "/services#industrial-energy" },
     { label: "Logistics", to: "/services#logistics" },
   ],
   products: [

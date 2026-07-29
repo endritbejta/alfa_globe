@@ -1,7 +1,7 @@
 export const milestones = [
   {
     year: "2014",
-    title: "Alfa Globe is founded",
+    title: "Alfa Trade is founded",
     description:
       "Started as a family fuel-trading business in Prishtina with a single truck and a simple principle: deliver exactly what was promised, when it was promised.",
   },

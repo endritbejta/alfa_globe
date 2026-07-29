@@ -9,8 +9,8 @@ const Testimonials = () => (
     <div className="container-x">
       <SectionTitle
         eyebrow="What clients say"
-        title="Judged by the people who depend on us"
-        lead="Transport managers, site foremen and farmers — the customers who feel it first when a supplier fails."
+        title="What good fuel supply changes for the customer"
+        lead="Less administration, fewer urgent calls and a clearer view of what was delivered, where and when."
         align="center"
       />
       <motion.div

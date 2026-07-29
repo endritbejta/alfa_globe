@@ -58,14 +58,14 @@ export const services = [
     ],
     process: [
       "We register your vehicles and issue fuel cards.",
-      "Drivers refuel at any Alfa Globe station.",
+      "Drivers refuel at any Alfa Trade station.",
       "You receive consolidated invoices and usage reports.",
     ],
   },
   {
     slug: "industrial-energy",
     icon: Factory,
-    title: "Industrial Energy Supply",
+    title: "Industrial Fuel Supply",
     description:
       "Heating oil, generator diesel and process fuels for manufacturing plants, hospitals, greenhouses and facilities that cannot afford downtime.",
     benefits: [
@@ -150,7 +150,7 @@ export const services = [
 ];
 
 export const servicesIntro = {
-  eyebrow: "Our services",
-  title: "Energy services built around your operations",
-  lead: "From single-site deliveries to national fleet programmes, we design supply around how your business actually works — then we deliver on it, every time.",
+  eyebrow: "Ways to buy",
+  title: "From a single fill to a managed fuel programme",
+  lead: "Refuel at our stations, schedule tanker deliveries, equip your drivers with fleet cards or build a contracted supply plan around your consumption.",
 };

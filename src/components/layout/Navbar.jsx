@@ -5,11 +5,42 @@ import { Menu, X, Phone } from "lucide-react";
 import { navLinks, site } from "../../data/site";
 import Button from "../ui/Button";
 import logo from "../../assets/img/alfalogored.png";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const { language, setLanguage } = useLanguage();
+
+  const LanguageSwitch = ({ compact = false }) => (
+    <div
+      className={`flex items-center rounded-full border border-white/15 bg-white/5 p-1 ${
+        compact ? "self-start" : ""
+      }`}
+      role="group"
+      aria-label="Language"
+    >
+      {[
+        ["sq", "SQ"],
+        ["en", "EN"],
+      ].map(([code, label]) => (
+        <button
+          key={code}
+          type="button"
+          onClick={() => setLanguage(code)}
+          className={`rounded-full px-2.5 py-1 text-[11px] font-bold tracking-wider transition-colors ${
+            language === code
+              ? "bg-brand-600 text-white"
+              : "text-white/55 hover:text-white"
+          }`}
+          aria-pressed={language === code}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  );
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -42,10 +73,10 @@ const Navbar = () => {
       }`}
     >
       <div className="container-x flex h-18 items-center justify-between gap-6 py-3">
-        <Link to="/" className="flex items-center gap-3" aria-label="Alfa Globe — home">
+        <Link to="/" className="flex items-center gap-3" aria-label="Alfa Trade — home">
           <img src={logo} alt="" className="h-10 w-10 object-contain" />
           <span className="text-lg font-extrabold uppercase tracking-[0.18em] text-white">
-            Alfa <span className="text-brand-500">Globe</span>
+            Alfa <span className="text-brand-500">Trade</span>
           </span>
         </Link>
 
@@ -58,6 +89,7 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden items-center gap-3 xl:flex">
+          <LanguageSwitch />
           <Button to="/contact" size="md">
             Request a quote
           </Button>
@@ -100,7 +132,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-2.5">
                   <img src={logo} alt="" className="h-8 w-8 object-contain" />
                   <span className="text-sm font-extrabold uppercase tracking-[0.18em] text-white">
-                    Alfa <span className="text-brand-500">Globe</span>
+                    Alfa <span className="text-brand-500">Trade</span>
                   </span>
                 </div>
                 <button
@@ -138,6 +170,7 @@ const Navbar = () => {
               </nav>
 
               <div className="mt-auto space-y-4 border-t border-white/10 pt-6">
+                <LanguageSwitch compact />
                 <a
                   href={`tel:${site.phone}`}
                   className="flex items-center gap-3 text-sm font-semibold text-white/80 transition-colors hover:text-white"

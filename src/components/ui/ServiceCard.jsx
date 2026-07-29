@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
   return (
     <motion.article
       variants={fadeUp}
-      className="group relative flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-card-hover"
+      className="group relative flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-300 hover:border-brand-200 hover:shadow-card-hover"
     >
       <div className="flex items-start justify-between">
         <div className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white">

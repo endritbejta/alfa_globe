@@ -1,6 +1,6 @@
-# Alfa Globe — Corporate Website
+# Alfa Trade — Corporate Website
 
-Premium corporate website for **Alfa Globe**, a petroleum and energy company operating fuel
+Premium corporate website for **Alfa Trade**, a petroleum distribution company operating fuel
 stations and a bulk-delivery network across Kosovo.
 
 **Live site:** https://alfaglobe.netlify.app/
@@ -11,7 +11,7 @@ stations and a bulk-delivery network across Kosovo.
 
 ## Overview
 
-A complete redesign (v2) of the original Alfa Globe site: migrated from Create React App + SCSS
+A complete redesign (v2) of the original Alfa Trade site: migrated from Create React App + SCSS
 to **Vite + Tailwind CSS v4**, rebuilt around a consistent design system, and filled with
 realistic corporate content — services, product catalog with specifications, fleet programme,
 sustainability strategy, careers and a station map with real coordinates.

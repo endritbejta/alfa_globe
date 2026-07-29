@@ -15,7 +15,7 @@ import CTASection from "../components/ui/CTASection";
 const Home = () => {
   usePageMeta(
     null,
-    "Alfa Globe supplies certified fuels, lubricants and energy solutions to businesses and industries across Kosovo — with four stations, bulk delivery and fleet programmes."
+    "Alfa Trade distributes certified diesel, petrol, lubricants and AdBlue across Kosovo through four stations, bulk tanker delivery and fleet programmes."
   );
 
   return (

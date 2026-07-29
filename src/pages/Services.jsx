@@ -79,15 +79,15 @@ const ServiceSection = ({ service, index }) => {
 const Services = () => {
   usePageMeta(
     "Services",
-    "Fuel supply, bulk delivery, fleet solutions, industrial energy, lubricants, logistics and 24/7 emergency supply — Alfa Globe's full service portfolio."
+    "Petroleum distribution, bulk fuel delivery, fleet supply, industrial fuels, lubricants, logistics and 24/7 emergency delivery — Alfa Trade's full service portfolio."
   );
 
   return (
     <>
       <PageHero
         eyebrow="Our services"
-        title="Every way a business buys fuel, done properly"
-        lead="Eight services, one standard: certified quality, metered volumes and delivery you can set your operations by."
+        title="Fuel supply designed around where and how you use it"
+        lead="At station, by tanker, through fleet cards or under contract—each option comes with clear product specifications, measured volume and documented delivery."
         image={highway3}
         crumbs={[{ label: "Services" }]}
       />
@@ -116,8 +116,8 @@ const Services = () => {
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.5fr]">
           <SectionTitle
             eyebrow="FAQ"
-            title="Common questions, straight answers"
-            lead="If yours isn't here, our commercial team answers the phone — even outside office hours."
+            title="The details buyers ask before the first order"
+            lead="Volumes, delivery windows, quality documentation and invoicing—answered clearly before supply begins."
             className="lg:sticky lg:top-32 lg:self-start"
           />
           <Reveal>

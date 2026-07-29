@@ -14,7 +14,7 @@ import highway2 from "../assets/img/highway2.jpg";
 const Locations = () => {
   usePageMeta(
     "Locations",
-    "Find your nearest Alfa Globe fuel station: Çagllavicë, Kçiç, Klinë e Poshtme and Polac — open daily with certified fuels and fleet card acceptance."
+    "Find your nearest Alfa Trade fuel station: Çagllavicë, Kçiç, Klinë e Poshtme and Polac — open daily with certified fuels and fleet card acceptance."
   );
 
   const [focus, setFocus] = useState(null);
@@ -23,8 +23,8 @@ const Locations = () => {
     <>
       <PageHero
         eyebrow="Our locations"
-        title="Four stations, one standard"
-        lead={`${site.stationHours}. Certified fuels, market shops and fleet-card acceptance at every site.`}
+        title="Four convenient points for fuel, AdBlue and fleet cards"
+        lead={`${site.stationHours}. Consistent product standards, practical services and direct access from the road.`}
         image={highway2}
         crumbs={[{ label: "Locations" }]}
       />
@@ -32,8 +32,8 @@ const Locations = () => {
       <section className="container-x py-20 sm:py-28">
         <SectionTitle
           eyebrow="Station network"
-          title="Find your nearest station"
-          lead="Click a station to see it on the map, or get directions straight to the pump."
+          title="Choose a station and plan the stop"
+          lead="Check the available services, open the location on the map or get directions directly."
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1.3fr]">

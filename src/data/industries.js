@@ -61,7 +61,7 @@ export const industries = [
 ];
 
 export const industriesIntro = {
-  eyebrow: "Industries we serve",
-  title: "Trusted across every sector that moves Kosovo",
-  lead: "Different industries fail in different ways when fuel stops. We know the difference — and we plan supply around the realities of each sector we serve.",
+  eyebrow: "Who we supply",
+  title: "Fuel plans shaped around how each sector works",
+  lead: "A transport fleet, construction site, factory and farm do not consume fuel the same way. We plan product, storage and delivery around the job.",
 };

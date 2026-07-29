@@ -60,7 +60,7 @@ const OpeningCard = ({ opening }) => {
 const Careers = () => {
   usePageMeta(
     "Careers",
-    "Join Alfa Globe: stable local jobs, paid training and real progression across our stations, logistics fleet and commercial team."
+    "Join Alfa Trade: stable local jobs, paid training and real progression across our stations, logistics fleet and commercial team."
   );
 
   const [submitted, setSubmitted] = useState(false);
@@ -74,8 +74,8 @@ const Careers = () => {
     <>
       <PageHero
         eyebrow="Careers"
-        title="Do work people depend on"
-        lead="Fuel keeps hospitals running, harvests moving and shelves stocked. The people who make that happen are the people we hire — and keep."
+        title="Build a career in a business that has to deliver"
+        lead="From safe fuel handling to route planning and customer service, our work rewards people who are careful, dependable and ready to take responsibility."
         image={gasNozzle}
         crumbs={[{ label: "Careers" }]}
       />
@@ -84,8 +84,8 @@ const Careers = () => {
       <section className="container-x py-20 sm:py-28">
         <SectionTitle
           eyebrow="Why work here"
-          title="A serious employer in a serious industry"
-          lead="Average tenure over five years doesn't happen by accident. This is what we offer in return for good work."
+          title="Clear standards, practical training and work that matters"
+          lead="We invest in the licences, product knowledge and safety habits people need to grow in petroleum distribution."
           align="center"
         />
         <motion.div

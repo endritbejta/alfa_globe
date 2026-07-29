@@ -36,7 +36,7 @@ const inputClasses =
 const Contact = () => {
   usePageMeta(
     "Contact",
-    "Contact Alfa Globe: request a quote, arrange a delivery or reach our 24/7 dispatch line. Phone, email, WhatsApp and Viber."
+    "Contact Alfa Trade: request a quote, arrange a delivery or reach our 24/7 dispatch line. Phone, email, WhatsApp and Viber."
   );
 
   const [submitted, setSubmitted] = useState(false);
@@ -50,8 +50,8 @@ const Contact = () => {
     <>
       <PageHero
         eyebrow="Contact us"
-        title="Talk to a person, not a queue"
-        lead="Quotes, deliveries, fleet programmes or anything else — reach us by phone, email or messenger, and we'll answer quickly."
+        title="Start with the fuel requirement"
+        lead="Tell us the product, volume, location and timing. Our team will route your request to station, bulk, fleet or commercial supply."
         image={tanker}
         crumbs={[{ label: "Contact" }]}
       />
@@ -147,8 +147,8 @@ const Contact = () => {
           <div>
             <SectionTitle
               eyebrow="Send an inquiry"
-              title="Tell us what you need"
-              lead="Commercial inquiries get a response within one working day."
+              title="Give us the details needed to quote"
+              lead="Product, estimated volume, delivery point and preferred timing are enough to start."
             />
             <Reveal className="mt-10">
               {submitted ? (

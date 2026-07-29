@@ -68,15 +68,15 @@ const steps = [
 const Fleet = () => {
   usePageMeta(
     "Fleet Solutions",
-    "The Alfa Globe fleet programme: fuel cards, spending controls, consumption reporting and consolidated invoicing for transport and logistics fleets."
+    "The Alfa Trade fleet programme: fuel cards, spending controls, consumption reporting and consolidated invoicing for transport and logistics fleets."
   );
 
   return (
     <>
       <PageHero
         eyebrow="Fleet solutions"
-        title="Take fuel administration off your desk"
-        lead="Cards for the road, bulk supply for the depot, and reporting that shows exactly where every litre went — the complete fuel programme for fleets of five vehicles or five hundred."
+        title="Control fleet fuel without chasing cash and receipts"
+        lead="Give drivers controlled access at our stations, combine it with depot deliveries, and review transactions by card, vehicle, product and location."
         image={highway}
         crumbs={[{ label: "Fleet Solutions" }]}
       />
@@ -85,8 +85,8 @@ const Fleet = () => {
       <section className="container-x py-20 sm:py-28">
         <SectionTitle
           eyebrow="The programme"
-          title="Everything a fleet manager actually needs"
-          lead="Built with transport operators, not for them — every feature answers a real complaint we heard from fleet managers."
+          title="The controls that make fuel easier to manage"
+          lead="Set limits, restrict products, consolidate invoices and see the information needed to question unusual consumption."
           align="center"
         />
         <motion.div
@@ -102,7 +102,7 @@ const Fleet = () => {
               <motion.div
                 key={cap.title}
                 variants={fadeUp}
-                className="rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-card-hover"
+                className="rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-300 hover:border-brand-200 hover:shadow-card-hover"
               >
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600">
                   <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
@@ -188,8 +188,8 @@ const Fleet = () => {
       </section>
 
       <CTASection
-        title="Put your fleet on one invoice"
-        lead="A 30-minute fleet review is enough to show you the savings. No commitment, no sales theatre."
+        title="Bring station and depot fuel into one plan"
+        lead="Share your fleet size, routes and current buying process. We will outline a practical card and bulk-supply setup."
         primary={{ label: "Book a fleet review", to: "/contact" }}
         secondary={{ label: "See fuel products", to: "/products" }}
       />

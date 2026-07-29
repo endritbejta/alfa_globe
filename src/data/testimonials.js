@@ -1,21 +1,21 @@
 export const testimonials = [
   {
     quote:
-      "We run 40 trucks on tight cross-border schedules. Since moving to the Alfa fleet card, refuelling stopped being an administrative job — one invoice, per-vehicle reports, and pricing we can actually plan around.",
+      "The Alfa fleet card replaced cash advances and scattered receipts. We now review fuel by vehicle and close the month with one invoice.",
     name: "Bekim Krasniqi",
     initials: "BK",
     role: "Operations Director, EuroTrans Logistics",
   },
   {
     quote:
-      "Concrete doesn't wait. Alfa Globe has delivered bulk diesel to our sites at 6 a.m. before a single pour was missed. In three years they have not been late once.",
+      "Our sites move quickly, so delivery timing matters as much as price. Alfa Trade confirms the window, coordinates with the foreman and provides the paperwork at discharge.",
     name: "Arta Gashi",
     initials: "AG",
     role: "Site Manager, NB Construction Group",
   },
   {
     quote:
-      "During harvest we burn more diesel in a week than in the whole winter. They plan the season with us in advance, and the tanker simply shows up before we run low. That is what a supplier should be.",
+      "Harvest demand is predictable if you plan early. We agree the expected volume and delivery rhythm before the season, which keeps the machinery working when the days get long.",
     name: "Fatos Berisha",
     initials: "FB",
     role: "Owner, AgroVita Farms",

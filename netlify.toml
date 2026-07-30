@@ -3,8 +3,8 @@
   publish = "dist"
 
 [build.environment]
-  # Vite 6 / Tailwind v4 need modern Node; old CRA-era sites default to Node 16.
-  NODE_VERSION = "20"
+  # Keep Netlify builds and Agent Runners on the same supported LTS release.
+  NODE_VERSION = "22"
 
 # SPA fallback: serve index.html for every route so React Router
 # handles /about, /products/diesel, etc. on direct visits and refreshes.

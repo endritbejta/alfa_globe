@@ -19,9 +19,9 @@ export const milestones = [
   },
   {
     year: "2020",
-    title: "Agriculture division launches",
+    title: "Bulk delivery capacity expands",
     description:
-      "Responding to our farming customers, we begin supplying fertilizers and seeds alongside seasonal fuel planning for the agricultural sector.",
+      "Additional tanker capacity extends scheduled fuel delivery to commercial sites, construction projects and seasonal customers across Kosovo.",
   },
   {
     year: "2022",

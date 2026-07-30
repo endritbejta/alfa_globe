@@ -66,6 +66,21 @@
   }
 }
 
+@layer components {
+  .ui-pressable {
+    transition:
+      color 160ms ease,
+      background-color 160ms ease,
+      border-color 160ms ease,
+      box-shadow 160ms ease,
+      transform 140ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .ui-pressable:active {
+    transform: scale(0.97);
+  }
+}
+
 @layer utilities {
   /* Standard page gutter + max width */
   .container-x {
@@ -194,18 +209,20 @@
     transform 180ms ease;
 }
 
-.alfa-map-marker:hover {
-  z-index: 1000 !important;
-}
+@media (hover: hover) and (pointer: fine) {
+  .alfa-map-marker:hover {
+    z-index: 1000 !important;
+  }
 
-.alfa-map-marker:hover .alfa-map-marker__pin {
-  filter: brightness(1.05) saturate(1.05);
-  transform: translateY(-3px) rotate(-45deg) scale(1.06);
-}
+  .alfa-map-marker:hover .alfa-map-marker__pin {
+    filter: brightness(1.05) saturate(1.05);
+    transform: translateY(-3px) rotate(-45deg) scale(1.06);
+  }
 
-.alfa-map-marker:hover .alfa-map-marker__shadow {
-  opacity: 0.65;
-  transform: translateX(-50%) scale(0.82);
+  .alfa-map-marker:hover .alfa-map-marker__shadow {
+    opacity: 0.65;
+    transform: translateX(-50%) scale(0.82);
+  }
 }
 
 .alfa-map-marker.is-focused .alfa-map-marker__pin {
@@ -223,6 +240,27 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee {
+    animation: none;
+    transform: none;
+  }
+
+  .animate-pulse {
+    animation: none;
+  }
+
+  .ui-pressable {
+    transition-property: color, background-color, border-color, box-shadow;
+  }
+
+  .ui-pressable:active {
+    transform: none;
+  }
+
   .alfa-map-loading__spinner {
     animation-duration: 1400ms;
   }
@@ -234,6 +272,14 @@
 
   .alfa-map-marker.is-focused .alfa-map-marker__pin {
     animation: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .backdrop-blur,
+  .backdrop-blur-sm,
+  .backdrop-blur-md {
+    backdrop-filter: none;
   }
 }
 

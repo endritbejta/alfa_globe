@@ -15,9 +15,9 @@ const Hero = () => (
   <section className="relative flex min-h-svh flex-col justify-center overflow-hidden bg-night-950">
     {/* Background */}
     <motion.img
-      initial={{ scale: 1.08, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1.4, ease: "easeOut" }}
+      initial={{ transform: "scale(1.04)", opacity: 0 }}
+      animate={{ transform: "scale(1)", opacity: 1 }}
+      transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
       src={tanker}
       alt=""
       aria-hidden="true"
@@ -33,7 +33,7 @@ const Hero = () => (
     />
 
     <div className="container-x relative pb-28 pt-40 sm:pb-32">
-      <motion.div variants={stagger(0.12, 0.2)} initial="hidden" animate="visible" className="max-w-3xl">
+      <motion.div variants={stagger(0.05, 0.08)} initial="hidden" animate="visible" className="max-w-3xl">
         <motion.div variants={fadeUp}>
           <Eyebrow light>Fuel distribution across Kosovo</Eyebrow>
         </motion.div>

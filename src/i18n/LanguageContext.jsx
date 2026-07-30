@@ -1,4 +1,5 @@
 import { createContext, useContext, useLayoutEffect, useMemo, useState } from "react";
+import sqExtended from "./sqExtended";
 
 const STORAGE_KEY = "alfa-trade-language";
 
@@ -108,6 +109,16 @@ const sq = {
   "AdBlue packs": "Paketime AdBlue",
   "AdBlue at pump": "AdBlue në pompë",
   "Loading map…": "Duke ngarkuar hartën…",
+  "Show on map": "Shfaq në hartë",
+  "Additional tanker capacity strengthens bulk delivery coverage":
+    "Kapaciteti shtesë i cisternave forcon mbulimin e furnizimit me shumicë",
+  "Expanded tanker capacity gives commercial customers more scheduling flexibility and stronger coverage during periods of peak fuel demand.":
+    "Kapaciteti i zgjeruar i cisternave u jep klientëve komercialë më shumë fleksibilitet në planifikim dhe mbulim më të mirë gjatë periudhave me kërkesë të lartë.",
+  "Today Alfa Trade operates across retail fuel, bulk petroleum distribution and commercial supply, using its own ADR-certified tanker operations to serve fleets, industrial sites, construction projects and seasonal customers. We remain independently owned and accountable to the customers and communities we serve.":
+    "Sot Alfa Trade vepron në shitjen me pakicë të derivateve, shpërndarjen me shumicë dhe furnizimin komercial, duke përdorur cisternat e veta të certifikuara ADR për flota, objekte industriale, projekte ndërtimore dhe klientë sezonalë. Mbetemi kompani e pavarur dhe e përgjegjshme ndaj klientëve dhe komuniteteve që u shërbejmë.",
+  "Bulk delivery capacity expands": "Zgjerohet kapaciteti i furnizimit me shumicë",
+  "Additional tanker capacity extends scheduled fuel delivery to commercial sites, construction projects and seasonal customers across Kosovo.":
+    "Kapaciteti shtesë i cisternave zgjeron furnizimin e planifikuar për objekte komerciale, projekte ndërtimore dhe klientë sezonalë në gjithë Kosovën.",
   "Petroleum distribution & fuel supply — Kosovo":
     "Shpërndarje e derivateve dhe furnizim — Kosovë",
   "Reliable fuel supply for businesses": "Furnizim i sigurt me derivate për bizneset",
@@ -276,6 +287,7 @@ const sq = {
     "Produkte të reja, përditësime nga pikat tona dhe zhvillimet në tregun rajonal të derivateve.",
   "Certified petroleum products, lubricants and bulk fuel distribution for businesses and industries — delivered safely and on time since 2014.":
     "Produkte të certifikuara të naftës, lubrifikantë dhe shpërndarje me shumicë për biznese e industri — të dorëzuara sigurt dhe në kohë që nga viti 2014.",
+  ...sqExtended,
 };
 
 const translations = { sq };

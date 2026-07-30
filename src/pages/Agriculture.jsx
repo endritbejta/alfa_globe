@@ -95,7 +95,7 @@ const Agriculture = () => {
                 <motion.article
                   key={fertilizer.name}
                   variants={fadeUp}
-                  className="flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-300 hover:border-brand-200 hover:shadow-card-hover"
+                  className="flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
                 >
                   <div className="flex items-center justify-between">
                     <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600">

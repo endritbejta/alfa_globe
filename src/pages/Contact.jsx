@@ -71,7 +71,7 @@ const Contact = () => {
               <motion.li variants={fadeUp}>
                 <a
                   href={`tel:${site.phone}`}
-                  className="group flex items-center gap-4 rounded-2xl border border-night-100 bg-white p-5 shadow-card transition-all hover:border-brand-200 hover:shadow-card-hover"
+                  className="group flex items-center gap-4 rounded-2xl border border-night-100 bg-white p-5 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
                 >
                   <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
                     <Phone size={20} aria-hidden="true" />
@@ -85,7 +85,7 @@ const Contact = () => {
               <motion.li variants={fadeUp}>
                 <a
                   href={`mailto:${site.email}`}
-                  className="group flex items-center gap-4 rounded-2xl border border-night-100 bg-white p-5 shadow-card transition-all hover:border-brand-200 hover:shadow-card-hover"
+                  className="group flex items-center gap-4 rounded-2xl border border-night-100 bg-white p-5 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
                 >
                   <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
                     <Mail size={20} aria-hidden="true" />
@@ -99,7 +99,7 @@ const Contact = () => {
               <motion.li variants={fadeUp}>
                 <a
                   href={site.whatsapp}
-                  className="group flex items-center gap-4 rounded-2xl border border-night-100 bg-white p-5 shadow-card transition-all hover:border-brand-200 hover:shadow-card-hover"
+                  className="group flex items-center gap-4 rounded-2xl border border-night-100 bg-white p-5 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
                 >
                   <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
                     <MessageCircle size={20} aria-hidden="true" />

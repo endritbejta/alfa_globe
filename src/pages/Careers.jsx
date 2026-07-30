@@ -39,7 +39,7 @@ const OpeningCard = ({ opening }) => {
         </div>
         <ChevronDown
           size={20}
-          className={`shrink-0 text-night-400 transition-transform duration-300 ${
+          className={`shrink-0 text-night-400 transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] ${
             expanded ? "rotate-180" : ""
           }`}
           aria-hidden="true"

@@ -1,6 +1,5 @@
 import highway3 from "../assets/img/highway3.jpg";
 import tanker from "../assets/img/tanker.jpg";
-import wheat from "../assets/img/wheat.jpg";
 
 export const news = [
   {
@@ -22,12 +21,12 @@ export const news = [
       "Fleet card customers can now track every transaction, set card limits and download consolidated reports from a single dashboard — no more waiting for month-end.",
   },
   {
-    slug: "agriculture-season",
-    title: "Seasonal fuel planning programme opens for the 2026 harvest",
+    slug: "bulk-delivery-capacity",
+    title: "Additional tanker capacity strengthens bulk delivery coverage",
     date: "March 2026",
-    category: "Agriculture",
-    image: wheat,
+    category: "Logistics",
+    image: tanker,
     excerpt:
-      "Farms can now lock in scheduled bulk deliveries for the harvest season, with volume pricing and priority dispatch during peak weeks.",
+      "Expanded tanker capacity gives commercial customers more scheduling flexibility and stronger coverage during periods of peak fuel demand.",
   },
 ];

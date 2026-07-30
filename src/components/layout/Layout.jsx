@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import BackToTop from "./BackToTop";
+import PageLoader from "../ui/PageLoader";
 
 const Layout = () => {
   const { pathname, hash } = useLocation();
@@ -32,7 +33,9 @@ const Layout = () => {
       </a>
       <Navbar />
       <main id="main" className="flex-1">
-        <Outlet />
+        <Suspense fallback={<PageLoader />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
       <BackToTop />

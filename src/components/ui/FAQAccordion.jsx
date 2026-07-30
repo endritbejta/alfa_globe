@@ -1,38 +1,28 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "lucide-react";
 
-const FAQItem = ({ item, open, onToggle }) => (
+const FAQItem = ({ item, open, onToggle, id }) => (
   <div className="border-b border-night-100">
     <button
       onClick={onToggle}
       aria-expanded={open}
-      className="flex w-full items-center justify-between gap-4 py-5 text-left"
+      aria-controls={id}
+      className="group flex w-full items-center justify-between gap-4 py-5 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-600"
     >
       <span className="text-base font-semibold text-night-950 sm:text-lg">{item.question}</span>
       <span
-        className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border transition-all duration-300 ${
+        className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border transition-[transform,color,background-color,border-color] duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] ${
           open
             ? "rotate-45 border-brand-600 bg-brand-600 text-white"
-            : "border-night-200 text-night-500"
+            : "border-night-200 text-night-500 group-hover:border-brand-300"
         }`}
       >
         <Plus size={16} aria-hidden="true" />
       </span>
     </button>
-    <AnimatePresence initial={false}>
-      {open && (
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: "auto", opacity: 1 }}
-          exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="overflow-hidden"
-        >
-          <p className="pb-6 pr-12 leading-relaxed text-night-500">{item.answer}</p>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <div id={id} hidden={!open}>
+      <p className="pb-6 pr-12 leading-relaxed text-night-500">{item.answer}</p>
+    </div>
   </div>
 );
 
@@ -46,6 +36,7 @@ const FAQAccordion = ({ items }) => {
           item={item}
           open={openIndex === i}
           onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
+          id={`faq-answer-${i}`}
         />
       ))}
     </div>

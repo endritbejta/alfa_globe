@@ -1,20 +1,20 @@
 // Shared Framer Motion presets — keep animations consistent and subtle.
 
 export const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, transform: "translateY(12px)" },
   visible: {
     opacity: 1,
-    y: 0,
-    transition: { duration: 0.55, ease: [0.21, 0.6, 0.35, 1] },
+    transform: "translateY(0px)",
+    transition: { duration: 0.4, ease: [0.23, 1, 0.32, 1] },
   },
 };
 
 export const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.7, ease: "easeOut" } },
+  visible: { opacity: 1, transition: { duration: 0.4, ease: [0.23, 1, 0.32, 1] } },
 };
 
-export const stagger = (staggerChildren = 0.1, delayChildren = 0) => ({
+export const stagger = (staggerChildren = 0.06, delayChildren = 0) => ({
   hidden: {},
   visible: { transition: { staggerChildren, delayChildren } },
 });

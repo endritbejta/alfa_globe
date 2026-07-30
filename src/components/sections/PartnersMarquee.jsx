@@ -20,6 +20,7 @@ const PartnersMarquee = ({ dark = false }) => {
           {items.map((name, i) => (
             <span
               key={`${name}-${i}`}
+              aria-hidden={i >= partners.length ? "true" : undefined}
               className={`whitespace-nowrap text-lg font-extrabold uppercase tracking-wide ${
                 dark ? "text-white/30" : "text-night-300"
               }`}

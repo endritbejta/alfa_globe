@@ -2,7 +2,6 @@ import {
   Truck,
   HardHat,
   Factory,
-  Tractor,
   Ship,
   Landmark,
   Store,
@@ -27,12 +26,6 @@ export const industries = [
     title: "Manufacturing",
     description:
       "Process fuels, industrial oils and guaranteed continuity of supply for production lines that never stop.",
-  },
-  {
-    icon: Tractor,
-    title: "Agriculture",
-    description:
-      "Seasonal fuel planning, farm deliveries, fertilizers and seeds through our dedicated agriculture division.",
   },
   {
     icon: Ship,

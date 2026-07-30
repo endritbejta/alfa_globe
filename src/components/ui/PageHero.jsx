@@ -23,7 +23,7 @@ const PageHero = ({ eyebrow, title, lead, image, crumbs = [] }) => (
     )}
     <div className="bg-grid-dark absolute inset-0" aria-hidden="true" />
     <div className="container-x relative">
-      <motion.div variants={stagger(0.1)} initial="hidden" animate="visible">
+      <motion.div variants={stagger(0.05, 0.04)} initial="hidden" animate="visible">
         <motion.nav variants={fadeUp} aria-label="Breadcrumb" className="mb-8">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-white/50">
             <li>

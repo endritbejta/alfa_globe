@@ -102,7 +102,7 @@ const Fleet = () => {
               <motion.div
                 key={cap.title}
                 variants={fadeUp}
-                className="rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-300 hover:border-brand-200 hover:shadow-card-hover"
+                className="rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
               >
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600">
                   <Icon size={22} strokeWidth={1.8} aria-hidden="true" />

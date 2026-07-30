@@ -48,10 +48,10 @@ const About = () => {
                 four stations across central and western Kosovo.
               </p>
               <p>
-                Today Alfa Trade operates across petroleum, agriculture and construction supply,
-                using its own ADR-certified tanker operations to serve retail, fleet, industrial
-                and seasonal customers. We remain independently owned and accountable to the
-                customers and communities we serve.
+                Today Alfa Trade operates across retail fuel, bulk petroleum distribution and
+                commercial supply, using its own ADR-certified tanker operations to serve fleets,
+                industrial sites, construction projects and seasonal customers. We remain
+                independently owned and accountable to the customers and communities we serve.
               </p>
             </div>
           </div>

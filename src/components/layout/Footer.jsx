@@ -67,28 +67,28 @@ const Footer = () => (
           <a
             href={site.facebook}
             aria-label="Alfa Trade on Facebook"
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:border-brand-600 hover:bg-brand-600 hover:text-white"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
           >
             <Facebook size={16} />
           </a>
           <a
             href={site.instagram}
             aria-label="Alfa Trade on Instagram"
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:border-brand-600 hover:bg-brand-600 hover:text-white"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
           >
             <Instagram size={16} />
           </a>
           <a
             href={site.whatsapp}
             aria-label="Chat on WhatsApp"
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/15 transition-all hover:border-white/40"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 hover:border-white/40"
           >
             <img src={whatsapp} alt="" className="h-4 w-4" />
           </a>
           <a
             href={site.viber}
             aria-label="Chat on Viber"
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/15 transition-all hover:border-white/40"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 hover:border-white/40"
           >
             <img src={viber} alt="" className="h-4 w-4" />
           </a>

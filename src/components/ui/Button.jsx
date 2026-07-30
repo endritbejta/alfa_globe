@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { preloadRoute } from "../../lib/routePreload";
 
 const variants = {
   primary:
@@ -31,7 +32,7 @@ const Button = ({
   children,
   ...rest
 }) => {
-  const classes = `group inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-tight transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${variants[variant]} ${sizes[size]} ${className}`;
+  const classes = `ui-pressable group inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${variants[variant]} ${sizes[size]} ${className}`;
 
   const content = (
     <>
@@ -39,7 +40,7 @@ const Button = ({
       {withArrow && (
         <ArrowRight
           size={size === "lg" ? 18 : 16}
-          className="transition-transform duration-300 group-hover:translate-x-1"
+          className="transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-x-1"
         />
       )}
     </>
@@ -47,7 +48,19 @@ const Button = ({
 
   if (to)
     return (
-      <Link to={to} className={classes} {...rest}>
+      <Link
+        to={to}
+        className={classes}
+        {...rest}
+        onMouseEnter={(event) => {
+          preloadRoute(to);
+          rest.onMouseEnter?.(event);
+        }}
+        onFocus={(event) => {
+          preloadRoute(to);
+          rest.onFocus?.(event);
+        }}
+      >
         {content}
       </Link>
     );

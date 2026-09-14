@@ -3,7 +3,7 @@
 Premium corporate website for **Alfa Trade**, a petroleum distribution company operating fuel
 stations and a bulk-delivery network across Kosovo.
 
-**Live site:** https://alfaglobe.netlify.app/
+**Live site:** https://alfa-trade.netlify.app/
 
 ![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646cff?logo=vite&logoColor=white)

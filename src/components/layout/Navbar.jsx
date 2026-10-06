@@ -20,7 +20,7 @@ const Navbar = () => {
   const LanguageSwitch = ({ compact = false }) => (
     <div
       className={`flex items-center rounded-full border border-white/15 bg-white/5 p-1 ${
-        compact ? "self-start" : ""
+        compact ? "w-full" : ""
       }`}
       role="group"
       aria-label="Language"
@@ -33,7 +33,11 @@ const Navbar = () => {
           key={code}
           type="button"
           onClick={() => setLanguage(code)}
-          className={`ui-pressable rounded-full px-2.5 py-1 text-[11px] font-bold tracking-wider ${
+          className={`ui-pressable rounded-full font-bold tracking-wider ${
+            compact
+              ? "flex-1 py-2.5 text-xs"
+              : "px-2.5 py-1 text-[11px]"
+          } ${
             language === code
               ? "bg-brand-600 text-white"
               : "text-white/55 hover:text-white"

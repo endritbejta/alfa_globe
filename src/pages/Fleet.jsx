@@ -102,9 +102,9 @@ const Fleet = () => {
               <motion.div
                 key={cap.title}
                 variants={fadeUp}
-                className="rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
+                className="hover-lift group rounded-2xl border border-night-100 bg-white p-7 shadow-card hover:border-brand-200 hover:shadow-card-hover"
               >
-                <div className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                <div className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 transition-[color,background-color,scale] duration-300 ease-out-expo group-hover:scale-105 group-hover:bg-brand-600 group-hover:text-white">
                   <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold tracking-tight text-night-950">{cap.title}</h3>
@@ -157,7 +157,7 @@ const Fleet = () => {
               <motion.li
                 key={s.step}
                 variants={fadeUp}
-                className="flex gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                className="flex gap-5 rounded-2xl border border-white/10 bg-white/5 p-6"
               >
                 <span className="text-2xl font-extrabold tracking-tight text-brand-500">
                   {s.step}

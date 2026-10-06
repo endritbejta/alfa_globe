@@ -9,22 +9,22 @@ const ProductCard = ({ product }) => {
   return (
     <motion.article
       variants={fadeUp}
-      className="group relative overflow-hidden rounded-2xl border border-night-100 bg-white shadow-card transition-shadow duration-200 hover:shadow-card-hover"
+      className="hover-lift group rounded-2xl border border-night-100 bg-white shadow-card hover:border-brand-200 hover:shadow-card-hover"
     >
-      <div className="relative h-44 overflow-hidden bg-night-900">
+      <div className="relative h-44 overflow-hidden rounded-t-[15px] bg-night-900">
         {product.image ? (
           <img
             src={product.image}
             alt={product.name}
             loading="lazy"
-            className="h-full w-full object-cover opacity-90 transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.03]"
+            className="h-full w-full object-cover opacity-90 transition-transform duration-500 ease-out-expo group-hover:scale-[1.05]"
           />
         ) : (
           <div className="bg-grid-dark grid h-full w-full place-items-center">
             <Icon size={44} strokeWidth={1.2} className="text-white/40" aria-hidden="true" />
           </div>
         )}
-        <span className="absolute left-4 top-4 rounded-full bg-night-950/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur">
+        <span className="absolute left-4 top-4 rounded-full bg-night-950/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
           {product.category}
         </span>
       </div>
@@ -37,12 +37,12 @@ const ProductCard = ({ product }) => {
           to={`/products/${product.slug}`}
           onMouseEnter={() => preloadRoute(`/products/${product.slug}`)}
           onFocus={() => preloadRoute(`/products/${product.slug}`)}
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 transition-colors hover:text-brand-700"
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 transition-colors duration-200 hover:text-brand-700"
         >
           View details
           <ArrowRight
             size={15}
-            className="transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-x-1"
+            className="transition-transform duration-200 ease-out-expo group-hover:translate-x-1"
             aria-hidden="true"
           />
           <span className="absolute inset-0" aria-hidden="true" />

@@ -30,9 +30,12 @@ const BackToTop = () => {
             window.scrollTo({ top: 0, behavior: shouldReduceMotion ? "auto" : "smooth" })
           }
           aria-label="Back to top"
-          className="ui-pressable fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-night-950 text-white shadow-card-hover hover:bg-brand-600"
+          className="ui-pressable group fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-night-950 text-white shadow-card-hover hover:scale-105 hover:bg-brand-600"
         >
-          <ArrowUp size={20} />
+          <ArrowUp
+            size={20}
+            className="transition-transform duration-200 ease-out-expo group-hover:-translate-y-0.5"
+          />
         </motion.button>
       )}
     </AnimatePresence>

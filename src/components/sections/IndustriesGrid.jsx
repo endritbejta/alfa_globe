@@ -21,12 +21,12 @@ const IndustriesGrid = () => (
             <motion.div
               key={industry.title}
               variants={fadeUp}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-[border-color,background-color] duration-200 hover:border-brand-600/60 hover:bg-white/[0.08]"
+              className="hover-lift group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-brand-600/60 hover:bg-white/[0.08]"
             >
               <Icon
                 size={26}
                 strokeWidth={1.6}
-                className="text-brand-500 transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-105"
+                className="text-brand-500 transition-transform duration-300 ease-out-expo group-hover:scale-110"
                 aria-hidden="true"
               />
               <h3 className="mt-4 font-bold tracking-tight text-white">{industry.title}</h3>

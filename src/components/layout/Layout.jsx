@@ -20,7 +20,9 @@ const Layout = () => {
       const settle = setTimeout(scrollToTarget, 400);
       return () => clearTimeout(settle);
     }
-    window.scrollTo(0, 0);
+    // Instant, not smooth: the CSS `scroll-behavior: smooth` would otherwise make
+    // the new page visibly scroll up from the old page's scroll position.
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [pathname, hash]);
 
   return (

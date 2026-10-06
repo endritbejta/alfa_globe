@@ -19,8 +19,10 @@ const Navbar = () => {
 
   const LanguageSwitch = ({ compact = false }) => (
     <div
-      className={`flex items-center rounded-full border border-white/15 bg-white/5 p-1 ${
-        compact ? "w-full" : ""
+      className={`flex items-center rounded-full border ${
+        compact
+          ? "border-white/10 p-0.5"
+          : "border-white/15 bg-white/5 p-1"
       }`}
       role="group"
       aria-label="Language"
@@ -34,13 +36,15 @@ const Navbar = () => {
           type="button"
           onClick={() => setLanguage(code)}
           className={`ui-pressable rounded-full font-bold tracking-wider ${
-            compact
-              ? "flex-1 py-2.5 text-xs"
-              : "px-2.5 py-1 text-[11px]"
+            compact ? "px-3 py-1.5 text-[11px]" : "px-2.5 py-1 text-[11px]"
           } ${
             language === code
-              ? "bg-brand-600 text-white"
-              : "text-white/55 hover:text-white"
+              ? compact
+                ? "bg-white/10 text-white"
+                : "bg-brand-600 text-white"
+              : compact
+                ? "text-white/40 hover:text-white/70"
+                : "text-white/55 hover:text-white"
           }`}
           aria-pressed={language === code}
         >
@@ -108,22 +112,34 @@ const Navbar = () => {
   }, [open]);
 
   const linkClasses = ({ isActive }) =>
-    `relative py-2 text-sm font-semibold tracking-tight transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-brand-600 after:transition-transform after:duration-200 hover:text-white ${
+    `relative py-2 text-sm font-semibold tracking-tight transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-brand-600 after:transition-transform after:duration-300 after:ease-out-expo hover:text-white hover:after:scale-x-100 ${
       isActive ? "text-white after:scale-x-100" : "text-white/70"
     }`;
 
   return (
     <>
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-200 ${
-        scrolled
-          ? "bg-night-950/90 shadow-lg shadow-night-950/20 backdrop-blur-md"
-          : "bg-gradient-to-b from-night-950/80 to-transparent"
-      }`}
-    >
-      <div className="container-x flex h-18 items-center justify-between gap-6 py-3">
-        <Link to="/" className="flex items-center gap-3" aria-label="Alfa Trade — home">
-          <img src={logo} alt="" className="h-10 w-10 object-contain" />
+    <header className="fixed inset-x-0 top-0 z-50">
+      {/* A gradient can't transition to a solid colour, so the two header
+          backgrounds are stacked layers that cross-fade by opacity instead. */}
+      <div
+        className={`pointer-events-none absolute inset-0 bg-gradient-to-b from-night-950/80 to-transparent transition-opacity duration-300 ${
+          scrolled ? "opacity-0" : "opacity-100"
+        }`}
+        aria-hidden="true"
+      />
+      <div
+        className={`pointer-events-none absolute inset-0 bg-night-950/90 shadow-lg shadow-night-950/20 backdrop-blur-md transition-opacity duration-300 ${
+          scrolled ? "opacity-100" : "opacity-0"
+        }`}
+        aria-hidden="true"
+      />
+      <div className="container-x relative flex h-18 items-center justify-between gap-6 py-3">
+        <Link to="/" className="group flex items-center gap-3" aria-label="Alfa Trade — home">
+          <img
+            src={logo}
+            alt=""
+            className="h-10 w-10 object-contain transition-transform duration-300 ease-out-expo group-hover:scale-110"
+          />
           <span className="text-lg font-extrabold uppercase tracking-[0.18em] text-white">
             Alfa <span className="text-brand-500">Trade</span>
           </span>
@@ -174,7 +190,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: shouldReduceMotion ? 0.12 : 0.18 }}
-              className="fixed inset-0 z-[55] bg-night-950/60 backdrop-blur-sm xl:hidden"
+              className="fixed inset-0 z-[55] bg-night-950/75 xl:hidden"
               onClick={() => setOpen(false)}
               aria-hidden="true"
             />
@@ -225,7 +241,7 @@ const Navbar = () => {
                       onFocus={() => preloadRoute(link.to)}
                       onTouchStart={() => preloadRoute(link.to)}
                       className={({ isActive }) =>
-                        `block rounded-xl px-4 py-3 text-lg font-semibold tracking-tight transition-colors ${
+                        `block rounded-xl px-4 py-3 text-lg font-semibold tracking-tight transition-[color,background-color] duration-200 ${
                           isActive
                             ? "bg-brand-600/15 text-brand-500"
                             : "text-white/80 hover:bg-white/5 hover:text-white"
@@ -239,14 +255,16 @@ const Navbar = () => {
               </nav>
 
               <div className="mt-auto space-y-4 border-t border-white/10 pt-6">
-                <LanguageSwitch compact />
-                <a
-                  href={`tel:${site.phone}`}
-                  className="flex items-center gap-3 text-sm font-semibold text-white/80 transition-colors hover:text-white"
-                >
-                  <Phone size={16} className="text-brand-500" />
-                  {site.phoneDisplay}
-                </a>
+                <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-3">
+                  <a
+                    href={`tel:${site.phone}`}
+                    className="flex items-center gap-3 text-sm font-semibold text-white/80 transition-colors hover:text-white"
+                  >
+                    <Phone size={16} className="text-brand-500" />
+                    {site.phoneDisplay}
+                  </a>
+                  <LanguageSwitch compact />
+                </div>
                 <Button to="/contact" className="w-full">
                   Request a quote
                 </Button>

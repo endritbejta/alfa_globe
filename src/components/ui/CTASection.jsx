@@ -27,7 +27,7 @@ const CTASection = ({
             to={primary.to}
             size="lg"
             withArrow
-            className="!bg-white !text-brand-700 shadow-none hover:!bg-night-950 hover:!text-white"
+            className="!bg-white !text-brand-700 shadow-none hover:!bg-night-950 hover:!text-white hover:shadow-none"
           >
             {primary.label}
           </Button>

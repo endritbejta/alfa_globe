@@ -95,10 +95,10 @@ const Agriculture = () => {
                 <motion.article
                   key={fertilizer.name}
                   variants={fadeUp}
-                  className="flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card transition-[border-color,box-shadow] duration-200 hover:border-brand-200 hover:shadow-card-hover"
+                  className="hover-lift group flex flex-col rounded-2xl border border-night-100 bg-white p-7 shadow-card hover:border-brand-200 hover:shadow-card-hover"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                    <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 transition-[color,background-color,scale] duration-300 ease-out-expo group-hover:scale-105 group-hover:bg-brand-600 group-hover:text-white">
                       <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
                     </span>
                     <span className="rounded-full bg-night-950 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
@@ -187,7 +187,7 @@ const Agriculture = () => {
                     <motion.div
                       key={service.title}
                       variants={fadeUp}
-                      className="flex gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                      className="flex gap-4 rounded-2xl border border-white/10 bg-white/5 p-6"
                     >
                       <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-600 text-white">
                         <Icon size={20} strokeWidth={1.8} aria-hidden="true" />

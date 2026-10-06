@@ -4,7 +4,7 @@ import { preloadRoute } from "../../lib/routePreload";
 
 const variants = {
   primary:
-    "bg-brand-600 text-white hover:bg-brand-700 focus-visible:outline-brand-600 shadow-sm shadow-brand-600/30",
+    "bg-brand-600 text-white shadow-sm shadow-brand-600/30 hover:bg-brand-700 hover:shadow-md hover:shadow-brand-600/40 focus-visible:outline-brand-600",
   dark: "bg-night-950 text-white hover:bg-night-800 focus-visible:outline-night-950",
   outline:
     "border border-night-300 text-night-800 hover:border-night-950 hover:bg-night-950 hover:text-white focus-visible:outline-night-950",
@@ -40,7 +40,7 @@ const Button = ({
       {withArrow && (
         <ArrowRight
           size={size === "lg" ? 18 : 16}
-          className="transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-x-1"
+          className="transition-transform duration-200 ease-out-expo group-hover:translate-x-1"
         />
       )}
     </>

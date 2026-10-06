@@ -7,6 +7,7 @@ import SectionTitle from "../components/ui/SectionTitle";
 import FeatureCard from "../components/ui/FeatureCard";
 import CTASection from "../components/ui/CTASection";
 import Button from "../components/ui/Button";
+import Collapse from "../components/ui/Collapse";
 import Reveal from "../components/ui/Reveal";
 import { benefits, openings, hiringProcess } from "../data/careers";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
@@ -17,7 +18,7 @@ const OpeningCard = ({ opening }) => {
   return (
     <motion.article
       variants={fadeUp}
-      className="rounded-2xl border border-night-100 bg-white shadow-card transition-shadow hover:shadow-card-hover"
+      className="hover-lift rounded-2xl border border-night-100 bg-white shadow-card hover:border-brand-200 hover:shadow-card-hover"
     >
       <button
         onClick={() => setExpanded(!expanded)}
@@ -45,14 +46,14 @@ const OpeningCard = ({ opening }) => {
           aria-hidden="true"
         />
       </button>
-      {expanded && (
+      <Collapse open={expanded}>
         <div className="border-t border-night-100 p-6 pt-5">
           <p className="leading-relaxed text-night-600">{opening.description}</p>
           <Button href="#apply" className="mt-5" withArrow>
             Apply for this role
           </Button>
         </div>
-      )}
+      </Collapse>
     </motion.article>
   );
 };

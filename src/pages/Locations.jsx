@@ -64,17 +64,17 @@ const Locations = () => {
               return (
                 <motion.li key={station.name} variants={fadeUp}>
                   <div
-                    className={`relative overflow-hidden rounded-2xl border transition-[border-color,background-color,box-shadow] duration-200 ${
+                    className={`hover-lift rounded-2xl border ${
                       active
                         ? "border-brand-600 bg-brand-50/60 shadow-card-hover"
-                        : "border-night-100 bg-white shadow-card hover:border-brand-300"
+                        : "border-night-100 bg-white shadow-card hover:border-brand-300 hover:shadow-card-hover"
                     }`}
                   >
                     <button
                       type="button"
                       onClick={() => showOnMap(station)}
                       aria-pressed={active}
-                      className="w-full p-6 pr-20 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-brand-600"
+                      className="w-full rounded-2xl p-6 pr-20 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-brand-600"
                     >
                       <h3 className="flex flex-wrap items-center gap-2 text-lg font-bold tracking-tight text-night-950">
                         {station.name}

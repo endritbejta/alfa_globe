@@ -35,6 +35,8 @@
 
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
+  --ease-out-expo: cubic-bezier(0.23, 1, 0.32, 1);
+
   --shadow-card:
     0 1px 2px rgb(13 13 15 / 0.05), 0 8px 24px -8px rgb(13 13 15 / 0.12);
   --shadow-card-hover:
@@ -73,11 +75,45 @@
       background-color 160ms ease,
       border-color 160ms ease,
       box-shadow 160ms ease,
-      transform 140ms cubic-bezier(0.23, 1, 0.32, 1);
+      scale 200ms var(--ease-out-expo),
+      translate 200ms var(--ease-out-expo),
+      transform 140ms var(--ease-out-expo);
   }
 
   .ui-pressable:active {
     transform: scale(0.97);
+  }
+
+  /*
+   * Card hover: lifts 4px and lets the card's own hover:border / hover:shadow
+   * utilities fade in. Uses the individual `translate` property so it composes
+   * with Framer Motion's inline `transform` reveal instead of fighting it.
+   * The card root must not clip overflow (the bridge below sits outside it).
+   */
+  .hover-lift {
+    position: relative;
+    transition:
+      translate 240ms var(--ease-out-expo),
+      box-shadow 240ms ease,
+      border-color 200ms ease,
+      background-color 200ms ease,
+      color 200ms ease;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hover-lift:hover {
+    translate: 0 -4px;
+  }
+
+  /* Bridges the gap the card leaves as it rises. Without it, a pointer resting
+     on the old bottom edge flips hover on and off, making the card flicker. */
+  .hover-lift::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 100%;
+    height: 6px;
   }
 }
 
@@ -259,6 +295,14 @@
 
   .ui-pressable:active {
     transform: none;
+  }
+
+  .hover-lift {
+    transition-property: box-shadow, border-color, background-color, color;
+  }
+
+  .hover-lift:hover {
+    translate: none;
   }
 
   .alfa-map-loading__spinner {

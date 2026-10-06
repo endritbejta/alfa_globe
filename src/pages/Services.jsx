@@ -99,7 +99,7 @@ const Services = () => {
             <a
               key={service.slug}
               href={`#${service.slug}`}
-              className="whitespace-nowrap rounded-full border border-night-200 px-4 py-1.5 text-sm font-semibold text-night-600 transition-colors hover:border-brand-600 hover:bg-brand-600 hover:text-white"
+              className="ui-pressable whitespace-nowrap rounded-full border border-night-200 px-4 py-1.5 text-sm font-semibold text-night-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
             >
               {service.title}
             </a>

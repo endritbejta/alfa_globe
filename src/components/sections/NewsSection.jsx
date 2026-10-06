@@ -6,14 +6,14 @@ import { fadeUp, stagger, viewportOnce } from "../../lib/motion";
 const NewsCard = ({ item }) => (
   <motion.article
     variants={fadeUp}
-    className="overflow-hidden rounded-2xl border border-night-100 bg-white shadow-card"
+    className="hover-lift group rounded-2xl border border-night-100 bg-white shadow-card hover:border-brand-200 hover:shadow-card-hover"
   >
-    <div className="relative h-48 overflow-hidden">
+    <div className="relative h-48 overflow-hidden rounded-t-[15px]">
       <img
         src={item.image}
         alt=""
         loading="lazy"
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover transition-transform duration-500 ease-out-expo group-hover:scale-[1.05]"
       />
       <span className="absolute left-4 top-4 rounded-full bg-brand-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
         {item.category}
@@ -21,7 +21,7 @@ const NewsCard = ({ item }) => (
     </div>
     <div className="p-6">
       <p className="text-xs font-semibold uppercase tracking-wider text-night-400">{item.date}</p>
-      <h3 className="mt-2 text-lg font-bold leading-snug tracking-tight text-night-950">
+      <h3 className="mt-2 text-lg font-bold leading-snug tracking-tight text-night-950 transition-colors duration-200 group-hover:text-brand-600">
         {item.title}
       </h3>
       <p className="mt-2.5 line-clamp-2 text-sm leading-relaxed text-night-500">{item.excerpt}</p>

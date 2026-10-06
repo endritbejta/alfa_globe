@@ -7,10 +7,10 @@ const FeatureCard = ({ feature, light = false }) => {
   return (
     <motion.div
       variants={fadeUp}
-      className={`rounded-2xl border p-6 transition-colors duration-200 ${
+      className={`hover-lift rounded-2xl border p-6 ${
         light
-          ? "border-white/10 bg-white/5 hover:border-white/25"
-          : "border-night-100 bg-white shadow-card hover:border-brand-200"
+          ? "border-white/10 bg-white/5 hover:border-white/25 hover:bg-white/[0.08]"
+          : "border-night-100 bg-white shadow-card hover:border-brand-200 hover:shadow-card-hover"
       }`}
     >
       <div

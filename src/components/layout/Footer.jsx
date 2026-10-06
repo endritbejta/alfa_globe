@@ -14,7 +14,7 @@ const FooterColumn = ({ title, links }) => (
         <li key={link.label}>
           <Link
             to={link.to}
-            className="text-sm text-white/70 transition-colors duration-200 hover:text-white"
+            className="inline-block text-sm text-white/70 transition-[color,translate] duration-200 ease-out-expo hover:translate-x-1 hover:text-white"
           >
             {link.label}
           </Link>
@@ -67,28 +67,28 @@ const Footer = () => (
           <a
             href={site.facebook}
             aria-label="Alfa Trade on Facebook"
-            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 hover:scale-110 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
           >
             <Facebook size={16} />
           </a>
           <a
             href={site.instagram}
             aria-label="Alfa Trade on Instagram"
-            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 hover:scale-110 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
           >
             <Instagram size={16} />
           </a>
           <a
             href={site.whatsapp}
             aria-label="Chat on WhatsApp"
-            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 hover:border-white/40"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 hover:scale-110 hover:border-white/40 hover:bg-white/10"
           >
             <img src={whatsapp} alt="" className="h-4 w-4" />
           </a>
           <a
             href={site.viber}
             aria-label="Chat on Viber"
-            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 hover:border-white/40"
+            className="ui-pressable grid h-10 w-10 place-items-center rounded-full border border-white/15 hover:scale-110 hover:border-white/40 hover:bg-white/10"
           >
             <img src={viber} alt="" className="h-4 w-4" />
           </a>
@@ -106,9 +106,9 @@ const Footer = () => (
             <li key={station.name}>
               <Link
                 to="/locations"
-                className="group block text-sm text-white/70 transition-colors hover:text-white"
+                className="group block text-sm text-white/70 transition-[color,translate] duration-200 ease-out-expo hover:translate-x-1 hover:text-white"
               >
-                <span className="font-semibold text-white/90 group-hover:text-brand-400">
+                <span className="font-semibold text-white/90 transition-colors duration-200 group-hover:text-brand-400">
                   {station.name}
                 </span>
                 <span className="block text-xs text-white/45">{station.address}</span>

@@ -16,13 +16,13 @@ const PartnersMarquee = ({ dark = false }) => {
         Trusted by businesses across Kosovo
       </p>
       <div className="relative overflow-hidden">
-        <div className="animate-marquee flex w-max items-center gap-14 pr-14 hover:[animation-play-state:paused]">
+        <div className="animate-marquee flex w-max items-center gap-14 pr-14 will-change-transform hover:[animation-play-state:paused]">
           {items.map((name, i) => (
             <span
               key={`${name}-${i}`}
               aria-hidden={i >= partners.length ? "true" : undefined}
-              className={`whitespace-nowrap text-lg font-extrabold uppercase tracking-wide ${
-                dark ? "text-white/30" : "text-night-300"
+              className={`whitespace-nowrap text-lg font-extrabold uppercase tracking-wide transition-colors duration-200 ${
+                dark ? "text-white/30 hover:text-white/80" : "text-night-300 hover:text-night-700"
               }`}
             >
               {name}

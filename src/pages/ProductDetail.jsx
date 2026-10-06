@@ -93,10 +93,14 @@ const ProductDetail = () => {
                 </dl>
                 <Link
                   to="/contact"
-                  className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold transition-colors hover:bg-brand-500"
+                  className="ui-pressable group mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold hover:bg-brand-500"
                 >
                   Request this product
-                  <ChevronRight size={16} aria-hidden="true" />
+                  <ChevronRight
+                    size={16}
+                    className="transition-transform duration-200 ease-out-expo group-hover:translate-x-1"
+                    aria-hidden="true"
+                  />
                 </Link>
               </div>
             </Reveal>

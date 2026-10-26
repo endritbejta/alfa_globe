@@ -22,8 +22,7 @@ const sq = {
   "Who we supply": "Kë furnizojmë",
   "Fuel plans shaped around how each sector works":
     "Plane furnizimi të përshtatura me mënyrën si punon çdo sektor",
-  "Founded in Prishtina": "Themeluar në Prishtinë",
-  "Supply divisions": "Divizione furnizimi",
+  "Founded in Skenderaj": "Themeluar në Skenderaj",
   "A petroleum distributor built close to its customers":
     "Distributor i derivateve i ndërtuar pranë klientëve",
   "Independent by ownership. Accountable by choice.": "I pavarur në pronësi. I përgjegjshëm me zgjedhje.",

@@ -1,9 +1,9 @@
 export const milestones = [
   {
-    year: "2014",
+    year: "1997",
     title: "Alfa Trade is founded",
     description:
-      "Started as a family fuel-trading business in Prishtina with a single truck and a simple principle: deliver exactly what was promised, when it was promised.",
+      "Started as a family fuel-trading business in Skenderaj with a single truck and a simple principle: deliver exactly what was promised, when it was promised.",
   },
   {
     year: "2016",

@@ -16,7 +16,7 @@ import tanker from "../assets/img/tanker.jpg";
 const About = () => {
   usePageMeta(
     "About us",
-    "The story of Alfa Trade: an independent Kosovar petroleum distributor built on certified products, reliable delivery, safety and long-term partnerships since 2014."
+    "The story of Alfa Trade: an independent Kosovar petroleum distributor built on certified products, reliable delivery, safety and long-term partnerships since 1997."
   );
 
   return (
@@ -36,15 +36,15 @@ const About = () => {
             <SectionTitle
               eyebrow="Our story"
               title="Independent by ownership. Accountable by choice."
-              lead="Founded in Prishtina in 2014, Alfa Trade was built by people with regional fuel-trading experience and a belief that every customer deserves clear terms, correct volumes and serious service."
+              lead="Founded in Skenderaj in 1997, Alfa Trade was built by people with fuel-trading experience and a belief that every customer deserves clear terms, correct volumes and serious service."
             />
             <div className="mt-7 space-y-5 leading-relaxed text-night-600">
               <p>
                 The early years were simple: one truck, a handful of commercial clients, and an
                 obsession with keeping every commitment. That reputation compounded. Construction
-                firms recommended us to hauliers; hauliers recommended us to farms. In 2016 we
-                opened our first retail station in Çagllavicë, and by 2018 the network had grown to
-                four stations across central and western Kosovo.
+                firms recommended us to hauliers; hauliers recommended us to farms. Over time that
+                grew into a network of four stations in Bardhosh, Klinë e Epërme, Llaushë and
+                Obiliq.
               </p>
               <p>
                 Today Alfa Trade operates across retail fuel, bulk petroleum distribution and
@@ -58,15 +58,9 @@ const About = () => {
             <div className="overflow-hidden rounded-2xl shadow-card-hover">
               <img src={tanker} alt="Alfa Trade tanker fleet" loading="lazy" className="w-full object-cover" />
             </div>
-            <div className="mt-6 grid grid-cols-2 gap-4">
-              <div className="rounded-2xl bg-night-950 p-6 text-white">
-                <p className="text-3xl font-extrabold tracking-tight text-brand-500">2014</p>
-                <p className="mt-1 text-sm text-white/60">Founded in Prishtina</p>
-              </div>
-              <div className="rounded-2xl bg-brand-600 p-6 text-white">
-                <p className="text-3xl font-extrabold tracking-tight">3</p>
-                <p className="mt-1 text-sm text-white/80">Supply divisions</p>
-              </div>
+            <div className="mt-6 rounded-2xl bg-night-950 p-6 text-white">
+              <p className="text-3xl font-extrabold tracking-tight text-brand-500">1997</p>
+              <p className="mt-1 text-sm text-white/60">Founded in Skenderaj</p>
             </div>
           </Reveal>
         </div>
@@ -132,7 +126,7 @@ const About = () => {
             <SectionTitle
               eyebrow="Milestones"
               title="Growth built one delivery at a time"
-              lead="Each new station, tanker and supply division followed a real customer need—not a change in fashion."
+              lead="Each new station, tanker and service followed a real customer need—not a change in fashion."
               className="lg:sticky lg:top-28"
             />
           </div>

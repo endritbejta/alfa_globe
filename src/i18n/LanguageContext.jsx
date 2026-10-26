@@ -7,46 +7,23 @@ const sq = {
   "Fuel distribution across Kosovo": "Shpërndarje e derivateve në gjithë Kosovën",
   "Fuel supply that keeps": "Furnizim me derivate që e mban",
   "business moving": "biznesin në lëvizje",
-  "Certified diesel, petrol, lubricants and AdBlue—available through four stations, delivered in bulk to your site, or managed across your fleet with one clear account.":
-    "Dizel, benzinë, lubrifikantë dhe AdBlue të certifikuar—në katër pikat tona, me dërgesë me shumicë ose përmes një llogarie të qartë për flotën.",
   "Get a fuel quote": "Kërko ofertë për derivate",
   "See how we supply": "Shiko mënyrat e furnizimit",
-  "Diesel EN 590 & petrol EN 228": "Dizel EN 590 dhe benzinë EN 228",
-  "Retail, bulk & fleet supply": "Furnizim në pika, me shumicë dhe për flota",
   "ADR-certified transport": "Transport i certifikuar ADR",
-  "From terminal to tank": "Nga terminali në rezervuar",
-  "One supplier for the fuel your operation depends on":
-    "Një furnitor për derivatet nga të cilat varet veprimtaria juaj",
-  "Alfa Trade has distributed petroleum products since 2014. We combine station access, scheduled tanker delivery and fleet controls so customers can buy fuel in the way that fits their operation—not ours.":
-    "Alfa Trade shpërndan produkte të naftës që nga viti 2014. Bashkojmë furnizimin në pika, dërgesat e planifikuara me cisternë dhe kontrollin e flotës, sipas mënyrës si punon klienti.",
-  "Years in fuel distribution": "Vite në shpërndarjen e derivateve",
-  "Certified products sourced through established regional terminals":
-    "Produkte të certifikuara nga terminale të njohura rajonale",
-  "Four retail stations plus direct bulk delivery": "Katër pika dhe dërgesë direkte me shumicë",
-  "Fleet cards, consolidated invoicing and usage reporting":
-    "Kartela flote, faturim i përmbledhur dhe raportim i përdorimit",
-  "Dedicated supply for transport, industry, construction and farms":
-    "Furnizim për transport, industri, ndërtimtari dhe ferma",
   "How we work": "Si punojmë",
   "Ways to buy": "Mënyrat e furnizimit",
   "From a single fill to a managed fuel programme": "Nga një mbushje te një program i menaxhuar",
-  "Refuel at our stations, schedule tanker deliveries, equip your drivers with fleet cards or build a contracted supply plan around your consumption.":
-    "Furnizohuni në pikat tona, planifikoni dërgesa me cisternë, pajisni shoferët me kartela ose ndërtoni një plan kontraktual sipas konsumit.",
   "Calibrated, metered discharge on every drop": "Shkarkim i kalibruar dhe i matur në çdo dërgesë",
   "Deliveries scheduled around your operations": "Dërgesa të planifikuara sipas veprimtarisë suaj",
   "Sealed compartments with delivery notes": "Ndarje të vulosura me fletëdërgesë",
   "OEM-approved specifications": "Specifikime të aprovuara nga prodhuesit",
   "Application advice from trained staff": "Këshillim nga staf i trajnuar",
   "Pack sizes from 1 L to 1,000 L IBC": "Paketime nga 1 L deri në IBC 1,000 L",
-  "The right petroleum product, in the right format": "Produkti i duhur i naftës, në formatin e duhur",
   "Who we supply": "Kë furnizojmë",
   "Fuel plans shaped around how each sector works":
     "Plane furnizimi të përshtatura me mënyrën si punon çdo sektor",
   "Founded in Prishtina": "Themeluar në Prishtinë",
   "Supply divisions": "Divizione furnizimi",
-  "Days a week": "Ditë në javë",
-  "Emergency dispatch": "Dispeçeri emergjente",
-  "European fuel standards": "Standarde evropiane të derivateve",
   "A petroleum distributor built close to its customers":
     "Distributor i derivateve i ndërtuar pranë klientëve",
   "Independent by ownership. Accountable by choice.": "I pavarur në pronësi. I përgjegjshëm me zgjedhje.",
@@ -56,10 +33,6 @@ const sq = {
     "Furnizim i përshtatur me vendin dhe mënyrën e përdorimit",
   "The details buyers ask before the first order": "Detajet që blerësit kërkojnë para porosisë së parë",
   "Need help matching product to equipment?": "Të duhet ndihmë për ta përshtatur produktin me pajisjen?",
-  "Control fleet fuel without chasing cash and receipts":
-    "Kontrollo furnizimin e flotës pa para të gatshme dhe fatura të shpërndara",
-  "The controls that make fuel easier to manage": "Kontrollet që e bëjnë furnizimin më të lehtë",
-  "Bring station and depot fuel into one plan": "Bashko furnizimin në pika dhe depo në një plan",
   "Farm inputs and fuel planned around the season": "Inpute bujqësore dhe derivate të planifikuara sipas sezonit",
   "Plan inputs and diesel before the busy weeks": "Planifiko inputet dhe dizelin para javëve intensive",
   "Build a career in a business that has to deliver": "Ndërto karrierë në një biznes që duhet të realizojë",
@@ -67,8 +40,6 @@ const sq = {
     "Standarde të qarta, trajnim praktik dhe punë me rëndësi",
   "Start with the fuel requirement": "Fillo me kërkesën për derivate",
   "Give us the details needed to quote": "Na jep detajet e nevojshme për ofertë",
-  "Four convenient points for fuel, AdBlue and fleet cards":
-    "Katër pika praktike për derivate, AdBlue dhe kartela flote",
   "Choose a station and plan the stop": "Zgjidh pikën dhe planifiko ndalesën",
   "What matters when fuel is part of your daily operation":
     "Çfarë ka rëndësi kur derivatet janë pjesë e punës së përditshme",
@@ -96,24 +67,17 @@ const sq = {
   "Click a station to see it on the map, or get directions straight to the pump.":
     "Kliko një pikë për ta parë në hartë ose për të marrë udhëzime direkte.",
   "Need fuel delivered instead?": "Të duhet furnizim me derivate?",
-  "Our bulk-delivery fleet brings certified fuel to your site, farm or depot — anywhere in Kosovo.":
-    "Flota jonë sjell derivate të certifikuara në biznesin, fermën apo depon tuaj — kudo në Kosovë.",
   "Arrange a delivery": "Organizo dërgesën",
   "Bulk delivery service": "Shërbimi i furnizimit me shumicë",
   Flagship: "Kryesore",
   Market: "Market",
   "Market & café": "Market dhe kafene",
-  "Fleet card": "Kartelë për flotë",
   "Lubricants shop": "Dyqan lubrifikantësh",
   "Agri fuel point": "Pikë karburanti për bujqësi",
   "AdBlue packs": "Paketime AdBlue",
   "AdBlue at pump": "AdBlue në pompë",
   "Loading map…": "Duke ngarkuar hartën…",
   "Show on map": "Shfaq në hartë",
-  "Additional tanker capacity strengthens bulk delivery coverage":
-    "Kapaciteti shtesë i cisternave forcon mbulimin e furnizimit me shumicë",
-  "Expanded tanker capacity gives commercial customers more scheduling flexibility and stronger coverage during periods of peak fuel demand.":
-    "Kapaciteti i zgjeruar i cisternave u jep klientëve komercialë më shumë fleksibilitet në planifikim dhe mbulim më të mirë gjatë periudhave me kërkesë të lartë.",
   "Today Alfa Trade operates across retail fuel, bulk petroleum distribution and commercial supply, using its own ADR-certified tanker operations to serve fleets, industrial sites, construction projects and seasonal customers. We remain independently owned and accountable to the customers and communities we serve.":
     "Sot Alfa Trade vepron në shitjen me pakicë të derivateve, shpërndarjen me shumicë dhe furnizimin komercial, duke përdorur cisternat e veta të certifikuara ADR për flota, objekte industriale, projekte ndërtimore dhe klientë sezonalë. Mbetemi kompani e pavarur dhe e përgjegjshme ndaj klientëve dhe komuniteteve që u shërbejmë.",
   "Bulk delivery capacity expands": "Zgjerohet kapaciteti i furnizimit me shumicë",
@@ -160,33 +124,21 @@ const sq = {
   "Fleet Fuel Solutions": "Zgjidhje për furnizimin e flotave",
   "Industrial Fuel Supply": "Furnizim me derivate industriale",
   "Lubricants & Oils": "Lubrifikantë dhe vajra",
-  "Logistics Services": "Shërbime logjistike",
   "Commercial Fuel Contracts": "Kontrata komerciale për derivate",
-  "Emergency Fuel Supply": "Furnizim emergjent me derivate",
   "Consistent, quality-certified diesel and petrol supply for retail stations, commercial sites and public institutions, backed by long-standing relationships with regional refineries and terminals.":
     "Furnizim i qëndrueshëm me dizel dhe benzinë të certifikuar për pika, biznese dhe institucione publike.",
   "Direct-to-site tanker deliveries for construction sites, farms, generators and storage tanks — metered, sealed and documented from terminal to your tank.":
     "Dërgesa direkte me cisternë për kantiere, ferma, gjeneratorë dhe rezervuarë — të matura, vulosura dhe dokumentuara.",
-  "A fuel programme for transport and logistics companies: fuel cards accepted across our network, consolidated invoicing and per-vehicle consumption reporting.":
-    "Program furnizimi për kompani transporti dhe logjistike: kartela, faturim i përmbledhur dhe raportim i konsumit për secilin automjet.",
   "Heating oil, generator diesel and process fuels for manufacturing plants, hospitals, greenhouses and facilities that cannot afford downtime.":
     "Vaj ngrohjeje, dizel për gjeneratorë dhe derivate për fabrika, spitale, serra dhe objekte kritike.",
   "Engine oils, hydraulic fluids, transmission oils and greases for passenger, commercial and heavy plant applications, supplied in packs, drums or IBCs.":
     "Vajra motori, lëngje hidraulike, vajra transmisioni dhe graso për automjete e makineri të rënda.",
-  "Our own ADR-certified tanker fleet and experienced drivers move fuel safely between terminals, stations and customer sites across Kosovo and the region.":
-    "Flota jonë e certifikuar ADR dhe shoferët me përvojë transportojnë derivate në mënyrë të sigurt në Kosovë dhe rajon.",
   "EN 590 and EN 228 certified fuels": "Derivate të certifikuara EN 590 dhe EN 228",
   "Guaranteed volumes under contract": "Sasi të garantuara me kontratë",
   "Transparent, market-indexed pricing": "Çmime transparente sipas tregut",
-  "One monthly invoice for the whole fleet": "Një faturë mujore për gjithë flotën",
-  "Per-vehicle and per-driver reporting": "Raportim për automjet dhe shofer",
-  "Discounted contract pricing": "Çmime kontraktuale me zbritje",
   "Priority scheduling for critical facilities": "Prioritet për objektet kritike",
   "Storage tank monitoring and refill planning": "Monitorim i rezervuarëve dhe planifikim i furnizimit",
   "Technical support on fuel handling": "Mbështetje teknike për trajtimin e derivateve",
-  "ADR-certified vehicles and drivers": "Automjete dhe shoferë të certifikuar ADR",
-  "GPS-tracked deliveries": "Dërgesa të përcjella me GPS",
-  "Regional cross-border capability": "Kapacitet transporti rajonal",
   "Trusted across every sector that moves Kosovo": "E besuar në çdo sektor që e vë Kosovën në lëvizje",
   "Transportation & Logistics": "Transport dhe logjistikë",
   Construction: "Ndërtimtari",
@@ -196,10 +148,7 @@ const sq = {
   "Commercial Businesses": "Biznese komerciale",
   "Industrial Operations": "Operacione industriale",
   "Our products": "Produktet tona",
-  "News & insights": "Lajme dhe informacione",
-  "The latest from Alfa Trade": "Të rejat nga Alfa Trade",
   "What clients say": "Çfarë thonë klientët",
-  Sustainability: "Qëndrueshmëria",
   "About Alfa Trade": "Rreth Alfa Trade",
   "Built on one promise: the fuel is there when you need it":
     "Ndërtuar mbi një premtim: karburanti është aty kur ju nevojitet",
@@ -217,14 +166,6 @@ const sq = {
   "Talk to a specialist": "Fol me një specialist",
   "See our services": "Shiko shërbimet tona",
   "Fleet solutions": "Zgjidhje për flota",
-  "Take fuel administration off your desk": "Largo administrimin e karburantit nga tavolina",
-  "The programme": "Programi",
-  "Why it pays": "Pse ia vlen",
-  "Fleet FAQ": "Pyetje për flotën",
-  "Before you ask": "Para se të pyesni",
-  "Put your fleet on one invoice": "E gjithë flota në një faturë",
-  "Book a fleet review": "Rezervo analizën e flotës",
-  "See fuel products": "Shiko produktet",
   "Agriculture division": "Divizioni i bujqësisë",
   "Why agriculture": "Pse bujqësia",
   Fertilizers: "Plehrat",
@@ -279,14 +220,6 @@ const sq = {
   "Directions to": "Udhëzime për në",
   "Map of Alfa Trade stations": "Harta e pikave Alfa Trade",
   "Petroleum Distribution & Fuel Supply": "Shpërndarje dhe furnizim me derivate",
-  "Distributing fuel responsibly, today and tomorrow":
-    "Shpërndarje e përgjegjshme e derivateve, sot dhe nesër",
-  "A petroleum distributor's environmental duty starts with safe storage, transport and handling. We invest in cleaner fuels, efficient logistics and spill-prevention systems — and we hold ourselves to targets we publish.":
-    "Përgjegjësia mjedisore e një distributori të derivateve fillon me ruajtjen, transportin dhe trajtimin e sigurt. Investojmë në derivate më të pastra, logjistikë efikase dhe sisteme për parandalimin e derdhjeve.",
-  "Product launches, station updates and what's changing in the regional petroleum market.":
-    "Produkte të reja, përditësime nga pikat tona dhe zhvillimet në tregun rajonal të derivateve.",
-  "Certified petroleum products, lubricants and bulk fuel distribution for businesses and industries — delivered safely and on time since 2014.":
-    "Produkte të certifikuara të naftës, lubrifikantë dhe shpërndarje me shumicë për biznese e industri — të dorëzuara sigurt dhe në kohë që nga viti 2014.",
   ...sqExtended,
 };
 

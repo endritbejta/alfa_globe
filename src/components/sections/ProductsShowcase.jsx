@@ -6,7 +6,10 @@ import Reveal from "../ui/Reveal";
 import { products, productsIntro } from "../../data/products";
 import { stagger, viewportOnce } from "../../lib/motion";
 
-/** Home page teaser: first four products + link to the catalog. */
+const featured = ["petrol", "diesel", "adblue", "lpg"];
+const showcase = featured.map((slug) => products.find((product) => product.slug === slug));
+
+/** Home page teaser: the four everyday fuels + link to the catalog. */
 const ProductsShowcase = () => (
   <section className="bg-night-50 py-20 sm:py-28">
     <div className="container-x">
@@ -25,7 +28,7 @@ const ProductsShowcase = () => (
         viewport={viewportOnce}
         className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
       >
-        {products.slice(0, 4).map((product) => (
+        {showcase.map((product) => (
           <ProductCard key={product.slug} product={product} />
         ))}
       </motion.div>

@@ -5,17 +5,14 @@ import Overview from "../components/sections/Overview";
 import ServicesGrid from "../components/sections/ServicesGrid";
 import IndustriesGrid from "../components/sections/IndustriesGrid";
 import WhyUs from "../components/sections/WhyUs";
-import StatsBand from "../components/sections/StatsBand";
 import ProductsShowcase from "../components/sections/ProductsShowcase";
-import SustainabilityTeaser from "../components/sections/SustainabilityTeaser";
 import Testimonials from "../components/sections/Testimonials";
-import NewsSection from "../components/sections/NewsSection";
 import CTASection from "../components/ui/CTASection";
 
 const Home = () => {
   usePageMeta(
     null,
-    "Alfa Trade distributes certified diesel, petrol, lubricants and AdBlue across Kosovo through four stations, bulk tanker delivery and fleet programmes."
+    "Alfa Trade supplies diesel, petrol, gas and AdBlue across Kosovo, at four stations and with bulk delivery to your site."
   );
 
   return (
@@ -26,11 +23,8 @@ const Home = () => {
       <ServicesGrid />
       <IndustriesGrid />
       <WhyUs />
-      <StatsBand />
       <ProductsShowcase />
-      <SustainabilityTeaser />
       <Testimonials />
-      <NewsSection />
       <CTASection />
     </>
   );

@@ -79,7 +79,7 @@ const ServiceSection = ({ service, index }) => {
 const Services = () => {
   usePageMeta(
     "Services",
-    "Petroleum distribution, bulk fuel delivery, fleet supply, industrial fuels, lubricants, logistics and 24/7 emergency delivery — Alfa Trade's full service portfolio."
+    "Fuel supply, bulk delivery, fleet fuel plans, industrial fuels, lubricants and supply contracts from Alfa Trade."
   );
 
   return (
@@ -87,7 +87,7 @@ const Services = () => {
       <PageHero
         eyebrow="Our services"
         title="Fuel supply designed around where and how you use it"
-        lead="At station, by tanker, through fleet cards or under contract—each option comes with clear product specifications, measured volume and documented delivery."
+        lead="At our stations, delivered to your site or under contract. Every option comes with clear product details, measured volume and proper paperwork."
         image={highway3}
         crumbs={[{ label: "Services" }]}
       />

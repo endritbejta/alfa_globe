@@ -14,7 +14,7 @@ export const features = [
     icon: Route,
     title: "Reliable Supply Chain",
     description:
-      "Established terminal relationships and our own tanker operations help protect your supply when demand changes.",
+      "Established supplier relationships help protect your supply when demand changes.",
   },
   {
     icon: BadgeCheck,
@@ -38,7 +38,7 @@ export const features = [
     icon: ShieldCheck,
     title: "Safety First",
     description:
-      "ADR-certified transport, trained handlers and strict station procedures protect people, property and product.",
+      "Trained handlers and strict station procedures protect people, property and product.",
   },
   {
     icon: Headset,

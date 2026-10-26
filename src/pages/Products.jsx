@@ -10,7 +10,7 @@ import gasNozzle from "../assets/img/gasolinenozzle.jpg";
 const Products = () => {
   usePageMeta(
     "Products",
-    "Diesel, petrol, premium fuels, lubricants, industrial oils, AdBlue and fleet cards — the full Alfa Trade product catalog with specifications."
+    "Diesel, petrol, premium fuels, lubricants, industrial oils, AdBlue and gas (LPG) — the full Alfa Trade product catalog."
   );
 
   return (

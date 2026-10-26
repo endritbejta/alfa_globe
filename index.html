@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Alfa Trade — certified petroleum products, bulk fuel distribution, lubricants and fleet supply across Kosovo and the region."
+      content="Alfa Trade — certified petroleum products, bulk fuel distribution, lubricants and gas across Kosovo."
     />
     <meta name="theme-color" content="#0d0d0f" />
     <title>Alfa Trade — Petroleum Distribution & Fuel Supply</title>
@@ -18,6 +18,16 @@
     />
   </head>
   <body>
+    <!-- Static copy of the contact form so Netlify detects it at build time. -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="company" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="department" />
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

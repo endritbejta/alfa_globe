@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     quote:
-      "The Alfa fleet card replaced cash advances and scattered receipts. We now review fuel by vehicle and close the month with one invoice.",
+      "We get one invoice a month and a clear view of what each vehicle used. No more chasing receipts, and the team always picks up the phone.",
     name: "Bekim Krasniqi",
     initials: "BK",
     role: "Operations Director, EuroTrans Logistics",

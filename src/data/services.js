@@ -1,13 +1,10 @@
 import {
   Fuel,
-  Truck,
   Container,
   CreditCard,
   Factory,
   Droplets,
-  Route,
   FileText,
-  AlarmClockCheck,
 } from "lucide-react";
 
 export const services = [
@@ -50,16 +47,16 @@ export const services = [
     icon: CreditCard,
     title: "Fleet Fuel Solutions",
     description:
-      "A fuel programme for transport and logistics companies: fuel cards accepted across our network, consolidated invoicing and per-vehicle consumption reporting.",
+      "A simple fuel plan for businesses with several vehicles: agreed prices, one monthly invoice and a clear record of what each vehicle uses.",
     benefits: [
-      "One monthly invoice for the whole fleet",
-      "Per-vehicle and per-driver reporting",
-      "Discounted contract pricing",
+      "One monthly invoice for all your vehicles",
+      "A clear record of fuel used per vehicle",
+      "Agreed contract pricing",
     ],
     process: [
-      "We register your vehicles and issue fuel cards.",
-      "Drivers refuel at any Alfa Trade station.",
-      "You receive consolidated invoices and usage reports.",
+      "We note down your vehicles and agree a price with you.",
+      "Your drivers refuel at our stations.",
+      "You get one invoice and a summary of what was used.",
     ],
   },
   {
@@ -97,23 +94,6 @@ export const services = [
     ],
   },
   {
-    slug: "logistics",
-    icon: Route,
-    title: "Logistics Services",
-    description:
-      "Our own ADR-certified tanker fleet and experienced drivers move fuel safely between terminals, stations and customer sites across Kosovo and the region.",
-    benefits: [
-      "ADR-certified vehicles and drivers",
-      "GPS-tracked deliveries",
-      "Regional cross-border capability",
-    ],
-    process: [
-      "Route and risk assessment for each lane.",
-      "Scheduling integrated with terminal loading.",
-      "Live tracking and delivery confirmation.",
-    ],
-  },
-  {
     slug: "commercial-contracts",
     icon: FileText,
     title: "Commercial Fuel Contracts",
@@ -130,27 +110,10 @@ export const services = [
       "Quarterly reviews keep the contract fair.",
     ],
   },
-  {
-    slug: "emergency-supply",
-    icon: AlarmClockCheck,
-    title: "Emergency Fuel Supply",
-    description:
-      "24/7 response for generator failures, unexpected demand and supply disruptions — because hospitals, data rooms and cold chains cannot wait until morning.",
-    benefits: [
-      "24/7 emergency dispatch line",
-      "Priority response for critical infrastructure",
-      "Standby agreements available",
-    ],
-    process: [
-      "Call the emergency line at any hour.",
-      "The nearest loaded tanker is dispatched.",
-      "Root-cause review to prevent repeat events.",
-    ],
-  },
 ];
 
 export const servicesIntro = {
   eyebrow: "Ways to buy",
   title: "From a single fill to a managed fuel programme",
-  lead: "Refuel at our stations, schedule tanker deliveries, equip your drivers with fleet cards or build a contracted supply plan around your consumption.",
+  lead: "Refuel at our stations, have fuel delivered to your site, or set up a supply plan around how much you use.",
 };

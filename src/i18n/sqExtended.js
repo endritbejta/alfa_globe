@@ -21,18 +21,12 @@ const sqExtended = {
   "Full catalog": "Katalogu i plotë",
   "Discuss this service": "Diskuto këtë shërbim",
   "Ready to power your operations?": "Gati për të furnizuar veprimtarinë tuaj?",
-  "Talk to our commercial team about supply contracts, bulk delivery and fleet programmes tailored to your business.":
-    "Flisni me ekipin tonë komercial për kontrata furnizimi, dërgesa me shumicë dhe programe flote të përshtatura për biznesin tuaj.",
   "Alfa Trade. All rights reserved.": "Alfa Trade. Të gjitha të drejtat e rezervuara.",
   "This page ran out of fuel": "Kjo faqe mbeti pa karburant",
   "The page you're looking for doesn't exist or has been moved. Let's get you back on the road.":
     "Faqja që kërkoni nuk ekziston ose është zhvendosur. Le t’ju kthejmë në rrugën e duhur.",
 
   // Home and sector cards
-  "A transport fleet, construction site, factory and farm do not consume fuel the same way. We plan product, storage and delivery around the job.":
-    "Një flotë transporti, kantier, fabrikë dhe fermë nuk konsumojnë derivate në të njëjtën mënyrë. Ne planifikojmë produktin, ruajtjen dhe dërgesën sipas punës.",
-  "Fleet fuel programmes, cards and bulk depot supply for hauliers, bus operators and courier networks.":
-    "Programe furnizimi, kartela dhe dërgesa me shumicë në depo për transportues, operatorë autobusësh dhe rrjete korrierësh.",
   "On-site bulk diesel, plant lubricants and flexible delivery windows that follow your project schedule.":
     "Dizel me shumicë në kantier, lubrifikantë për makineri dhe orare fleksibile sipas planit të projektit.",
   "Process fuels, industrial oils and guaranteed continuity of supply for production lines that never stop.":
@@ -46,8 +40,6 @@ const sqExtended = {
   "High-volume contracts with storage monitoring for processors, mines and heavy industry.":
     "Kontrata me vëllim të lartë dhe monitorim të rezervuarëve për përpunues, miniera dhe industri të rëndë.",
   "Reliable Supply Chain": "Zinxhir i besueshëm furnizimi",
-  "Established terminal relationships and our own tanker operations help protect your supply when demand changes.":
-    "Marrëdhëniet e qëndrueshme me terminalet dhe cisternat tona mbrojnë furnizimin tuaj kur kërkesa ndryshon.",
   "Certified Quality": "Cilësi e certifikuar",
   "Diesel and petrol are supplied to EN 590 and EN 228 specifications, with batch documentation available.":
     "Dizeli dhe benzina furnizohen sipas EN 590 dhe EN 228, me dokumentacion për çdo seri.",
@@ -58,8 +50,6 @@ const sqExtended = {
   "People who understand fuel quality, safe handling, delivery planning and the realities of your sector.":
     "Njerëz që kuptojnë cilësinë, trajtimin e sigurt, planifikimin e dërgesave dhe realitetin e sektorit tuaj.",
   "Safety First": "Siguria mbi të gjitha",
-  "ADR-certified transport, trained handlers and strict station procedures protect people, property and product.":
-    "Transporti i certifikuar ADR, stafi i trajnuar dhe procedurat e rrepta mbrojnë njerëzit, pronën dhe produktin.",
   "Responsive Support": "Mbështetje e shpejtë",
   "Direct access to people who can confirm stock, schedule a delivery and solve an urgent supply issue.":
     "Qasje direkte te njerëzit që konfirmojnë stokun, planifikojnë dërgesën dhe zgjidhin kërkesat urgjente.",
@@ -69,14 +59,10 @@ const sqExtended = {
   "Long-Term Partnerships": "Partneritete afatgjata",
   "Supply arrangements designed to become simpler and more useful as we learn your operation.":
     "Marrëveshje furnizimi që bëhen më të thjeshta dhe më të dobishme ndërsa njohim veprimtarinë tuaj.",
-  "Retail stations": "Pika të shitjes me pakicë",
-  "−15% by 2030": "−15% deri më 2030",
-  "fleet fuel-intensity target": "synimi i intensitetit të konsumit të flotës",
-  "Modern highway — efficient transport routes": "Autostradë moderne — itinerare efikase transporti",
 
   // Products and product details
   Fuel: "Derivate",
-  Diesel: "Dizel",
+  Diesel: "Naftë",
   Petrol: "Benzinë",
   "Premium fuel": "Derivate premium",
   Lubricants: "Lubrifikantë",
@@ -94,127 +80,26 @@ const sqExtended = {
   "Reliable Petroleum Distribution for Businesses and Industries":
     "Shpërndarje e besueshme e derivateve për biznese dhe industri",
   Standard: "Standardi",
-  "Sulphur content": "Përmbajtja e squfurit",
-  "Cetane number": "Numri i cetanit",
-  "Density at 15 °C": "Dendësia në 15 °C",
-  "Winter CFPP": "CFPP dimëror",
-  "Research octane (RON)": "Numri oktanik (RON)",
   "Base standard": "Standardi bazë",
-  Detergency: "Pastrueshmëria",
   Availability: "Disponueshmëria",
   "Engine oils": "Vajra motori",
   Standards: "Standardet",
   Packaging: "Paketimi",
-  "Hydraulic oils": "Vajra hidraulike",
-  "Gear oils": "Vajra për transmision",
   "Urea concentration": "Përqendrimi i uresë",
   Supply: "Furnizimi",
-  Acceptance: "Pranimi",
-  Controls: "Kontrollet",
-  Reporting: "Raportimi",
-  "All Alfa Trade stations": "Të gjitha pikat Alfa Trade",
-  "Per card / day / product": "Sipas kartelës / ditës / produktit",
-  "Online portal + monthly": "Portali online + raport mujor",
-  "Pump, 10 L pack, bulk": "Në pompë, paketim 10 L, me shumicë",
-  "Diesel (EN 590)": "Dizel (EN 590)",
-  "Ultra-low-sulphur diesel meeting the EN 590 standard, suitable for modern common-rail engines, commercial fleets and agricultural machinery.":
-    "Dizel me përmbajtje shumë të ulët squfuri sipas EN 590, i përshtatshëm për motorë modernë common-rail, flota komerciale dhe makineri.",
-  "Our diesel is sourced exclusively from certified regional terminals and tested at loading and on delivery. With a sulphur content below 10 ppm and full seasonal grade management, it protects modern injection systems while delivering consistent performance in trucks, buses, tractors and passenger vehicles alike.":
-    "Dizeli ynë merret vetëm nga terminale rajonale të certifikuara dhe testohet gjatë ngarkimit dhe dërgesës. Me më pak se 10 ppm squfur dhe gradim sezonal, mbron sistemet moderne të injektimit dhe ofron performancë të qëndrueshme.",
-  "Commercial trucks and bus fleets": "Kamionë komercialë dhe flota autobusësh",
   "Agricultural machinery and tractors": "Makineri bujqësore dhe traktorë",
-  "Construction plant and equipment": "Makineri dhe pajisje ndërtimi",
   "Diesel passenger vehicles": "Automjete të udhëtarëve me dizel",
   "Backup generators": "Gjeneratorë rezervë",
-  "Sulphur content below 10 ppm protects after-treatment systems":
-    "Përmbajtja nën 10 ppm e squfurit mbron sistemet e pastrajtimit",
-  "Winter grade supplied automatically from November to March":
-    "Gradimi dimëror furnizohet automatikisht nga nëntori deri në mars",
-  "Certificate of quality available with every delivery":
-    "Certifikata e cilësisë është në dispozicion me çdo dërgesë",
-  "Consistent cetane performance for reliable cold starts":
-    "Performancë e qëndrueshme e cetanit për ndezje të sigurt në të ftohtë",
-  "Petrol 95 (EN 228)": "Benzinë 95 (EN 228)",
-  "Unleaded 95-octane petrol to the EN 228 standard, filtered and quality-checked from terminal to nozzle for clean, dependable combustion.":
-    "Benzinë pa plumb 95 oktan sipas EN 228, e filtruar dhe kontrolluar nga terminali deri te pompa për djegie të pastër e të qëndrueshme.",
-  "Alfa Trade unleaded petrol meets the full EN 228 specification for modern spark-ignition engines. Strict housekeeping across our storage and station network — regular tank cleaning, filter changes and water checks — means the fuel that reaches your engine is as clean as the fuel that left the refinery.":
-    "Benzina pa plumb Alfa Trade plotëson EN 228 për motorët modernë. Pastrimi i rregullt i rezervuarëve, ndërrimi i filtrave dhe kontrolli i ujit sigurojnë pastërti nga rafineria deri te motori.",
   "Passenger cars and motorcycles": "Vetura dhe motoçikleta",
   "Light commercial vehicles": "Automjete të lehta komerciale",
   "Small machinery and garden equipment": "Makineri të vogla dhe pajisje kopshti",
-  "Marine leisure engines": "Motorë për mjete ujore rekreative",
-  "Full EN 228 compliance verified by independent laboratories":
-    "Pajtueshmëri e plotë me EN 228, e verifikuar nga laboratorë të pavarur",
-  "Detergent additive package keeps injectors clean": "Paketa e aditivëve i mban injektorët të pastër",
-  "Stable octane rating across the network": "Numër oktanik i qëndrueshëm në gjithë rrjetin",
-  "Ethanol content managed to specification": "Përmbajtje etanoli e kontrolluar sipas specifikimit",
-  "Additivated premium diesel with enhanced detergency and cetane boost — cleaner injectors, better fuel economy and quieter running for demanding fleets.":
-    "Dizel premium me aditivë, pastrim të avancuar dhe cetan më të lartë — injektorë më të pastër, konsum më i ulët dhe punë më e qetë.",
-  "Alfa Premium Diesel starts as EN 590 diesel and adds a multifunctional additive package: detergents that clean and keep injectors clean, a cetane improver for sharper combustion, anti-foam for faster filling and a corrosion inhibitor that protects the fuel system. Fleets running high annual mileages see the difference in consumption and maintenance intervals.":
-    "Alfa Premium Diesel bazohet në EN 590 dhe përmban aditivë shumëfunksionalë për pastrimin e injektorëve, rritjen e cetanit, mbushje më të shpejtë dhe mbrojtje nga korrozioni. Flotat me kilometrazh të lartë e vërejnë ndryshimin në konsum dhe mirëmbajtje.",
-  "Long-haul transport fleets": "Flota transporti në distanca të gjata",
-  "Premium passenger vehicles": "Automjete premium",
-  "Operators focused on fuel economy": "Operatorë të fokusuar në ekonomi të karburantit",
-  "Vehicles with high annual mileage": "Automjete me kilometrazh të lartë vjetor",
-  "Up to 3% fuel-economy improvement in fleet trials": "Deri në 3% përmirësim të ekonomisë në prova me flota",
-  "Removes existing injector deposits within tanks of use": "Largon depozitat ekzistuese nga injektorët gjatë përdorimit",
-  "Improved cold-start behaviour and quieter combustion": "Ndezje më e mirë në të ftohtë dhe djegie më e qetë",
-  "Reduced foaming for faster, cleaner refuelling": "Më pak shkumë për furnizim më të shpejtë dhe më të pastër",
-  "Engine oils, transmission fluids and greases from OEM-approved ranges, covering passenger vehicles through to heavy commercial and off-road plant.":
-    "Vajra motori, lëngje transmisioni dhe graso të aprovuara nga prodhuesit, për vetura, automjete komerciale dhe makineri të rënda.",
-  "We stock a curated range of lubricants covering the specifications that matter in our market — ACEA and API grades for European and global fleets, heavy-duty engine oils for commercial transport, and multi-purpose greases for plant and agriculture. Our staff are trained to match the right product to your equipment, so you never over- or under-specify.":
-    "Mbajmë një gamë të zgjedhur lubrifikantësh sipas ACEA dhe API, vajra për motorë të rëndë dhe graso shumëfunksionale. Stafi ynë ju ndihmon të zgjidhni specifikimin e saktë për pajisjen.",
-  "Passenger car engine and gearbox service": "Servisim i motorit dhe transmisionit të veturave",
-  "Heavy-duty commercial engines": "Motorë komercialë për punë të rënda",
   "Agricultural and construction equipment": "Pajisje bujqësore dhe ndërtimore",
-  "Industrial gearboxes and bearings": "Transmisione dhe kushineta industriale",
-  "Pack sizes from 1 L retail to 208 L drums": "Paketime nga 1 L deri në fuçi 208 L",
-  "Application guidance from trained staff": "Udhëzim për përdorim nga staf i trajnuar",
-  "Delivered alongside your fuel order": "Dërgohet bashkë me porosinë e derivateve",
-  "Hydraulic, gear, compressor and turbine oils for manufacturing and processing industries, supplied in drums and IBCs with full technical data sheets.":
-    "Vajra hidraulike, për transmision, kompresorë dhe turbina, të furnizuara në fuçi dhe IBC me dokumentacion të plotë teknik.",
-  "For plants and processors, we supply the industrial lubricants that keep production lines moving: HLP/HVLP hydraulic oils, CLP gear oils, compressor and turbine oils, and food-grade options where required. Every product ships with its technical and safety data sheets, and we help you build sensible lubrication schedules that extend equipment life.":
-    "Për fabrika dhe përpunues furnizojmë vajra hidraulike HLP/HVLP, vajra CLP, vajra për kompresorë e turbina dhe variante ushqimore. Çdo produkt vjen me fletë teknike e sigurie dhe me këshillim për mirëmbajtje.",
-  "Hydraulic systems and presses": "Sisteme hidraulike dhe presa",
   "Industrial gearboxes": "Transmisione industriale",
-  "Air compressors and turbines": "Kompresorë ajri dhe turbina",
-  "Metalworking and processing lines": "Linja metalpunuese dhe përpunuese",
-  "ISO VG grades held in local stock": "Gradat ISO VG në stok lokal",
-  "Technical and safety data sheets with every order": "Fletë teknike dhe sigurie me çdo porosi",
-  "Drum and IBC supply with deposit return": "Furnizim në fuçi dhe IBC me kthim të depozitës",
-  "Lubrication survey available for larger plants": "Analizë lubrifikimi për impiante më të mëdha",
-  "ISO 22241-certified urea solution for SCR diesel systems, available at the pump, in packs and in bulk for depots — keeping Euro 6 fleets compliant.":
-    "Tretësirë ureje e certifikuar ISO 22241 për sistemet SCR, në pompë, paketime dhe me shumicë për depot e flotave Euro 6.",
-  "AdBlue® is essential for every modern SCR-equipped diesel. Ours is produced and handled to ISO 22241, which matters: contaminated urea solution is one of the most common causes of SCR system failure. We dispense it at station pumps, sell it in 10 L packs, and deliver in bulk to fleet depots with dispensing equipment on request.":
-    "AdBlue® është thelbësor për motorët modernë SCR. Produkti ynë prodhohet dhe trajtohet sipas ISO 22241, ofrohet në pompë, paketime 10 L dhe me shumicë për depot e flotave.",
-  "Euro 5/6 trucks and buses": "Kamionë dhe autobusë Euro 5/6",
-  "SCR-equipped passenger diesels": "Automjete dizel me sistem SCR",
   "Agricultural machinery with SCR": "Makineri bujqësore me SCR",
-  "Fleet depot bulk storage": "Ruajtje me shumicë në depot e flotave",
-  "ISO 22241 certified purity": "Pastërti e certifikuar ISO 22241",
-  "Available at pump, in packs and in bulk": "Në pompë, paketime dhe me shumicë",
-  "Depot storage and dispensing solutions": "Zgjidhje për ruajtje dhe dozimin në depo",
-  "Protects SCR catalysts from contamination failure": "Mbron katalizatorët SCR nga ndotja",
-  "The cashless fuel card for businesses: refuel at any Alfa Trade station, control limits per vehicle and receive one consolidated monthly invoice.":
-    "Kartela pa para të gatshme për biznese: furnizohuni në çdo pikë Alfa Trade, caktoni limite për automjet dhe merrni një faturë mujore.",
-  "The Alfa Fleet Card replaces cash and receipts with a single controlled payment method for your drivers. Set limits per card, per day or per product, see every transaction with vehicle, station and volume, and close the month with one invoice instead of a shoebox of receipts. It is the backbone of our fleet programme.":
-    "Alfa Fleet Card zëvendëson paratë dhe faturat me një mënyrë të kontrolluar pagese. Caktoni limite sipas kartelës, ditës ose produktit dhe ndiqni çdo transaksion, automjet, pikë dhe sasi.",
-  "Transport and logistics fleets": "Flota transporti dhe logjistike",
-  "Company car programmes": "Programe për automjete të kompanisë",
-  "Construction and service vehicles": "Automjete ndërtimi dhe shërbimi",
-  "Municipal and public fleets": "Flota komunale dhe publike",
-  "Accepted across the whole station network": "Pranohet në gjithë rrjetin e pikave",
-  "Per-card limits and product restrictions": "Limite sipas kartelës dhe kufizime produktesh",
-  "Online portal with real-time transactions": "Portal online me transaksione në kohë reale",
-  "Consolidated monthly invoicing with VAT detail": "Faturim mujor i përmbledhur me hollësi të TVSH-së",
-  "Road fuels, AdBlue, automotive lubricants and industrial oils—available at station, in packs and drums, or delivered in bulk with the documentation your operation requires.":
-    "Derivate rrugore, AdBlue, lubrifikantë automobilistikë dhe vajra industriale—në pika, paketime, fuçi ose me shumicë me dokumentacionin e kërkuar.",
   "Tell us the vehicle, machine or application. We will identify the relevant specification, pack size and supply method.":
     "Na tregoni automjetin, makinerinë ose përdorimin. Ne do të përcaktojmë specifikimin, paketimin dhe mënyrën e duhur të furnizimit.",
 
   // Services and FAQ
-  "At station, by tanker, through fleet cards or under contract—each option comes with clear product specifications, measured volume and documented delivery.":
-    "Në pikë, me cisternë, përmes kartelave ose me kontratë—secila mundësi vjen me specifikime të qarta, sasi të matur dhe dërgesë të dokumentuar.",
   "Services on this page": "Shërbimet në këtë faqe",
   "We assess your consumption profile and storage capacity.": "Vlerësojmë konsumin dhe kapacitetin tuaj të ruajtjes.",
   "We agree volumes, delivery windows and pricing structure.": "Dakordojmë sasitë, oraret e dërgesës dhe strukturën e çmimit.",
@@ -222,18 +107,12 @@ const sqExtended = {
   "Order by phone or through your account manager.": "Porositni me telefon ose përmes menaxherit të llogarisë.",
   "We confirm the delivery window and tanker size.": "Konfirmojmë orarin e dërgesës dhe madhësinë e cisternës.",
   "Metered discharge with signed proof of delivery.": "Shkarkim i matur me dëshmi të nënshkruar të dërgesës.",
-  "We register your vehicles and issue fuel cards.": "Regjistrojmë automjetet dhe lëshojmë kartelat.",
-  "Drivers refuel at any Alfa Trade station.": "Shoferët furnizohen në çdo pikë Alfa Trade.",
-  "You receive consolidated invoices and usage reports.": "Merrni fatura të përmbledhura dhe raporte përdorimi.",
   "Site survey of your storage and consumption.": "Inspektim i ruajtjes dhe konsumit në lokacion.",
   "Automatic refill thresholds are agreed.": "Dakordohen nivelet automatike të rifurnizimit.",
   "We keep your tanks topped up — no stock-outs.": "I mbajmë rezervuarët të furnizuar—pa mungesa.",
   "Tell us your equipment and OEM requirements.": "Na tregoni pajisjet dhe kërkesat e prodhuesit.",
   "We match the right specification and pack size.": "Përshtatim specifikimin dhe paketimin e duhur.",
   "Delivery alongside your regular fuel drops.": "Dërgesë bashkë me furnizimet e rregullta.",
-  "Route and risk assessment for each lane.": "Vlerësim i rrugës dhe rrezikut për çdo itinerar.",
-  "Scheduling integrated with terminal loading.": "Planifikim i integruar me ngarkimin në terminal.",
-  "Live tracking and delivery confirmation.": "Gjurmim në kohë reale dhe konfirmim i dërgesës.",
   "Fixed-term supply agreements that protect your business from price volatility, with volume commitments matched to your annual consumption.":
     "Marrëveshje furnizimi me afat që mbrojnë biznesin nga luhatjet e çmimeve, me sasi të përshtatura me konsumin vjetor.",
   "Budget certainty on fuel costs": "Siguri buxhetore për kostot e derivateve",
@@ -242,28 +121,15 @@ const sqExtended = {
   "We review 12 months of consumption data.": "Shqyrtojmë të dhënat e konsumit për 12 muaj.",
   "A pricing structure is tailored to your risk appetite.": "Struktura e çmimit përshtatet me nivelin tuaj të rrezikut.",
   "Quarterly reviews keep the contract fair.": "Rishikimet tremujore e mbajnë kontratën të drejtë.",
-  "24/7 response for generator failures, unexpected demand and supply disruptions — because hospitals, data rooms and cold chains cannot wait until morning.":
-    "Përgjigje 24/7 për dështime gjeneratorësh, kërkesa të papritura dhe ndërprerje—sepse spitalet, qendrat e të dhënave dhe zinxhirët e ftohtë nuk mund të presin.",
-  "24/7 emergency dispatch line": "Linjë emergjente 24/7",
-  "Priority response for critical infrastructure": "Përgjigje prioritare për infrastrukturë kritike",
-  "Standby agreements available": "Marrëveshje gatishmërie në dispozicion",
-  "Call the emergency line at any hour.": "Telefononi linjën emergjente në çdo kohë.",
-  "The nearest loaded tanker is dispatched.": "Dërgohet cisterna e ngarkuar më e afërt.",
-  "Root-cause review to prevent repeat events.": "Analizë e shkakut për të parandaluar përsëritjen.",
   "Volumes, delivery windows, quality documentation and invoicing—answered clearly before supply begins.":
     "Sasitë, oraret, dokumentacioni dhe faturimi—të sqaruara para fillimit të furnizimit.",
   "What is the minimum order for bulk fuel delivery?": "Cila është porosia minimale për furnizim me shumicë?",
   "Our standard minimum for direct-to-site delivery is 1,000 litres. For smaller regular needs — generators, small sites — we can combine your drop with a scheduled route in your area, so ask your account manager about route days.":
     "Minimumi standard për dërgesë direkte është 1,000 litra. Për nevoja më të vogla mund ta kombinojmë dërgesën me një itinerar të planifikuar në zonën tuaj.",
   "How quickly can you deliver after an order?": "Sa shpejt mund të dërgoni pas porosisë?",
-  "Scheduled contract customers receive deliveries in agreed windows. For ad-hoc orders we typically deliver within 24–48 hours, and our 24/7 emergency line dispatches the nearest loaded tanker for critical situations such as generator failures.":
-    "Klientët me kontratë furnizohen në oraret e dakorduara. Porositë e veçanta zakonisht dërgohen brenda 24–48 orësh, ndërsa linja 24/7 dërgon cisternën më të afërt për raste kritike.",
   "Do you provide quality documentation with deliveries?": "A ofroni dokumentacion cilësie me dërgesat?",
   "Yes. Every delivery ships with a delivery note showing metered volume, and a certificate of quality for the batch is available on request. Our fuels are tested against EN 590 (diesel) and EN 228 (petrol) standards.":
     "Po. Çdo dërgesë ka fletëdërgesë me sasinë e matur dhe certifikatë cilësie sipas kërkesës. Derivatet testohen sipas EN 590 dhe EN 228.",
-  "Can you supply sites outside Kosovo?": "A furnizoni lokacione jashtë Kosovës?",
-  "Our own ADR-certified fleet operates across Kosovo, and we serve cross-border lanes in the region through established logistics partners. Contact our commercial team with your locations and we will confirm coverage.":
-    "Flota jonë e certifikuar ADR operon në Kosovë dhe, përmes partnerëve logjistikë, në itinerare ndërkufitare të rajonit. Na dërgoni lokacionet për konfirmim.",
   "How does pricing work for contract customers?": "Si funksionon çmimi për klientët me kontratë?",
   "Contract pricing is indexed to Platts market quotations plus a fixed, transparent margin — so your price moves with the market, never with our mood. Fixed-price periods are available for customers who prefer budget certainty.":
     "Çmimi kontraktual lidhet me kuotimet Platts dhe një marzhë fikse transparente. Periudhat me çmim fiks janë të mundshme për siguri buxhetore.",
@@ -361,34 +227,6 @@ const sqExtended = {
 
   // Sustainability, testimonials and news
   "Cleaner fuels": "Derivate më të pastra",
-  "Ultra-low-sulphur diesel, additivated premium fuels that cut consumption, and ISO-certified AdBlue that keeps SCR emission systems working as designed.":
-    "Dizel me squfur shumë të ulët, derivate premium që ulin konsumin dhe AdBlue i certifikuar ISO për funksionim të saktë të SCR.",
-  "Efficient logistics": "Logjistikë efikase",
-  "Route optimisation and full-load planning reduce empty kilometres. Every avoided trip is fuel not burned and emissions not released.":
-    "Optimizimi i itinerareve dhe ngarkesat e plota ulin kilometrat bosh, konsumin dhe emetimet.",
-  "Spill prevention": "Parandalimi i derdhjeve",
-  "Sealed transfer procedures, double-walled storage, staff training and spill-response kits at every site protect soil and groundwater.":
-    "Procedurat e vulosura, rezervuarët me mure të dyfishta, trajnimi dhe pajisjet emergjente mbrojnë tokën dhe ujërat.",
-  "Responsible waste handling": "Menaxhim i përgjegjshëm i mbetjeve",
-  "Used oils, filters and packaging from our operations are collected and processed through licensed recycling partners.":
-    "Vajrat e përdorura, filtrat dhe ambalazhet mblidhen dhe përpunohen nga partnerë të licencuar.",
-  "Efficient fuel facilities": "Objekte efikase furnizimi",
-  "LED lighting across all stations, and a phased rollout of rooftop solar to power station operations from 2027.":
-    "Ndriçim LED në të gjitha pikat dhe instalim gradual i energjisë diellore nga viti 2027.",
-  "Community investment": "Investim në komunitet",
-  "We support local education and sports initiatives, and prioritise local hiring and suppliers in every municipality we operate in.":
-    "Mbështesim arsimin dhe sportin lokal dhe u japim përparësi punësimit e furnitorëve lokalë.",
-  "Ask about our practices": "Pyet për praktikat tona",
-  "Fleet fuel intensity by 2030": "Intensiteti i konsumit të flotës deri më 2030",
-  "through routing, driver training and fleet renewal": "përmes itinerareve, trajnimit dhe rinovimit të flotës",
-  "Stations on LED lighting": "Pikat me ndriçim LED",
-  "completed across the network in 2025": "përfunduar në gjithë rrjetin më 2025",
-  "First solar-powered station": "Pika e parë me energji diellore",
-  "rooftop PV pilot at the Çagllavicë flagship": "pilot fotovoltaik në pikën kryesore në Çagllavicë",
-  "Reportable spills target": "Synimi për derdhje të raportueshme",
-  "maintained through prevention-first procedures": "ruhet përmes procedurave parandaluese",
-  "The Alfa fleet card replaced cash advances and scattered receipts. We now review fuel by vehicle and close the month with one invoice.":
-    "Kartela Alfa zëvendësoi paratë e gatshme dhe faturat e shpërndara. Tani shqyrtojmë konsumin për automjet dhe e mbyllim muajin me një faturë.",
   "Operations Director, EuroTrans Logistics": "Drejtor i operacioneve, EuroTrans Logistics",
   "Our sites move quickly, so delivery timing matters as much as price. Alfa Trade confirms the window, coordinates with the foreman and provides the paperwork at discharge.":
     "Kantieret tona lëvizin shpejt, prandaj koha e dërgesës është po aq e rëndësishme sa çmimi. Alfa Trade koordinon orarin dhe dokumentacionin.",
@@ -396,72 +234,9 @@ const sqExtended = {
   "Harvest demand is predictable if you plan early. We agree the expected volume and delivery rhythm before the season, which keeps the machinery working when the days get long.":
     "Kërkesa e korrjes parashikohet kur planifikohet herët. Dakordojmë sasinë dhe ritmin para sezonit që makineritë të vazhdojnë punën.",
   "Owner, AgroVita Farms": "Pronar, AgroVita Farms",
-  "June 2026": "Qershor 2026",
-  "April 2026": "Prill 2026",
-  "March 2026": "Mars 2026",
-  "Alfa Premium Diesel arrives across our station network": "Alfa Premium Diesel arrin në gjithë rrjetin tonë",
-  "Our additivated premium diesel is now available at every Alfa Trade station, bringing enhanced detergency and cetane boost to fleets and private drivers alike.":
-    "Dizeli ynë premium me aditivë tani ofrohet në çdo pikë Alfa Trade, me pastrim më të mirë dhe cetan më të lartë.",
-  "New online portal gives fleet customers real-time fuel data":
-    "Portali i ri u jep klientëve të flotës të dhëna në kohë reale",
-  "Fleet card customers can now track every transaction, set card limits and download consolidated reports from a single dashboard — no more waiting for month-end.":
-    "Klientët e flotës mund të ndjekin transaksionet, të caktojnë limite dhe të shkarkojnë raporte nga një panel i vetëm.",
 
   // Fleet page
-  "Fleet Solutions": "Zgjidhje për flota",
-  "Give drivers controlled access at our stations, combine it with depot deliveries, and review transactions by card, vehicle, product and location.":
-    "Jepuni shoferëve qasje të kontrolluar në pikat tona, kombinojeni me dërgesat në depo dhe shqyrtoni transaksionet sipas kartelës, automjetit, produktit dhe lokacionit.",
-  "Set limits, restrict products, consolidate invoices and see the information needed to question unusual consumption.":
-    "Caktoni limite, kufizoni produktet, përmblidhni faturat dhe identifikoni konsumin e pazakontë.",
-  "One card per vehicle, accepted across our whole station network. No cash, no receipts, no reconciliation headaches.":
-    "Një kartelë për automjet, e pranuar në gjithë rrjetin. Pa para, pa fatura dhe pa ngarkesë administrative.",
-  "Spending controls": "Kontrolle të shpenzimit",
-  "Restrict cards by product, daily volume or time of day. Change limits instantly from the portal, block lost cards in seconds.":
-    "Kufizoni kartelat sipas produktit, sasisë ditore ose orarit. Ndryshoni limitet dhe bllokoni kartelat menjëherë.",
-  "Consumption reporting": "Raportim i konsumit",
-  "Per-vehicle and per-driver consumption, litres-per-100km trends, and anomaly flags that surface fuel loss early.":
-    "Konsum sipas automjetit dhe shoferit, trendet litra/100 km dhe sinjalizime për humbje të mundshme.",
   "One monthly invoice": "Një faturë mujore",
-  "A single consolidated invoice with full VAT detail, plus exports that drop straight into your accounting software.":
-    "Një faturë e përmbledhur me hollësi të TVSH-së dhe të dhëna për programin tuaj të kontabilitetit.",
-  "Bulk depot supply": "Furnizim me shumicë në depo",
-  "Run your own yard tank? We combine card refuelling on the road with scheduled bulk deliveries at the depot.":
-    "Keni rezervuar në oborr? Kombinojmë kartelat në rrugë me dërgesa të planifikuara në depo.",
-  "A named account manager": "Menaxher i dedikuar i llogarisë",
-  "Fleet customers get a direct line to a person who knows their account — not a ticket queue.":
-    "Klientët e flotës kanë kontakt direkt me një person që e njeh llogarinë e tyre.",
-  "Fleets typically cut fuel admin by hours a week — and spot leakage they never saw":
-    "Flotat zakonisht kursejnë orë administrimi çdo javë dhe zbulojnë humbje të fshehura",
-  "Contract pricing below pump price for committed volumes": "Çmime kontraktuale nën çmimin në pompë për sasitë e zotuara",
-  "Fuel theft and card misuse flagged automatically": "Vjedhja dhe keqpërdorimi sinjalizohen automatikisht",
-  "Zero cash handling and zero lost receipts": "Pa para të gatshme dhe pa fatura të humbura",
-  "VAT-ready reporting cuts month-end closing time": "Raportimi për TVSH shkurton mbylljen mujore",
-  "Start a fleet review": "Fillo analizën e flotës",
-  "Fleet review": "Analiza e flotës",
-  "We analyse your routes, vehicles and current fuel spend.": "Analizojmë itineraret, automjetet dhe shpenzimet aktuale.",
-  "Programme design": "Dizajnimi i programit",
-  "Card controls, pricing and depot supply tailored to your operation.":
-    "Kontrolle, çmime dhe furnizim në depo të përshtatura me veprimtarinë tuaj.",
-  "Cards issued": "Lëshimi i kartelave",
-  "Vehicles registered and cards delivered within a week.": "Automjetet regjistrohen dhe kartelat dërgohen brenda një jave.",
-  "Ongoing optimisation": "Optimizim i vazhdueshëm",
-  "Quarterly reviews of consumption data to keep costs falling.": "Rishikime tremujore të konsumit për të ulur kostot.",
-  "The questions every fleet manager asks in the first meeting.":
-    "Pyetjet që çdo menaxher flote i bën në takimin e parë.",
-  "How do I get Alfa Fleet Cards for my vehicles?": "Si marr Alfa Fleet Cards për automjetet?",
-  "Contact our commercial team with your fleet list. We verify the business, register vehicles and issue cards within a week. There is no card fee for contract customers.":
-    "Kontaktoni ekipin komercial me listën e flotës. Verifikojmë biznesin, regjistrojmë automjetet dhe lëshojmë kartelat brenda një jave.",
-  "Can I limit what a driver can buy on the card?": "A mund ta kufizoj çfarë blen shoferi me kartelë?",
-  "Yes. Each card can be restricted by product (e.g. diesel only), by daily volume or spend, and by time of day. Limits are changed instantly from the online portal.":
-    "Po. Kartela mund të kufizohet sipas produktit, sasisë ditore, shpenzimit ose orarit. Limitet ndryshohen menjëherë online.",
-  "What happens if a card is lost or stolen?": "Çfarë ndodh nëse kartela humbet ose vidhet?",
-  "Block it instantly from the portal or call your account manager. A replacement card is issued immediately, and you remain protected from transactions after the block.":
-    "Bllokojeni menjëherë në portal ose telefononi menaxherin. Kartela zëvendësuese lëshohet menjëherë.",
-  "How is fleet fuel invoiced?": "Si faturohet furnizimi i flotës?",
-  "One consolidated invoice per month with full VAT detail, itemised by card, vehicle and station. Transaction data can also be exported for your fleet-management software.":
-    "Një faturë mujore me hollësi të TVSH-së sipas kartelës, automjetit dhe pikës. Të dhënat mund të eksportohen.",
-  "Share your fleet size, routes and current buying process. We will outline a practical card and bulk-supply setup.":
-    "Ndani madhësinë e flotës, itineraret dhe mënyrën aktuale të furnizimit. Ne do të propozojmë një zgjidhje praktike.",
 
   // Careers
   "Join Alfa Trade: stable local jobs, paid training and real progression across our stations, logistics fleet and commercial team.":
@@ -534,12 +309,8 @@ const sqExtended = {
   // Contact and locations
   "Contact Alfa Trade: request a quote, arrange a delivery or reach our 24/7 dispatch line. Phone, email, WhatsApp and Viber.":
     "Kontaktoni Alfa Trade për ofertë, dërgesë ose dispeçerinë 24/7 përmes telefonit, emailit, WhatsApp dhe Viber.",
-  "Tell us the product, volume, location and timing. Our team will route your request to station, bulk, fleet or commercial supply.":
-    "Na tregoni produktin, sasinë, lokacionin dhe kohën. Ekipi do ta drejtojë kërkesën te pika, furnizimi me shumicë, flota ose ekipi komercial.",
   "Commercial & quotes": "Komerciale dhe oferta",
-  "Supply contracts, bulk delivery, fleet programmes": "Kontrata, furnizim me shumicë dhe programe flote",
   "Orders & dispatch": "Porosi dhe dispeçeri",
-  "Delivery scheduling and 24/7 emergency supply": "Planifikim dërgesash dhe furnizim emergjent 24/7",
   "Applications and open positions": "Aplikime dhe pozita të hapura",
   "Quality & HSE": "Cilësi dhe HSE",
   "Certificates, safety documentation, environmental questions":
@@ -547,8 +318,6 @@ const sqExtended = {
   "WhatsApp / Viber": "WhatsApp / Viber",
   "Product, estimated volume, delivery point and preferred timing are enough to start.":
     "Produkti, sasia e përafërt, pika e dërgesës dhe koha e preferuar mjaftojnë për të filluar.",
-  "Thank you — our commercial team will reply within one working day.":
-    "Faleminderit—ekipi komercial do t’ju përgjigjet brenda një dite pune.",
   "Volumes, locations, timelines — the more detail, the faster the quote.":
     "Sasitë, lokacionet dhe afatet—sa më shumë hollësi, aq më shpejt oferta.",
   "Fuel stations open daily 06:00 – 24:00. Consistent product standards, practical services and direct access from the road.":
@@ -556,6 +325,104 @@ const sqExtended = {
   "Check the available services, open the location on the map or get directions directly.":
     "Kontrolloni shërbimet, hapni lokacionin në hartë ose merrni udhëzimet.",
   "Diesel & Petrol 95": "Dizel dhe benzinë 95",
+
+  // Home and services cut (fleet, logistics and emergency copy removed)
+  "Petrol, diesel and gas": "Benzinë, naftë dhe gaz",
+  "Stations and bulk delivery": "Pika furnizimi dhe dërgesë me shumicë",
+  "Diesel, petrol, gas and AdBlue at our four stations, or delivered in bulk straight to your site.": "Naftë, benzinë, gaz dhe AdBlue në katër pikat tona, ose me dërgesë me shumicë direkt te ju.",
+  "Quality fuel from suppliers we trust": "Derivate cilësore nga furnitorë që u besojmë",
+  "Four stations, and bulk delivery to your door": "Katër pika, dhe dërgesë me shumicë deri te dera juaj",
+  "Clear prices and honest paperwork": "Çmime të qarta dhe dokumentacion i ndershëm",
+  "Supply for businesses, building sites and farms": "Furnizim për biznese, objekte ndërtimi dhe ferma",
+  "Years of service": "Vite shërbim",
+  "Your local fuel supplier since 1997": "Furnizuesi juaj lokal i derivateve që nga viti 1997",
+  "For over 25 years we have kept Kosovo moving. Fill up at one of our stations or have fuel brought to your site. Either way, you deal with people who know your name and keep their word.": "Mbi 25 vjet e mbajmë Kosovën në lëvizje. Furnizohuni në një nga pikat tona ose na kërkoni ta sjellim derivatin në objektin tuaj. Në të dyja rastet, bashkëpunoni me njerëz që ju njohin dhe e mbajnë fjalën.",
+  "Certified petroleum products, lubricants and bulk fuel distribution for businesses and industries, delivered safely and on time since 1997.": "Produkte të certifikuara të naftës, lubrifikantë dhe shpërndarje me shumicë për biznese e industri, të dorëzuara sigurt dhe në kohë që nga viti 1997.",
+  "A simple fuel plan for businesses with several vehicles: agreed prices, one monthly invoice and a clear record of what each vehicle uses.": "Një plan i thjeshtë furnizimi për biznese me disa automjete: çmime të dakorduara, një faturë mujore dhe evidencë e qartë e asaj që përdor çdo automjet.",
+  "One monthly invoice for all your vehicles": "Një faturë mujore për të gjitha automjetet",
+  "A clear record of fuel used per vehicle": "Evidencë e qartë e derivatit për çdo automjet",
+  "Agreed contract pricing": "Çmim i dakorduar me kontratë",
+  "We note down your vehicles and agree a price with you.": "Regjistrojmë automjetet tuaja dhe biem dakord për çmimin.",
+  "Your drivers refuel at our stations.": "Shoferët tuaj furnizohen në pikat tona.",
+  "You get one invoice and a summary of what was used.": "Merrni një faturë dhe përmbledhje të asaj që është përdorur.",
+  "Refuel at our stations, have fuel delivered to your site, or set up a supply plan around how much you use.": "Furnizohuni në pikat tona, kërkoni dërgesë në objektin tuaj, ose ndërtoni një plan furnizimi sipas konsumit.",
+  "At our stations, delivered to your site or under contract. Every option comes with clear product details, measured volume and proper paperwork.": "Në pikat tona, me dërgesë në objektin tuaj ose me kontratë. Çdo mënyrë vjen me detaje të qarta të produktit, vëllim të matur dhe dokumentacion të rregullt.",
+  "Scheduled contract customers receive deliveries in agreed windows. For ad-hoc orders we typically deliver within 24–48 hours.": "Klientët me kontratë marrin dërgesa brenda afateve të dakorduara. Për porosi të rastësishme, zakonisht dërgojmë brenda 24–48 orësh.",
+  "Where do you deliver?": "Ku bëni dërgesa?",
+  "We deliver across Kosovo. Tell us where your site is and we will confirm the delivery details and timing.": "Dërgojmë në gjithë Kosovën. Na tregoni ku ndodhet objekti juaj dhe do t'ju konfirmojmë detajet dhe kohën e dërgesës.",
+  "Commercial trucks and buses": "Kamionë tregtarë dhe autobusë",
+  "Gas (LPG)": "Gaz (LPG)",
+  "Autogas (LPG) for vehicles converted to run on gas, a lower-cost alternative to petrol.": "Autogaz (LPG) për automjete të përshtatura për gaz, alternativë më e lirë ndaj benzinës.",
+  "LPG is a popular choice for drivers who cover a lot of kilometres and want to spend less on fuel. Ask our team at the station about availability and how to fill up safely.": "LPG është zgjedhje e njohur për shoferët që bëjnë shumë kilometra dhe duan të shpenzojnë më pak për karburant. Pyesni ekipin tonë në pikë për disponueshmërinë dhe si të furnizoheni në mënyrë të sigurt.",
+  "Passenger cars converted to LPG": "Makina të përshtatura për LPG",
+  "Taxis and high-mileage drivers": "Taksi dhe shoferë me kilometrazhë të madhe",
+  "Works alongside your existing petrol tank": "Punon së bashku me rezervuarin ekzistues të benzinës",
+  "Staff on hand to help with first-time filling": "Stafi ndihmon kur furnizoheni për herë të parë",
+  "Autogas (LPG)": "Autogaz (LPG)",
+  "Vehicles converted to run on gas": "Automjete të përshtatura për gaz",
+  "What we supply": "Çfarë furnizojmë",
+  "Petrol, diesel, gas and AdBlue at our stations, plus lubricants and oils when you need them. Ask us about bulk orders.": "Benzinë, naftë, gaz dhe AdBlue në pikat tona, si dhe lubrifikantë e vajra kur ju duhen. Pyesni për porosi me shumicë.",
+  "Talk to our commercial team about supply contracts and bulk delivery tailored to your business.": "Flisni me ekipin tonë komercial për kontrata furnizimi dhe dërgesa me shumicë të përshtatura për biznesin tuaj.",
+  "Supply contracts and bulk delivery": "Kontrata furnizimi dhe dërgesa me shumicë",
+  "Delivery scheduling and order questions": "Planifikimi i dërgesave dhe pyetje për porosi",
+  "Tell us the product, volume, location and timing. Our team will route your request to station, bulk or commercial supply.": "Na tregoni produktin, sasinë, lokacionin dhe kohën. Ekipi do ta drejtojë kërkesën te pika, furnizimi me shumicë ose ekipi komercial.",
+  "Four convenient points for fuel and AdBlue": "Katër pika të volitshme për derivate dhe AdBlue",
+  "We bring fuel to your site, farm or depot, anywhere in Kosovo.": "Ua sjellim derivatin në objekt, fermë ose depo, kudo në Kosovë.",
+  "Regular fuel supply and bulk depot deliveries for hauliers, bus operators and couriers.": "Furnizim i rregullt dhe dërgesa me shumicë në depo për transportues, operatorë autobusësh dhe korrierë.",
+  "A haulage company, construction site, factory and farm do not use fuel the same way. We plan product, storage and delivery around the job.": "Një kompani transporti, kantier, fabrikë dhe fermë nuk e përdorin derivatin në të njëjtën mënyrë. Ne planifikojmë produktin, ruajtjen dhe dërgesën sipas punës.",
+  "Established supplier relationships help protect your supply when demand changes.": "Marrëdhëniet e qëndrueshme me furnitorët mbrojnë furnizimin tuaj kur kërkesa ndryshon.",
+  "Trained handlers and strict station procedures protect people, property and product.": "Stafi i trajnuar dhe procedurat e rrepta në pika mbrojnë njerëzit, pronën dhe produktin.",
+  "We get one invoice a month and a clear view of what each vehicle used. No more chasing receipts, and the team always picks up the phone.": "Marrim një faturë në muaj dhe shohim qartë çfarë ka përdorur çdo automjet. Nuk kërkojmë më fatura, dhe ekipi gjithmonë e ngre telefonin.",
+  // Product catalog rewritten in general terms
+  "Diesel to the EN 590 standard, for cars, trucks, tractors and generators.": "Naftë sipas standardit EN 590, për makina, kamionë, traktorë dhe gjeneratorë.",
+  "Our diesel meets the EN 590 standard that applies in Kosovo. It suits modern and older diesel engines, from passenger cars to trucks and farm machinery. Ask our team at any station or about a bulk order and we will help you with what you need.": "Nafta jonë i përmbahet standardit EN 590 që zbatohet në Kosovë. Është e përshtatshme për motorë dizel modernë dhe më të vjetër, nga makinat e zakonshme te kamionët dhe makineritë bujqësore. Pyesni ekipin tonë në çdo pikë ose për një porosi me shumicë dhe do t'ju ndihmojmë me atë që ju duhet.",
+  "Construction equipment": "Pajisje ndërtimi",
+  "Meets the EN 590 standard": "Plotëson standardin EN 590",
+  "Available at our stations and in bulk": "Në dispozicion në pikat tona dhe me shumicë",
+  "Delivery note with every bulk delivery": "Fletëdërgesë me çdo dërgesë me shumicë",
+  "Advice from staff who know the product": "Këshillim nga stafi që e njeh produktin",
+  "Unleaded 95 petrol to the EN 228 standard, for cars, motorcycles and light vehicles.": "Benzinë pa plumb 95 sipas standardit EN 228, për makina, motoçikleta dhe automjete të lehta.",
+  "Our unleaded petrol meets the EN 228 standard used in Kosovo. It is the everyday fuel for petrol cars, motorcycles and small machinery, available at all four of our stations.": "Benzina jonë pa plumb i përmbahet standardit EN 228 që përdoret në Kosovë. Është karburanti i përditshëm për makina me benzinë, motoçikleta dhe makineri të vogla, i disponueshëm në të katër pikat tona.",
+  "Meets the EN 228 standard": "Plotëson standardin EN 228",
+  "95 octane unleaded": "95 oktan, pa plumb",
+  "Available at all four of our stations": "Në dispozicion në të katër pikat tona",
+  "Octane": "Oktan",
+  "95 (unleaded)": "95 (pa plumb)",
+  "Our premium diesel with added additives, available at selected stations.": "Nafta jonë premium me aditivë, në dispozicion në pika të zgjedhura.",
+  "Alfa Premium Diesel is EN 590 diesel with an additive package that helps keep injectors clean and the engine running smoothly. Ask our team at the station whether it suits your vehicle.": "Alfa Premium Diesel është naftë EN 590 me aditivë që ndihmojnë ruajtjen e injektorëve të pastër dhe punën e qetë të motorit. Pyesni ekipin tonë në pikë nëse i përshtatet automjetit tuaj.",
+  "Passenger and commercial diesel vehicles": "Automjete dizel personale dhe komerciale",
+  "Drivers who cover many kilometres": "Shoferë që bëjnë shumë kilometra",
+  "Based on EN 590 diesel": "Bazohet në naftën EN 590",
+  "Additives to help keep the fuel system clean": "Aditivë që ndihmojnë pastërtinë e sistemit të karburantit",
+  "Available at selected stations": "Në dispozicion në pika të zgjedhura",
+  "Selected stations": "Pika të zgjedhura",
+  "Engine oils, gear oils and greases for cars, trucks and machinery.": "Vajra motori, vajra transmisioni dhe graso për makina, kamionë dhe makineri.",
+  "We supply a range of lubricants for passenger cars, commercial vehicles, and farm and construction machinery. Tell us your vehicle or equipment and our team will help you pick the right oil.": "Furnizojmë një gamë lubrifikantësh për makina, automjete komerciale dhe makineri bujqësore e ndërtimi. Na tregoni automjetin ose pajisjen dhe ekipi ynë do t'ju ndihmojë të zgjidhni vajin e duhur.",
+  "Passenger car engines and gearboxes": "Motorë dhe kuti marshi të makinave",
+  "Commercial vehicle engines": "Motorë të automjeteve komerciale",
+  "Advice from our staff": "Këshillim nga stafi ynë",
+  "Available in different pack sizes": "Në dispozicion në paketime të ndryshme",
+  "Can be added to your fuel order": "Mund t'i shtohet porosisë së derivateve",
+  "Range": "Gama",
+  "Engine oils, gear oils, greases": "Vajra motori, vajra transmisioni, graso",
+  "Ask us for sizes": "Pyesni për madhësitë",
+  "Hydraulic, gear and compressor oils for workshops and industry.": "Vajra hidraulike, transmisioni dhe kompresori për punishte dhe industri.",
+  "For workshops and industrial sites we can supply hydraulic, gear and compressor oils. Tell us the machine and the oil it needs, and we will confirm what we can supply and the pack size.": "Për punishte dhe objekte industriale mund të furnizojmë vajra hidraulike, transmisioni dhe kompresori. Na tregoni makinën dhe vajin që i duhet, dhe do t'ju konfirmojmë çfarë mund të furnizojmë dhe paketimin.",
+  "Hydraulic systems": "Sisteme hidraulike",
+  "Compressors": "Kompresorë",
+  "Supplied to match your equipment": "Furnizim sipas pajisjes suaj",
+  "Different pack sizes available": "Paketime të ndryshme në dispozicion",
+  "Hydraulic, gear and compressor oils": "Vajra hidraulike, transmisioni dhe kompresori",
+  "AdBlue® exhaust fluid for modern diesel vehicles, available at selected stations.": "Lëng AdBlue® për automjete moderne me dizel, në dispozicion në pika të zgjedhura.",
+  "AdBlue® is a urea solution that modern diesel vehicles with an SCR system need to meet emission rules. It is made to the ISO 22241 standard. Ask our team about pump and pack availability.": "AdBlue® është një tretësirë ureje që e kanë të nevojshme automjetet moderne dizel me sistem SCR për të përmbushur rregullat e emisioneve. Prodhohet sipas standardit ISO 22241. Pyesni ekipin tonë për disponueshmërinë në pompë dhe në paketime.",
+  "Trucks and buses with SCR": "Kamionë dhe autobusë me SCR",
+  "Diesel cars with SCR": "Makina dizel me SCR",
+  "Made to the ISO 22241 standard": "Prodhuar sipas standardit ISO 22241",
+  "Bulk supply on request": "Furnizim me shumicë me kërkesë",
+  "Lower fuel cost than petrol": "Kosto më e ulët karburanti se benzina",
+  "Thank you. Our team will get back to you as soon as possible.": "Faleminderit. Ekipi ynë do t'ju kthejë përgjigje sa më shpejt të jetë e mundur.",
+  "Sending…": "Duke dërguar…",
+  "Something went wrong and your message was not sent. Please try again, or call us on": "Diçka shkoi keq dhe mesazhi nuk u dërgua. Provoni përsëri, ose na telefononi në",
 };
 
 export default sqExtended;

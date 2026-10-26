@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 /** Full-width red conversion band used at the bottom of most pages. */
 const CTASection = ({
   title = "Ready to power your operations?",
-  lead = "Talk to our commercial team about supply contracts, bulk delivery and fleet programmes tailored to your business.",
+  lead = "Talk to our commercial team about supply contracts and bulk delivery tailored to your business.",
   primary = { label: "Request a quote", to: "/contact" },
   secondary = { label: "Explore our services", to: "/services" },
 }) => (

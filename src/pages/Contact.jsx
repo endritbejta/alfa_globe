@@ -89,7 +89,7 @@ const Contact = () => {
                     <Phone size={20} aria-hidden="true" />
                   </span>
                   <div>
-                    <p className="text-sm text-night-500">Phone — orders & 24/7 dispatch</p>
+                    <p className="text-sm text-night-500">Phone — orders and questions</p>
                     <p className="font-bold text-night-950">{site.phoneDisplay}</p>
                   </div>
                 </a>

@@ -114,7 +114,10 @@ const ProductDetail = () => {
           <h2 className="text-2xl font-bold tracking-tight text-night-950 sm:text-3xl">
             Related products
           </h2>
+          {/* Keyed by slug: the page stays mounted between products, so the grid must
+              remount or newly added cards keep their hidden animation state. */}
           <motion.div
+            key={slug}
             variants={stagger(0.08)}
             initial="hidden"
             whileInView="visible"

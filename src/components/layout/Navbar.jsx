@@ -128,7 +128,7 @@ const Navbar = () => {
         aria-hidden="true"
       />
       <div
-        className={`pointer-events-none absolute inset-0 bg-night-950/90 shadow-lg shadow-night-950/20 backdrop-blur-md transition-opacity duration-300 ${
+        className={`pointer-events-none absolute inset-0 bg-night-950 shadow-lg shadow-night-950/20 transition-opacity duration-300 ${
           scrolled ? "opacity-100" : "opacity-0"
         }`}
         aria-hidden="true"

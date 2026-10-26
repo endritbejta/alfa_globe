@@ -93,7 +93,7 @@ const Services = () => {
       />
 
       {/* Quick anchor nav */}
-      <nav aria-label="Services on this page" className="sticky top-18 z-30 border-b border-night-100 bg-white/90 backdrop-blur">
+      <nav aria-label="Services on this page" className="sticky top-18 z-30 border-b border-night-100 bg-white/95">
         <div className="container-x flex gap-2 overflow-x-auto py-3 [scrollbar-width:none]">
           {services.map((service) => (
             <a

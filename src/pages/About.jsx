@@ -2,12 +2,10 @@ import { motion } from "framer-motion";
 import usePageMeta from "../hooks/usePageMeta";
 import PageHero from "../components/ui/PageHero";
 import SectionTitle from "../components/ui/SectionTitle";
-import Timeline from "../components/ui/Timeline";
 import FeatureCard from "../components/ui/FeatureCard";
 import CTASection from "../components/ui/CTASection";
 import Reveal from "../components/ui/Reveal";
 import { values, leadership, certifications } from "../data/about";
-import { milestones } from "../data/milestones";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 import { BadgeCheck } from "lucide-react";
 import highway2 from "../assets/img/highway2.jpg";
@@ -117,21 +115,6 @@ const About = () => {
             <FeatureCard key={value.title} feature={value} />
           ))}
         </motion.div>
-      </section>
-
-      {/* Timeline */}
-      <section className="bg-night-50 py-20 sm:py-28">
-        <div className="container-x grid gap-14 lg:grid-cols-[1fr_1.4fr]">
-          <div>
-            <SectionTitle
-              eyebrow="Milestones"
-              title="Growth built one delivery at a time"
-              lead="Each new station, tanker and service followed a real customer need—not a change in fashion."
-              className="lg:sticky lg:top-28"
-            />
-          </div>
-          <Timeline items={milestones} />
-        </div>
       </section>
 
       {/* Leadership */}

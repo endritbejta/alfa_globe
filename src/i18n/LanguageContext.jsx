@@ -26,7 +26,6 @@ const sq = {
   "A petroleum distributor built close to its customers":
     "Distributor i derivateve i ndërtuar pranë klientëve",
   "Independent by ownership. Accountable by choice.": "I pavarur në pronësi. I përgjegjshëm me zgjedhje.",
-  "Growth built one delivery at a time": "Rritje e ndërtuar dërgesë pas dërgese",
   "Tell us how you buy fuel today": "Na tregoni si furnizoheni sot",
   "Fuel supply designed around where and how you use it":
     "Furnizim i përshtatur me vendin dhe mënyrën e përdorimit",
@@ -79,9 +78,6 @@ const sq = {
   "Show on map": "Shfaq në hartë",
   "Today Alfa Trade operates across retail fuel, bulk petroleum distribution and commercial supply, using its own ADR-certified tanker operations to serve fleets, industrial sites, construction projects and seasonal customers. We remain independently owned and accountable to the customers and communities we serve.":
     "Sot Alfa Trade vepron në shitjen me pakicë të derivateve, shpërndarjen me shumicë dhe furnizimin komercial, duke përdorur cisternat e veta të certifikuara ADR për flota, objekte industriale, projekte ndërtimore dhe klientë sezonalë. Mbetemi kompani e pavarur dhe e përgjegjshme ndaj klientëve dhe komuniteteve që u shërbejmë.",
-  "Bulk delivery capacity expands": "Zgjerohet kapaciteti i furnizimit me shumicë",
-  "Additional tanker capacity extends scheduled fuel delivery to commercial sites, construction projects and seasonal customers across Kosovo.":
-    "Kapaciteti shtesë i cisternave zgjeron furnizimin e planifikuar për objekte komerciale, projekte ndërtimore dhe klientë sezonalë në gjithë Kosovën.",
   "Petroleum distribution & fuel supply — Kosovo":
     "Shpërndarje e derivateve dhe furnizim — Kosovë",
   "Reliable fuel supply for businesses": "Furnizim i sigurt me derivate për bizneset",
@@ -152,7 +148,6 @@ const sq = {
   "Built on one promise: the fuel is there when you need it":
     "Ndërtuar mbi një premtim: karburanti është aty kur ju nevojitet",
   "Our values": "Vlerat tona",
-  Milestones: "Etapat",
   Leadership: "Udhëheqja",
   "Certifications & safety": "Certifikimet dhe siguria",
   "Every way a business buys fuel, done properly":

@@ -25,6 +25,25 @@ const Layout = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [pathname, hash]);
 
+  // While the page scrolls, cards slide under a resting cursor and flip their
+  // hover lift on and off, which reads as flicker. Pause pointer hits on the
+  // page content until scrolling stops.
+  useEffect(() => {
+    const root = document.documentElement;
+    let idle;
+    const onScroll = () => {
+      root.classList.add("is-scrolling");
+      clearTimeout(idle);
+      idle = setTimeout(() => root.classList.remove("is-scrolling"), 150);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      clearTimeout(idle);
+      root.classList.remove("is-scrolling");
+    };
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col">
       <a

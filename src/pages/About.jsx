@@ -46,8 +46,8 @@ const About = () => {
               </p>
               <p>
                 Today Alfa Trade operates across retail fuel, bulk petroleum distribution and
-                commercial supply, using its own ADR-certified tanker operations to serve fleets,
-                industrial sites, construction projects and seasonal customers. We remain
+                commercial supply, serving businesses, industrial sites, construction projects and
+                seasonal customers. We remain
                 independently owned and accountable to the customers and communities we serve.
               </p>
             </div>

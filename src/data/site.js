@@ -37,6 +37,7 @@ export const footerLinks = {
     { label: "Bulk delivery", to: "/services#bulk-delivery" },
     { label: "Fleet solutions", to: "/services#fleet-solutions" },
     { label: "Industrial fuel", to: "/services#industrial-energy" },
+    { label: "Vehicle technical inspection", to: "/services#vehicle-inspection" },
   ],
   products: [
     { label: "Diesel", to: "/products/diesel" },

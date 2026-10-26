@@ -324,7 +324,7 @@ const sqExtended = {
     "Pikat janë të hapura çdo ditë 06:00–24:00, me standarde të njëjta, shërbime praktike dhe qasje të drejtpërdrejtë.",
   "Check the available services, open the location on the map or get directions directly.":
     "Kontrolloni shërbimet, hapni lokacionin në hartë ose merrni udhëzimet.",
-  "Diesel & Petrol 95": "Dizel dhe benzinë 95",
+  "Diesel & Petrol 95": "Naftë dhe benzinë 95",
 
   // Home and services cut (fleet, logistics and emergency copy removed)
   "Petrol, diesel and gas": "Benzinë, naftë dhe gaz",

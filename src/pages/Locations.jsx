@@ -14,7 +14,7 @@ import highway2 from "../assets/img/highway2.jpg";
 const Locations = () => {
   usePageMeta(
     "Locations",
-    "Find your nearest Alfa Trade fuel station: Çagllavicë, Kçiç, Klinë e Poshtme and Polac — open daily with certified fuels and AdBlue."
+    "Find your nearest Alfa Trade fuel station in Bardhosh, Klinë e Epërme, Llaushë or Obiliq, open every day."
   );
 
   const [focus, setFocus] = useState(null);

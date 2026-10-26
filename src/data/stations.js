@@ -1,33 +1,32 @@
 export const stations = [
   {
-    name: "Çagllavicë",
-    address: "Rr. Rrafshi i Kosovës, Çagllavicë",
+    name: "Bardhosh",
+    address: "E80, Bardhosh",
     region: "Prishtina",
-    coords: [42.6230025, 21.1461527],
-    services: ["Diesel & Petrol 95", "Alfa Premium Diesel", "AdBlue at pump", "Market & café"],
-    flagship: true,
+    coords: [42.712616, 21.150845],
+    services: ["Diesel & Petrol 95"],
   },
   {
-    name: "Kçiç",
-    address: "Rr. Mbreti Agron, Kçiç",
-    region: "Mitrovica",
-    coords: [42.8621, 20.9090033],
-    services: ["Diesel & Petrol 95", "AdBlue packs", "Market"],
-  },
-  {
-    name: "Klinë e Poshtme",
-    address: "Rr. Dëshmorët e Kombit, Klinë e Poshtme",
-    region: "Klina",
-    coords: [42.763047, 20.788164],
-    services: ["Diesel & Petrol 95", "Lubricants shop", "Market"],
-  },
-  {
-    name: "Polac",
-    address: "Rr. Kodra e Polacit, Polac",
+    name: "Klinë e Epërme",
+    address: "Klinë e Epërme",
     region: "Skenderaj",
-    coords: [42.731945, 20.817045],
-    services: ["Diesel & Petrol 95", "Agri fuel point", "Market"],
+    coords: [42.790473, 20.782241],
+    services: ["Diesel & Petrol 95"],
+  },
+  {
+    name: "Llaushë",
+    address: "Rr. Arben Haliti, Llaushë",
+    region: "Skenderaj",
+    coords: [42.739334, 20.792334],
+    services: ["Diesel & Petrol 95"],
+  },
+  {
+    name: "Obiliq",
+    address: "Rr. Viktoria 713, Babimoc",
+    region: "Obiliq",
+    coords: [42.736344, 21.062831],
+    services: ["Diesel & Petrol 95"],
   },
 ];
 
-export const mapCenter = [42.72, 20.95];
+export const mapCenter = [42.75, 20.96];

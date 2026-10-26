@@ -26,18 +26,6 @@ const sqExtended = {
   "The page you're looking for doesn't exist or has been moved. Let's get you back on the road.":
     "Faqja që kërkoni nuk ekziston ose është zhvendosur. Le t’ju kthejmë në rrugën e duhur.",
 
-  // Vehicle technical inspection
-  "Vehicle Technical Inspection": "Kontrollim teknik i automjeteve",
-  "Vehicle technical inspection": "Kontrollim teknik i automjeteve",
-  "Alfa Trade runs its own technical inspection centre for vehicles, so you can have your car or commercial vehicle checked in the same place you refuel.":
-    "Alfa Trade ka qendrën e vet për kontrollim teknik të automjeteve, kështu që mund ta kontrolloni veturën ose automjetin tregtar te i njëjti ofrues ku furnizoheni me karburant.",
-  "Our own technical inspection centre": "Qendra jonë e kontrollimit teknik",
-  "Passenger and commercial vehicles": "Automjete personale dhe tregtare",
-  "Inspection and refuelling with one company": "Kontrollim teknik dhe furnizim me karburant te një kompani",
-  "Call or visit us to book an inspection.": "Na telefononi ose na vizitoni për të caktuar kontrollimin.",
-  "Your vehicle is checked by our inspection team.": "Automjeti kontrollohet nga ekipi ynë i inspektimit.",
-  "You receive the result and any follow-up notes.": "Merrni rezultatin dhe çdo shënim për veprimet e mëtejshme.",
-
   // Home and sector cards
   "On-site bulk diesel, plant lubricants and flexible delivery windows that follow your project schedule.":
     "Dizel me shumicë në kantier, lubrifikantë për makineri dhe orare fleksibile sipas planit të projektit.",

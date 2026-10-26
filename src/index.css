@@ -101,6 +101,11 @@
   }
 }
 
+/* Set by Layout while the page is scrolling; see the note there. */
+html.is-scrolling main {
+  pointer-events: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hover-lift:hover {
     translate: 0 -4px;

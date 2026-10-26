@@ -176,7 +176,7 @@ const sq = {
   "Talk to a person, not a queue": "Fol me një person, jo me një radhë pritjeje",
   "Get in touch": "Na kontaktoni",
   "Direct lines": "Kontaktet direkte",
-  "Phone — orders & 24/7 dispatch": "Telefoni — porosi dhe dispeçeri 24/7",
+  "Phone — orders and questions": "Telefoni — porosi dhe pyetje",
   Headquarters: "Selia",
   "Office hours": "Orari i punës",
   "Send an inquiry": "Dërgo kërkesë",

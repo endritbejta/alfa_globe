@@ -289,7 +289,7 @@ const sqExtended = {
   "Grow our fleet-card and bulk-supply portfolio. You know how to talk to transport managers and site foremen — we'll teach you the fuel.":
     "Zgjeroni portofolin e kartelave dhe furnizimit me shumicë. Ne ju trajnojmë për produktet.",
   "Logistics Coordinator": "Koordinator i logjistikës",
-  "Çagllavicë HQ": "Selia në Çagllavicë",
+  "Bardhosh HQ": "Selia në Bardhosh",
   "Schedule tanker routes, coordinate terminal loading windows and keep customers informed when plans change. Strong Excel skills and calm judgment under pressure are required.":
     "Planifikoni itineraret, koordinoni ngarkimin në terminal dhe informoni klientët për ndryshimet. Kërkohen njohuri të mira në Excel.",
   "Apply for this role": "Apliko për këtë pozitë",

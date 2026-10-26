@@ -57,7 +57,7 @@ export const openings = [
   },
   {
     title: "Logistics Coordinator",
-    location: "Çagllavicë HQ",
+    location: "Bardhosh HQ",
     type: "Full-time",
     description:
       "Schedule tanker routes, coordinate terminal loading windows and keep customers informed when plans change. Strong Excel skills and calm judgment under pressure are required.",

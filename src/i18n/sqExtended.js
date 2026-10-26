@@ -150,14 +150,14 @@ const sqExtended = {
     "Nuk shesim rezervuarë, por inspektojmë ruajtjen, këshillojmë për instalime të rregullta dhe monitorojmë nivelin për rifurnizim në kohë.",
 
   // About
-  "The story of Alfa Trade: an independent Kosovar petroleum distributor built on certified products, reliable delivery, safety and long-term partnerships since 2014.":
-    "Historia e Alfa Trade: distributor i pavarur kosovar i ndërtuar mbi produkte të certifikuara, dërgesa të sigurta dhe partneritete afatgjata që nga viti 2014.",
+  "The story of Alfa Trade: an independent Kosovar petroleum distributor built on certified products, reliable delivery, safety and long-term partnerships since 1997.":
+    "Historia e Alfa Trade: distributor i pavarur kosovar i ndërtuar mbi produkte të certifikuara, dërgesa të sigurta dhe partneritete afatgjata që nga viti 1997.",
   "Alfa Trade grew from one truck into a station network and commercial supply operation by staying focused on product quality, safe handling and dependable delivery.":
     "Alfa Trade u rrit nga një kamion në një rrjet pikash dhe furnizim komercial, duke ruajtur fokusin te cilësia, siguria dhe dërgesat e besueshme.",
-  "Founded in Prishtina in 2014, Alfa Trade was built by people with regional fuel-trading experience and a belief that every customer deserves clear terms, correct volumes and serious service.":
-    "E themeluar në Prishtinë më 2014, Alfa Trade u ndërtua nga profesionistë të tregtisë rajonale me bindjen se çdo klient meriton kushte të qarta, sasi të sakta dhe shërbim serioz.",
-  "The early years were simple: one truck, a handful of commercial clients, and an obsession with keeping every commitment. That reputation compounded. Construction firms recommended us to hauliers; hauliers recommended us to farms. In 2016 we opened our first retail station in Çagllavicë, and by 2018 the network had grown to four stations across central and western Kosovo.":
-    "Vitet e para nisën me një kamion, disa klientë komercialë dhe përkushtim ndaj çdo premtimi. Në vitin 2016 hapëm pikën e parë në Çagllavicë dhe deri më 2018 rrjeti u zgjerua në katër pika në Kosovën qendrore dhe perëndimore.",
+  "Founded in Skenderaj in 1997, Alfa Trade was built by people with fuel-trading experience and a belief that every customer deserves clear terms, correct volumes and serious service.":
+    "E themeluar në Skenderaj më 1997, Alfa Trade u ndërtua nga profesionistë të tregtisë së derivateve me bindjen se çdo klient meriton kushte të qarta, sasi të sakta dhe shërbim serioz.",
+  "The early years were simple: one truck, a handful of commercial clients, and an obsession with keeping every commitment. That reputation compounded. Construction firms recommended us to hauliers; hauliers recommended us to farms. Over time that grew into a network of four stations in Bardhosh, Klinë e Epërme, Llaushë and Obiliq.":
+    "Vitet e para nisën me një kamion, disa klientë komercialë dhe përkushtim ndaj çdo premtimi. Me kohë, kjo u rrit në një rrjet me katër pika: në Bardhosh, Klinë të Epërme, Llaushë dhe Obiliq.",
   "Our mission": "Misioni ynë",
   "To supply high-quality petroleum products with professionalism and integrity — always prioritising the well-being of people and the environment we operate in.":
     "Të furnizojmë produkte cilësore të naftës me profesionalizëm dhe integritet, duke vënë në plan të parë njerëzit dhe mjedisin.",
@@ -187,11 +187,11 @@ const sqExtended = {
   "Quality without shortcuts": "Cilësi pa kompromise",
   "Certified sourcing, sealed transport and independent testing. Quality is a chain, and we protect every link in it.":
     "Burime të certifikuara, transport i vulosur dhe testim i pavarur. Cilësia është zinxhir dhe ne mbrojmë çdo hallkë.",
-  "Each new station, tanker and supply division followed a real customer need—not a change in fashion.":
-    "Çdo pikë, cisternë dhe divizion i ri iu përgjigj një nevoje reale të klientit.",
+  "Each new station, tanker and service followed a real customer need—not a change in fashion.":
+    "Çdo pikë, cisternë dhe shërbim i ri iu përgjigj një nevoje reale të klientit.",
   "Alfa Trade is founded": "Themelohet Alfa Trade",
-  "Started as a family fuel-trading business in Prishtina with a single truck and a simple principle: deliver exactly what was promised, when it was promised.":
-    "Nisi si biznes familjar në Prishtinë me një kamion dhe një parim: të dërgohet saktësisht ajo që u premtua, në kohën e premtuar.",
+  "Started as a family fuel-trading business in Skenderaj with a single truck and a simple principle: deliver exactly what was promised, when it was promised.":
+    "Nisi si biznes familjar në Skenderaj me një kamion dhe një parim: të dërgohet saktësisht ajo që u premtua, në kohën e premtuar.",
   "First retail station opens": "Hapet pika e parë",
   "Our first fuel station opens in Çagllavicë on the Prishtina ring road, bringing our wholesale quality standards directly to drivers.":
     "Pika e parë hapet në Çagllavicë, duke sjellë standardet tona të cilësisë direkt te vozitësit.",
@@ -209,8 +209,8 @@ const sqExtended = {
     "Aktivizohet portali online i flotës dhe publikohet plani i parë për derivate më të pastra dhe logjistikë më efikase.",
   "The people accountable for the promise": "Njerëzit përgjegjës për premtimin",
   "Founder & Managing Director": "Themelues dhe drejtor menaxhues",
-  "Founded Alfa Trade in 2014 and still walks the stations weekly. Two decades in regional fuel trading.":
-    "Themeloi Alfa Trade më 2014 dhe viziton pikat çdo javë. Dy dekada përvojë në tregtinë rajonale.",
+  "Founded Alfa Trade in 1997 and still walks the stations weekly. Nearly three decades in fuel trading.":
+    "Themeloi Alfa Trade më 1997 dhe viziton pikat çdo javë. Gati tri dekada përvojë në tregtinë e derivateve.",
   "Commercial Director": "Drejtoreshë komerciale",
   "Leads contracts, pricing and the fleet programme. Joined from a regional logistics group in 2019.":
     "Udhëheq kontratat, çmimet dhe programin e flotës. U bashkua më 2019 nga një grup rajonal logjistik.",

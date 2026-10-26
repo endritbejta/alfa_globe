@@ -8,10 +8,10 @@ import highway from "../../assets/img/highway.jpg";
 import gasNozzle from "../../assets/img/gasolinenozzle.jpg";
 
 const commitments = [
-  "Certified products sourced through established regional terminals",
-  "Four retail stations plus direct bulk delivery",
-  "Fleet cards, consolidated invoicing and usage reporting",
-  "Dedicated supply for transport, industry, construction and farms",
+  "Quality fuel from suppliers we trust",
+  "Four stations, and bulk delivery to your door",
+  "Clear prices and honest paperwork",
+  "Supply for businesses, building sites and farms",
 ];
 
 const Overview = () => (
@@ -31,9 +31,9 @@ const Overview = () => (
           <img src={gasNozzle} alt="Refuelling at an Alfa Trade station" loading="lazy" className="aspect-square w-full object-cover" />
         </div>
         <div className="absolute -top-6 -left-4 rounded-2xl bg-brand-600 px-6 py-4 text-white shadow-card-hover lg:-left-8">
-          <p className="text-3xl font-extrabold tracking-tight">12+</p>
+          <p className="text-3xl font-extrabold tracking-tight">25+</p>
           <p className="text-xs font-semibold uppercase tracking-wider text-white/80">
-            Years in fuel distribution
+            Years of service
           </p>
         </div>
       </Reveal>
@@ -41,9 +41,9 @@ const Overview = () => (
       {/* Copy */}
       <div className="order-1 lg:order-2">
         <SectionTitle
-          eyebrow="From terminal to tank"
-          title="One supplier for the fuel your operation depends on"
-          lead="Alfa Trade has distributed petroleum products since 2014. We combine station access, scheduled tanker delivery and fleet controls so customers can buy fuel in the way that fits their operation—not ours."
+          eyebrow="Who we are"
+          title="Your local fuel supplier since 1997"
+          lead="For over 25 years we have kept Kosovo moving. Fill up at one of our stations or have fuel brought to your site. Either way, you deal with people who know your name and keep their word."
         />
         <motion.ul
           variants={stagger(0.08)}

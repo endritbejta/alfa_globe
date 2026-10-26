@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Timer, BadgeCheck } from "lucide-react";
+import { Timer, BadgeCheck } from "lucide-react";
 import Button from "../ui/Button";
 import Eyebrow from "../ui/Eyebrow";
 import { fadeUp, stagger } from "../../lib/motion";
 import tanker from "../../assets/img/tanker.jpg";
 
 const trustPoints = [
-  { icon: BadgeCheck, label: "Diesel EN 590 & petrol EN 228" },
-  { icon: Timer, label: "Retail, bulk & fleet supply" },
-  { icon: ShieldCheck, label: "ADR-certified transport" },
+  { icon: BadgeCheck, label: "Petrol, diesel and gas" },
+  { icon: Timer, label: "Stations and bulk delivery" },
 ];
 
 const Hero = () => (
@@ -56,8 +55,8 @@ const Hero = () => (
           variants={fadeUp}
           className="mt-7 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg"
         >
-          Certified diesel, petrol, lubricants and AdBlue—available through four stations, delivered
-          in bulk to your site, or managed across your fleet with one clear account.
+          Diesel, petrol, gas and AdBlue at our four stations, or delivered in bulk straight to your
+          site.
         </motion.p>
 
         <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-4">

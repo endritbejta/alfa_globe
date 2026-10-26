@@ -22,7 +22,6 @@ export const navLinks = [
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Products", to: "/products" },
-  { label: "Fleet", to: "/fleet" },
   { label: "Careers", to: "/careers" },
   { label: "Locations", to: "/locations" },
 ];
@@ -30,17 +29,14 @@ export const navLinks = [
 export const footerLinks = {
   company: [
     { label: "About us", to: "/about" },
-    { label: "Sustainability", to: "/#sustainability" },
     { label: "Careers", to: "/careers" },
-    { label: "News & insights", to: "/#news" },
     { label: "Contact", to: "/contact" },
   ],
   services: [
     { label: "Fuel supply", to: "/services#fuel-supply" },
     { label: "Bulk delivery", to: "/services#bulk-delivery" },
-    { label: "Fleet solutions", to: "/fleet" },
+    { label: "Fleet solutions", to: "/services#fleet-solutions" },
     { label: "Industrial fuel", to: "/services#industrial-energy" },
-    { label: "Logistics", to: "/services#logistics" },
   ],
   products: [
     { label: "Diesel", to: "/products/diesel" },
@@ -48,5 +44,6 @@ export const footerLinks = {
     { label: "Lubricants", to: "/products/lubricants" },
     { label: "Industrial oils", to: "/products/industrial-oils" },
     { label: "AdBlue", to: "/products/adblue" },
+    { label: "Gas (LPG)", to: "/products/lpg" },
   ],
 };

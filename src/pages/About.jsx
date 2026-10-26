@@ -6,7 +6,6 @@ import Timeline from "../components/ui/Timeline";
 import FeatureCard from "../components/ui/FeatureCard";
 import CTASection from "../components/ui/CTASection";
 import Reveal from "../components/ui/Reveal";
-import StatsBand from "../components/sections/StatsBand";
 import { values, leadership, certifications } from "../data/about";
 import { milestones } from "../data/milestones";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
@@ -205,7 +204,6 @@ const About = () => {
         </div>
       </section>
 
-      <StatsBand />
       <CTASection
         title="Tell us how you buy fuel today"
         lead="We will show you where station access, bulk delivery or a contracted supply plan can make it simpler."

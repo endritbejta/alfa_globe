@@ -14,7 +14,7 @@ import highway2 from "../assets/img/highway2.jpg";
 const Locations = () => {
   usePageMeta(
     "Locations",
-    "Find your nearest Alfa Trade fuel station: Çagllavicë, Kçiç, Klinë e Poshtme and Polac — open daily with certified fuels and fleet card acceptance."
+    "Find your nearest Alfa Trade fuel station: Çagllavicë, Kçiç, Klinë e Poshtme and Polac — open daily with certified fuels and AdBlue."
   );
 
   const [focus, setFocus] = useState(null);
@@ -37,7 +37,7 @@ const Locations = () => {
     <>
       <PageHero
         eyebrow="Our locations"
-        title="Four convenient points for fuel, AdBlue and fleet cards"
+        title="Four convenient points for fuel and AdBlue"
         lead={`${site.stationHours}. Consistent product standards, practical services and direct access from the road.`}
         image={highway2}
         crumbs={[{ label: "Locations" }]}
@@ -131,7 +131,7 @@ const Locations = () => {
 
       <CTASection
         title="Need fuel delivered instead?"
-        lead="Our bulk-delivery fleet brings certified fuel to your site, farm or depot — anywhere in Kosovo."
+        lead="We bring fuel to your site, farm or depot, anywhere in Kosovo."
         primary={{ label: "Arrange a delivery", to: "/contact" }}
         secondary={{ label: "Bulk delivery service", to: "/services#bulk-delivery" }}
       />

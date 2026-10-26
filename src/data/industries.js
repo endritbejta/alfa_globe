@@ -13,7 +13,7 @@ export const industries = [
     icon: Truck,
     title: "Transportation & Logistics",
     description:
-      "Fleet fuel programmes, cards and bulk depot supply for hauliers, bus operators and courier networks.",
+      "Regular fuel supply and bulk depot deliveries for hauliers, bus operators and couriers.",
   },
   {
     icon: HardHat,
@@ -56,5 +56,5 @@ export const industries = [
 export const industriesIntro = {
   eyebrow: "Who we supply",
   title: "Fuel plans shaped around how each sector works",
-  lead: "A transport fleet, construction site, factory and farm do not consume fuel the same way. We plan product, storage and delivery around the job.",
+  lead: "A haulage company, construction site, factory and farm do not use fuel the same way. We plan product, storage and delivery around the job.",
 };

@@ -2,7 +2,6 @@ const routeLoaders = {
   "/about": () => import("../pages/About"),
   "/services": () => import("../pages/Services"),
   "/products": () => import("../pages/Products"),
-  "/fleet": () => import("../pages/Fleet"),
   "/careers": () => import("../pages/Careers"),
   "/contact": () => import("../pages/Contact"),
   "/locations": () => import("../pages/Locations"),

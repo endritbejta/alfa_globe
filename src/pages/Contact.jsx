@@ -14,11 +14,11 @@ import tanker from "../assets/img/tanker.jpg";
 const departments = [
   {
     name: "Commercial & quotes",
-    detail: "Supply contracts, bulk delivery, fleet programmes",
+    detail: "Supply contracts and bulk delivery",
   },
   {
     name: "Orders & dispatch",
-    detail: "Delivery scheduling and 24/7 emergency supply",
+    detail: "Delivery scheduling and order questions",
   },
   {
     name: "Careers",
@@ -51,7 +51,7 @@ const Contact = () => {
       <PageHero
         eyebrow="Contact us"
         title="Start with the fuel requirement"
-        lead="Tell us the product, volume, location and timing. Our team will route your request to station, bulk, fleet or commercial supply."
+        lead="Tell us the product, volume, location and timing. Our team will route your request to station, bulk or commercial supply."
         image={tanker}
         crumbs={[{ label: "Contact" }]}
       />

@@ -37,7 +37,7 @@ const Footer = () => (
         </Link>
         <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
           Certified petroleum products, lubricants and bulk fuel distribution for businesses and
-          industries — delivered safely and on time since 2014.
+          industries, delivered safely and on time since 1997.
         </p>
         <ul className="mt-7 space-y-3 text-sm">
           <li>

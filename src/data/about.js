@@ -5,7 +5,7 @@ export const values = [
     icon: ShieldCheck,
     title: "Safety, always",
     description:
-      "From ADR-certified transport to station procedures, nothing we deliver is worth an injury. Safety is the one standard we never negotiate.",
+      "From delivery to station procedures, nothing we deliver is worth an injury. Safety is the one standard we never negotiate.",
   },
   {
     icon: Handshake,
@@ -56,7 +56,7 @@ export const leadership = [
     name: "Driton Shala",
     initials: "DS",
     role: "Operations & Logistics Manager",
-    bio: "Runs the tanker fleet, terminal scheduling and the 24/7 dispatch line. ADR safety adviser by training.",
+    bio: "Runs deliveries, terminal scheduling and day-to-day station operations.",
   },
   {
     name: "Elira Morina",
@@ -70,10 +70,6 @@ export const certifications = [
   {
     title: "EN 590 / EN 228 compliance",
     description: "All fuels independently tested against European specifications.",
-  },
-  {
-    title: "ADR-certified transport",
-    description: "Every tanker and driver certified for dangerous-goods transport.",
   },
   {
     title: "ISO 9001-aligned processes",

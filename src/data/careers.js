@@ -9,7 +9,7 @@ export const benefits = [
   {
     icon: GraduationCap,
     title: "Paid training & certification",
-    description: "ADR licences, fuel-handling and safety training — funded by us, owned by you.",
+    description: "Fuel-handling and safety training, paid for by us.",
   },
   {
     icon: ShieldCheck,
@@ -33,39 +33,8 @@ export const benefits = [
   },
 ];
 
-export const openings = [
-  {
-    title: "Tanker Driver (ADR)",
-    location: "Prishtina region",
-    type: "Full-time",
-    description:
-      "C+E licence with ADR certificate (or willingness to obtain — we fund training). You'll run scheduled bulk deliveries with a modern, GPS-tracked fleet.",
-  },
-  {
-    title: "Station Supervisor",
-    location: "Kçiç",
-    type: "Full-time",
-    description:
-      "Lead a station team of six: shift planning, stock and cash reconciliation, and keeping our service standard high. Retail experience preferred.",
-  },
-  {
-    title: "Commercial Sales Representative",
-    location: "Prishtina (field)",
-    type: "Full-time",
-    description:
-      "Grow our fleet-card and bulk-supply portfolio. You know how to talk to transport managers and site foremen — we'll teach you the fuel.",
-  },
-  {
-    title: "Logistics Coordinator",
-    location: "Bardhosh HQ",
-    type: "Full-time",
-    description:
-      "Schedule tanker routes, coordinate terminal loading windows and keep customers informed when plans change. Strong Excel skills and calm judgment under pressure are required.",
-  },
-];
-
 export const hiringProcess = [
-  { step: "01", title: "Apply", description: "Send your CV through the form below or drop it off at any station." },
+  { step: "01", title: "Apply", description: "Fill in the form below or drop by any station." },
   { step: "02", title: "Intro call", description: "A short conversation about the role, your experience and expectations." },
   { step: "03", title: "Meet the team", description: "Visit the site you'd work at and meet your future colleagues." },
   { step: "04", title: "Offer & onboarding", description: "Clear contract, safety training in week one, a mentor for your first month." },

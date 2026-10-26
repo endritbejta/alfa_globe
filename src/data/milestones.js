@@ -31,9 +31,9 @@ export const milestones = [
   },
   {
     year: "2024",
-    title: "Fleet programme and ADR fleet renewal",
+    title: "Contract supply grows",
     description:
-      "The Alfa Fleet Card launches with consolidated invoicing and reporting, and our tanker fleet is renewed to the latest ADR safety standards.",
+      "More businesses move to contract supply with agreed prices and one monthly invoice.",
   },
   {
     year: "2026",

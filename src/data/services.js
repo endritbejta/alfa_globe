@@ -5,6 +5,7 @@ import {
   Factory,
   Droplets,
   FileText,
+  ClipboardCheck,
 } from "lucide-react";
 
 export const services = [
@@ -108,6 +109,23 @@ export const services = [
       "We review 12 months of consumption data.",
       "A pricing structure is tailored to your risk appetite.",
       "Quarterly reviews keep the contract fair.",
+    ],
+  },
+  {
+    slug: "vehicle-inspection",
+    icon: ClipboardCheck,
+    title: "Vehicle Technical Inspection",
+    description:
+      "Alfa Trade runs its own technical inspection centre for vehicles, so you can have your car or commercial vehicle checked in the same place you refuel.",
+    benefits: [
+      "Our own technical inspection centre",
+      "Passenger and commercial vehicles",
+      "Inspection and refuelling with one company",
+    ],
+    process: [
+      "Call or visit us to book an inspection.",
+      "Your vehicle is checked by our inspection team.",
+      "You receive the result and any follow-up notes.",
     ],
   },
 ];

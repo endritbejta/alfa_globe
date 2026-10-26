@@ -1,74 +1,41 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Clock, ChevronDown, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import usePageMeta from "../hooks/usePageMeta";
 import PageHero from "../components/ui/PageHero";
 import SectionTitle from "../components/ui/SectionTitle";
 import FeatureCard from "../components/ui/FeatureCard";
 import CTASection from "../components/ui/CTASection";
 import Button from "../components/ui/Button";
-import Collapse from "../components/ui/Collapse";
 import Reveal from "../components/ui/Reveal";
-import { benefits, openings, hiringProcess } from "../data/careers";
+import { benefits, hiringProcess } from "../data/careers";
+import { site } from "../data/site";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 import gasNozzle from "../assets/img/gasolinenozzle.jpg";
-
-const OpeningCard = ({ opening }) => {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <motion.article
-      variants={fadeUp}
-      className="hover-lift rounded-2xl border border-night-100 bg-white shadow-card hover:border-brand-200 hover:shadow-card-hover"
-    >
-      <button
-        onClick={() => setExpanded(!expanded)}
-        aria-expanded={expanded}
-        className="flex w-full items-center justify-between gap-4 p-6 text-left"
-      >
-        <div>
-          <h3 className="text-lg font-bold tracking-tight text-night-950">{opening.title}</h3>
-          <div className="mt-2 flex flex-wrap gap-4 text-sm text-night-500">
-            <span className="flex items-center gap-1.5">
-              <MapPin size={14} className="text-brand-600" aria-hidden="true" />
-              {opening.location}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock size={14} className="text-brand-600" aria-hidden="true" />
-              {opening.type}
-            </span>
-          </div>
-        </div>
-        <ChevronDown
-          size={20}
-          className={`shrink-0 text-night-400 transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] ${
-            expanded ? "rotate-180" : ""
-          }`}
-          aria-hidden="true"
-        />
-      </button>
-      <Collapse open={expanded}>
-        <div className="border-t border-night-100 p-6 pt-5">
-          <p className="leading-relaxed text-night-600">{opening.description}</p>
-          <Button href="#apply" className="mt-5" withArrow>
-            Apply for this role
-          </Button>
-        </div>
-      </Collapse>
-    </motion.article>
-  );
-};
 
 const Careers = () => {
   usePageMeta(
     "Careers",
-    "Join Alfa Trade: stable local jobs, paid training and real progression across our stations, logistics fleet and commercial team."
+    "Join Alfa Trade: stable local jobs, paid training and real progression across our stations, deliveries and commercial team."
   );
 
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("sending");
+    try {
+      const data = new URLSearchParams(new FormData(e.currentTarget));
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: data.toString(),
+      });
+      if (!response.ok) throw new Error(`Form submission failed (${response.status})`);
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -135,119 +102,122 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Openings + application */}
+      {/* Application */}
       <section className="bg-night-50 py-20 sm:py-28">
-        <div className="container-x grid gap-14 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <SectionTitle eyebrow="Open positions" title="We're hiring now" />
-            <motion.div
-              variants={stagger(0.08)}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportOnce}
-              className="mt-10 space-y-4"
-            >
-              {openings.map((opening) => (
-                <OpeningCard key={opening.title} opening={opening} />
-              ))}
-            </motion.div>
-          </div>
-
-          <div id="apply" className="scroll-mt-28">
-            <SectionTitle
-              eyebrow="Apply"
-              title="Send us your application"
-              lead="No role that fits? Apply anyway — good people are the one thing we always have room for."
-            />
-            <Reveal className="mt-10">
-              {submitted ? (
-                <div className="rounded-2xl border border-night-100 bg-white p-10 text-center shadow-card">
-                  <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-brand-50 text-brand-600">
-                    <Send size={24} aria-hidden="true" />
-                  </span>
-                  <h3 className="mt-5 text-xl font-bold text-night-950">Application received</h3>
-                  <p className="mt-2 text-night-500">
-                    Thank you — our team will get back to you within five working days.
-                  </p>
-                </div>
-              ) : (
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-5 rounded-2xl border border-night-100 bg-white p-7 shadow-card sm:p-9"
-                >
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div>
-                      <label htmlFor="career-name" className="mb-1.5 block text-sm font-semibold text-night-800">
-                        Full name
-                      </label>
-                      <input
-                        id="career-name"
-                        required
-                        type="text"
-                        autoComplete="name"
-                        className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="career-phone" className="mb-1.5 block text-sm font-semibold text-night-800">
-                        Phone
-                      </label>
-                      <input
-                        id="career-phone"
-                        required
-                        type="tel"
-                        autoComplete="tel"
-                        className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
-                        placeholder="+383 4x xxx xxx"
-                      />
-                    </div>
-                  </div>
+        <div id="apply" className="container-x max-w-3xl scroll-mt-28">
+          <SectionTitle
+            eyebrow="Apply"
+            title="Send us your application"
+            lead="Tell us who you are and what kind of work you are looking for. We will get in touch when there is a role that fits."
+          />
+          <Reveal className="mt-10">
+            {status === "sent" ? (
+              <div className="rounded-2xl border border-night-100 bg-white p-10 text-center shadow-card">
+                <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-brand-50 text-brand-600">
+                  <Send size={24} aria-hidden="true" />
+                </span>
+                <h3 className="mt-5 text-xl font-bold text-night-950">Application received</h3>
+                <p className="mt-2 text-night-500">Thank you. We will get back to you as soon as possible.</p>
+              </div>
+            ) : (
+              <form
+                onSubmit={handleSubmit}
+                name="careers"
+                className="space-y-5 rounded-2xl border border-night-100 bg-white p-7 shadow-card sm:p-9"
+              >
+                <input type="hidden" name="form-name" value="careers" />
+                <p className="hidden" aria-hidden="true">
+                  <label>
+                    Leave this field empty
+                    <input name="bot-field" tabIndex={-1} autoComplete="off" />
+                  </label>
+                </p>
+                <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="career-email" className="mb-1.5 block text-sm font-semibold text-night-800">
-                      Email
+                    <label htmlFor="career-name" className="mb-1.5 block text-sm font-semibold text-night-800">
+                      Full name
                     </label>
                     <input
-                      id="career-email"
+                      id="career-name"
+                      name="name"
                       required
-                      type="email"
-                      autoComplete="email"
+                      type="text"
+                      autoComplete="name"
                       className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
-                      placeholder="you@example.com"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="career-role" className="mb-1.5 block text-sm font-semibold text-night-800">
-                      Position
+                    <label htmlFor="career-phone" className="mb-1.5 block text-sm font-semibold text-night-800">
+                      Phone
                     </label>
-                    <select
-                      id="career-role"
-                      className="w-full rounded-xl border border-night-200 bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
-                    >
-                      {openings.map((o) => (
-                        <option key={o.title}>{o.title}</option>
-                      ))}
-                      <option>Open application</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="career-message" className="mb-1.5 block text-sm font-semibold text-night-800">
-                      Tell us about yourself
-                    </label>
-                    <textarea
-                      id="career-message"
-                      rows={4}
-                      className="w-full resize-none rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
-                      placeholder="Experience, licences, availability…"
+                    <input
+                      id="career-phone"
+                      name="phone"
+                      required
+                      type="tel"
+                      autoComplete="tel"
+                      className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
+                      placeholder="+383 4x xxx xxx"
                     />
                   </div>
-                  <Button type="submit" size="lg" withArrow className="w-full">
-                    Submit application
-                  </Button>
-                </form>
-              )}
-            </Reveal>
-          </div>
+                </div>
+                <div>
+                  <label htmlFor="career-email" className="mb-1.5 block text-sm font-semibold text-night-800">
+                    Email
+                  </label>
+                  <input
+                    id="career-email"
+                    name="email"
+                    required
+                    type="email"
+                    autoComplete="email"
+                    className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="career-role" className="mb-1.5 block text-sm font-semibold text-night-800">
+                    Position you are interested in <span className="font-normal text-night-400">(optional)</span>
+                  </label>
+                  <input
+                    id="career-role"
+                    name="position"
+                    type="text"
+                    className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20"
+                    placeholder="For example: station attendant, driver"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="career-message" className="mb-1.5 block text-sm font-semibold text-night-800">
+                    Tell us about yourself
+                  </label>
+                  <textarea
+                    id="career-message"
+                    name="message"
+                    rows={4}
+                    className="w-full rounded-xl border border-night-200 px-4 py-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 resize-none"
+                    placeholder="Experience, licences, availability…"
+                  />
+                </div>
+                {status === "error" && (
+                  <p role="alert" className="rounded-xl bg-brand-50 px-4 py-3 text-sm text-brand-700">
+                    Something went wrong and your message was not sent. Please try again, or call us on{" "}
+                    {site.phoneDisplay}.
+                  </p>
+                )}
+                <Button
+                  type="submit"
+                  size="lg"
+                  withArrow
+                  disabled={status === "sending"}
+                  className="w-full disabled:opacity-60"
+                >
+                  {status === "sending" ? "Sending…" : "Submit application"}
+                </Button>
+              </form>
+            )}
+          </Reveal>
         </div>
       </section>
 

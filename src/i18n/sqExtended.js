@@ -158,8 +158,7 @@ const sqExtended = {
     "Rritja për ne do të thotë më shumë besueshmëri: ruajtje më e madhe, logjistikë më e mençur, derivate më të pastra dhe shërbime më të thjeshta.",
   "The standards behind every delivery": "Standardet pas çdo dërgese",
   "Safety, always": "Siguria, gjithmonë",
-  "From ADR-certified transport to station procedures, nothing we deliver is worth an injury. Safety is the one standard we never negotiate.":
-    "Nga transporti ADR te procedurat në pika, asnjë dërgesë nuk vlen më shumë se siguria. Ky standard nuk negociohet.",
+  "From delivery to station procedures, nothing we deliver is worth an injury. Safety is the one standard we never negotiate.": "Nga dërgesa te procedurat në pika, asgjë që dërgojmë nuk vlen sa një lëndim. Siguria është standardi i vetëm për të cilin nuk negociojmë.",
   Integrity: "Integriteti",
   "Metered volumes, certified quality, transparent pricing. We built this company on doing exactly what we said we would do.":
     "Sasi të matura, cilësi e certifikuar dhe çmime transparente. Kompaninë e ndërtuam duke bërë pikërisht atë që premtuam.",
@@ -189,9 +188,8 @@ const sqExtended = {
   "Commercial & construction supply expands": "Zgjerohet furnizimi komercial dhe ndërtimor",
   "A dedicated bulk-delivery fleet and commercial contracts team is formed, serving construction sites, manufacturers and public institutions.":
     "Formohet flota e dedikuar për dërgesa me shumicë dhe ekipi i kontratave komerciale për kantiere, prodhues dhe institucione.",
-  "Fleet programme and ADR fleet renewal": "Programi i flotës dhe rinovimi ADR",
-  "The Alfa Fleet Card launches with consolidated invoicing and reporting, and our tanker fleet is renewed to the latest ADR safety standards.":
-    "Lansohet Alfa Fleet Card me faturim e raportim të përmbledhur dhe rinovohet flota sipas standardeve më të reja ADR.",
+  "Contract supply grows": "Rritet furnizimi me kontratë",
+  "More businesses move to contract supply with agreed prices and one monthly invoice.": "Gjithnjë e më shumë biznese kalojnë në furnizim me kontratë, me çmime të dakorduara dhe një faturë mujore.",
   "Digital services and sustainability roadmap": "Shërbime digjitale dhe plani i qëndrueshmërisë",
   "The online fleet portal goes live and we publish our first sustainability roadmap, committing to cleaner fuels and more efficient logistics.":
     "Aktivizohet portali online i flotës dhe publikohet plani i parë për derivate më të pastra dhe logjistikë më efikase.",
@@ -203,8 +201,7 @@ const sqExtended = {
   "Leads contracts, pricing and the fleet programme. Joined from a regional logistics group in 2019.":
     "Udhëheq kontratat, çmimet dhe programin e flotës. U bashkua më 2019 nga një grup rajonal logjistik.",
   "Operations & Logistics Manager": "Menaxher i operacioneve dhe logjistikës",
-  "Runs the tanker fleet, terminal scheduling and the 24/7 dispatch line. ADR safety adviser by training.":
-    "Menaxhon cisternat, oraret e terminalit dhe dispeçerinë 24/7. Këshilltar i trajnuar për siguri ADR.",
+  "Runs deliveries, terminal scheduling and day-to-day station operations.": "Menaxhon dërgesat, planifikimin te terminalet dhe punën e përditshme të pikave.",
   "Quality & HSE Lead": "Udhëheqëse e cilësisë dhe HSE",
   "Owns fuel quality testing, station audits and environmental compliance across the network.":
     "Përgjegjëse për testimin e cilësisë, auditimet e pikave dhe pajtueshmërinë mjedisore.",
@@ -214,8 +211,6 @@ const sqExtended = {
   "EN 590 / EN 228 compliance": "Pajtueshmëri me EN 590 / EN 228",
   "All fuels independently tested against European specifications.":
     "Të gjitha derivatet testohen në mënyrë të pavarur sipas specifikimeve evropiane.",
-  "Every tanker and driver certified for dangerous-goods transport.":
-    "Çdo cisternë dhe shofer është i certifikuar për transport të mallrave të rrezikshme.",
   "ISO 9001-aligned processes": "Procese të përafruara me ISO 9001",
   "Quality management procedures across sourcing, storage and delivery.":
     "Procedura të menaxhimit të cilësisë në furnizim, ruajtje dhe dërgesë.",
@@ -239,8 +234,6 @@ const sqExtended = {
   "One monthly invoice": "Një faturë mujore",
 
   // Careers
-  "Join Alfa Trade: stable local jobs, paid training and real progression across our stations, logistics fleet and commercial team.":
-    "Bashkohu me Alfa Trade: punë të qëndrueshme, trajnim të paguar dhe zhvillim real në pika, logjistikë dhe ekipin komercial.",
   "From safe fuel handling to route planning and customer service, our work rewards people who are careful, dependable and ready to take responsibility.":
     "Nga trajtimi i sigurt te planifikimi dhe shërbimi ndaj klientit, puna jonë shpërblen njerëzit e kujdesshëm dhe të përgjegjshëm.",
   "We invest in the licences, product knowledge and safety habits people need to grow in petroleum distribution.":
@@ -249,8 +242,7 @@ const sqExtended = {
   "Station staff become supervisors; drivers become dispatchers. We promote from within first.":
     "Stafi i pikave bëhet mbikëqyrës dhe shoferët dispeçerë. Përparësi ka promovimi i brendshëm.",
   "Paid training & certification": "Trajnim dhe certifikim i paguar",
-  "ADR licences, fuel-handling and safety training — funded by us, owned by you.":
-    "Licencat ADR dhe trajnimi për siguri financohen nga ne dhe mbeten me ju.",
+  "Fuel-handling and safety training, paid for by us.": "Trajnim për trajtimin e derivateve dhe sigurinë, i paguar nga ne.",
   "Safety-first workplace": "Vend pune me sigurinë të parën",
   "Modern equipment, strict procedures and the authority to stop any unsafe job, no questions asked.":
     "Pajisje moderne, procedura të rrepta dhe e drejta për të ndalur çdo punë të pasigurt.",
@@ -274,32 +266,8 @@ const sqExtended = {
   "Offer & onboarding": "Oferta dhe fillimi",
   "Clear contract, safety training in week one, a mentor for your first month.":
     "Kontratë e qartë, trajnim sigurie në javën e parë dhe mentor në muajin e parë.",
-  "Send your CV through the form below or drop it off at any station.":
-    "Dërgoni CV-në përmes formularit ose dorëzojeni në cilëndo pikë.",
-  "Tanker Driver (ADR)": "Shofer cisterne (ADR)",
-  "Prishtina region": "Rajoni i Prishtinës",
-  "Full-time": "Orar i plotë",
-  "C+E licence with ADR certificate (or willingness to obtain — we fund training). You'll run scheduled bulk deliveries with a modern, GPS-tracked fleet.":
-    "Kërkohet patentë C+E me ADR ose gatishmëri për certifikim, të cilin e financojmë ne. Do të kryeni dërgesa me një flotë moderne.",
-  "Station Supervisor": "Mbikëqyrës i pikës",
-  "Lead a station team of six: shift planning, stock and cash reconciliation, and keeping our service standard high. Retail experience preferred.":
-    "Udhëhiqni ekipin e pikës: planifikim të ndërrimeve, stokut, arkës dhe standardit të shërbimit. Preferohet përvojë në shitje.",
-  "Commercial Sales Representative": "Përfaqësues komercial i shitjes",
-  "Prishtina (field)": "Prishtinë (në terren)",
-  "Grow our fleet-card and bulk-supply portfolio. You know how to talk to transport managers and site foremen — we'll teach you the fuel.":
-    "Zgjeroni portofolin e kartelave dhe furnizimit me shumicë. Ne ju trajnojmë për produktet.",
-  "Logistics Coordinator": "Koordinator i logjistikës",
-  "Bardhosh HQ": "Selia në Bardhosh",
-  "Schedule tanker routes, coordinate terminal loading windows and keep customers informed when plans change. Strong Excel skills and calm judgment under pressure are required.":
-    "Planifikoni itineraret, koordinoni ngarkimin në terminal dhe informoni klientët për ndryshimet. Kërkohen njohuri të mira në Excel.",
-  "Apply for this role": "Apliko për këtë pozitë",
-  "No role that fits? Apply anyway — good people are the one thing we always have room for.":
-    "Nuk gjete pozitën e duhur? Apliko gjithsesi—gjithmonë kemi vend për njerëz të mirë.",
-  "Thank you — our team will get back to you within five working days.":
-    "Faleminderit—ekipi ynë do t’ju përgjigjet brenda pesë ditëve të punës.",
   Email: "Emaili",
   Position: "Pozita",
-  "Open application": "Aplikim i hapur",
   "Tell us about yourself": "Na tregoni për veten",
   "Experience, licences, availability…": "Përvoja, licencat, disponueshmëria…",
   "Submit application": "Dërgo aplikimin",
@@ -307,8 +275,6 @@ const sqExtended = {
     "Na telefononi ose vizitoni një pikë—biseda është mënyra më e shpejtë për të parë nëse përshtatemi.",
 
   // Contact and locations
-  "Contact Alfa Trade: request a quote, arrange a delivery or reach our 24/7 dispatch line. Phone, email, WhatsApp and Viber.":
-    "Kontaktoni Alfa Trade për ofertë, dërgesë ose dispeçerinë 24/7 përmes telefonit, emailit, WhatsApp dhe Viber.",
   "Commercial & quotes": "Komerciale dhe oferta",
   "Orders & dispatch": "Porosi dhe dispeçeri",
   "Applications and open positions": "Aplikime dhe pozita të hapura",
@@ -423,6 +389,11 @@ const sqExtended = {
   "Thank you. Our team will get back to you as soon as possible.": "Faleminderit. Ekipi ynë do t'ju kthejë përgjigje sa më shpejt të jetë e mundur.",
   "Sending…": "Duke dërguar…",
   "Something went wrong and your message was not sent. Please try again, or call us on": "Diçka shkoi keq dhe mesazhi nuk u dërgua. Provoni përsëri, ose na telefononi në",
+  "Tell us who you are and what kind of work you are looking for. We will get in touch when there is a role that fits.": "Na tregoni kush jeni dhe çfarë pune kërkoni. Do t'ju kontaktojmë kur të ketë një pozitë që ju përshtatet.",
+  "Thank you. We will get back to you as soon as possible.": "Faleminderit. Do t'ju kthejmë përgjigje sa më shpejt të jetë e mundur.",
+  "Position you are interested in": "Pozita që ju intereson",
+  "For example: station attendant, driver": "Për shembull: punonjës në pikë, shofer",
+  "Fill in the form below or drop by any station.": "Plotësoni formularin më poshtë ose kaloni në cilëndo pikë.",
 };
 
 export default sqExtended;

@@ -12,28 +12,24 @@ export const products = [
     icon: Fuel,
     image: tanker,
     summary:
-      "Ultra-low-sulphur diesel meeting the EN 590 standard, suitable for modern common-rail engines, trucks and agricultural machinery.",
+      "Diesel to the EN 590 standard, for cars, trucks, tractors and generators.",
     description:
-      "Our diesel is sourced exclusively from certified regional terminals and tested at loading and on delivery. With a sulphur content below 10 ppm and full seasonal grade management, it protects modern injection systems while delivering consistent performance in trucks, buses, tractors and passenger vehicles alike.",
+      "Our diesel meets the EN 590 standard that applies in Kosovo. It suits modern and older diesel engines, from passenger cars to trucks and farm machinery. Ask our team at any station or about a bulk order and we will help you with what you need.",
     applications: [
       "Commercial trucks and buses",
       "Agricultural machinery and tractors",
-      "Construction plant and equipment",
+      "Construction equipment",
       "Diesel passenger vehicles",
       "Backup generators",
     ],
     advantages: [
-      "Sulphur content below 10 ppm protects after-treatment systems",
-      "Winter grade supplied automatically from November to March",
-      "Certificate of quality available with every delivery",
-      "Consistent cetane performance for reliable cold starts",
+      "Meets the EN 590 standard",
+      "Available at our stations and in bulk",
+      "Delivery note with every bulk delivery",
+      "Advice from staff who know the product",
     ],
     specs: [
       { label: "Standard", value: "EN 590" },
-      { label: "Sulphur content", value: "≤ 10 mg/kg" },
-      { label: "Cetane number", value: "≥ 51" },
-      { label: "Density at 15 °C", value: "820–845 kg/m³" },
-      { label: "Winter CFPP", value: "up to −20 °C" },
     ],
   },
   {
@@ -43,26 +39,22 @@ export const products = [
     icon: Fuel,
     image: gasolineNozzle,
     summary:
-      "Unleaded 95-octane petrol to the EN 228 standard, filtered and quality-checked from terminal to nozzle for clean, dependable combustion.",
+      "Unleaded 95 petrol to the EN 228 standard, for cars, motorcycles and light vehicles.",
     description:
-      "Alfa Trade unleaded petrol meets the full EN 228 specification for modern spark-ignition engines. Strict housekeeping across our storage and station network — regular tank cleaning, filter changes and water checks — means the fuel that reaches your engine is as clean as the fuel that left the refinery.",
+      "Our unleaded petrol meets the EN 228 standard used in Kosovo. It is the everyday fuel for petrol cars, motorcycles and small machinery, available at all four of our stations.",
     applications: [
       "Passenger cars and motorcycles",
       "Light commercial vehicles",
       "Small machinery and garden equipment",
-      "Marine leisure engines",
     ],
     advantages: [
-      "Full EN 228 compliance verified by independent laboratories",
-      "Detergent additive package keeps injectors clean",
-      "Stable octane rating across the network",
-      "Ethanol content managed to specification",
+      "Meets the EN 228 standard",
+      "95 octane unleaded",
+      "Available at all four of our stations",
     ],
     specs: [
       { label: "Standard", value: "EN 228" },
-      { label: "Research octane (RON)", value: "≥ 95" },
-      { label: "Sulphur content", value: "≤ 10 mg/kg" },
-      { label: "Density at 15 °C", value: "720–775 kg/m³" },
+      { label: "Octane", value: "95 (unleaded)" },
     ],
   },
   {
@@ -72,26 +64,21 @@ export const products = [
     icon: Zap,
     image: highway3,
     summary:
-      "Additivated premium diesel with enhanced detergency and cetane boost — cleaner injectors, better fuel economy and quieter running for demanding engines.",
+      "Our premium diesel with added additives, available at selected stations.",
     description:
-      "Alfa Premium Diesel starts as EN 590 diesel and adds a multifunctional additive package: detergents that clean and keep injectors clean, a cetane improver for sharper combustion, anti-foam for faster filling and a corrosion inhibitor that protects the fuel system. Fleets running high annual mileages see the difference in consumption and maintenance intervals.",
+      "Alfa Premium Diesel is EN 590 diesel with an additive package that helps keep injectors clean and the engine running smoothly. Ask our team at the station whether it suits your vehicle.",
     applications: [
-      "High-mileage trucks and vans",
-      "Premium passenger vehicles",
-      "Operators focused on fuel economy",
-      "Vehicles with high annual mileage",
+      "Passenger and commercial diesel vehicles",
+      "Drivers who cover many kilometres",
     ],
     advantages: [
-      "Up to 3% fuel-economy improvement in trials",
-      "Removes existing injector deposits within tanks of use",
-      "Improved cold-start behaviour and quieter combustion",
-      "Reduced foaming for faster, cleaner refuelling",
+      "Based on EN 590 diesel",
+      "Additives to help keep the fuel system clean",
+      "Available at selected stations",
     ],
     specs: [
       { label: "Base standard", value: "EN 590" },
-      { label: "Cetane number", value: "≥ 55 (boosted)" },
-      { label: "Detergency", value: "Keep-clean & clean-up" },
-      { label: "Availability", value: "All Alfa Trade stations" },
+      { label: "Availability", value: "Selected stations" },
     ],
   },
   {
@@ -101,25 +88,22 @@ export const products = [
     icon: Droplets,
     image: null,
     summary:
-      "Engine oils, transmission fluids and greases from OEM-approved ranges, covering passenger vehicles through to heavy commercial and off-road plant.",
+      "Engine oils, gear oils and greases for cars, trucks and machinery.",
     description:
-      "We stock a curated range of lubricants covering the specifications that matter in our market — ACEA and API grades for European and global vehicles, heavy-duty engine oils for commercial transport, and multi-purpose greases for plant and agriculture. Our staff are trained to match the right product to your equipment, so you never over- or under-specify.",
+      "We supply a range of lubricants for passenger cars, commercial vehicles, and farm and construction machinery. Tell us your vehicle or equipment and our team will help you pick the right oil.",
     applications: [
-      "Passenger car engine and gearbox service",
-      "Heavy-duty commercial engines",
+      "Passenger car engines and gearboxes",
+      "Commercial vehicle engines",
       "Agricultural and construction equipment",
-      "Industrial gearboxes and bearings",
     ],
     advantages: [
-      "OEM approvals: ACEA, API, MB, VW, MAN, Volvo",
-      "Pack sizes from 1 L retail to 208 L drums",
-      "Application guidance from trained staff",
-      "Delivered alongside your fuel order",
+      "Advice from our staff",
+      "Available in different pack sizes",
+      "Can be added to your fuel order",
     ],
     specs: [
-      { label: "Engine oils", value: "0W-20 to 15W-40" },
-      { label: "Standards", value: "ACEA A/B/C/E, API SP/CK-4" },
-      { label: "Packaging", value: "1 L – 208 L" },
+      { label: "Range", value: "Engine oils, gear oils, greases" },
+      { label: "Packaging", value: "Ask us for sizes" },
     ],
   },
   {
@@ -129,25 +113,22 @@ export const products = [
     icon: FlaskConical,
     image: null,
     summary:
-      "Hydraulic, gear, compressor and turbine oils for manufacturing and processing industries, supplied in drums and IBCs with full technical data sheets.",
+      "Hydraulic, gear and compressor oils for workshops and industry.",
     description:
-      "For plants and processors, we supply the industrial lubricants that keep production lines moving: HLP/HVLP hydraulic oils, CLP gear oils, compressor and turbine oils, and food-grade options where required. Every product ships with its technical and safety data sheets, and we help you build sensible lubrication schedules that extend equipment life.",
+      "For workshops and industrial sites we can supply hydraulic, gear and compressor oils. Tell us the machine and the oil it needs, and we will confirm what we can supply and the pack size.",
     applications: [
-      "Hydraulic systems and presses",
+      "Hydraulic systems",
       "Industrial gearboxes",
-      "Air compressors and turbines",
-      "Metalworking and processing lines",
+      "Compressors",
     ],
     advantages: [
-      "ISO VG grades held in local stock",
-      "Technical and safety data sheets with every order",
-      "Drum and IBC supply with deposit return",
-      "Lubrication survey available for larger plants",
+      "Supplied to match your equipment",
+      "Different pack sizes available",
+      "Advice from our staff",
     ],
     specs: [
-      { label: "Hydraulic oils", value: "HLP/HVLP, ISO VG 32–68" },
-      { label: "Gear oils", value: "CLP, ISO VG 68–320" },
-      { label: "Packaging", value: "20 L, 208 L, 1,000 L IBC" },
+      { label: "Range", value: "Hydraulic, gear and compressor oils" },
+      { label: "Packaging", value: "Ask us for sizes" },
     ],
   },
   {
@@ -157,25 +138,22 @@ export const products = [
     icon: Container,
     image: null,
     summary:
-      "ISO 22241-certified urea solution for SCR diesel systems, available at the pump, in packs and in bulk for depots — keeping Euro 6 vehicles compliant.",
+      "AdBlue® exhaust fluid for modern diesel vehicles, available at selected stations.",
     description:
-      "AdBlue® is essential for every modern SCR-equipped diesel. Ours is produced and handled to ISO 22241, which matters: contaminated urea solution is one of the most common causes of SCR system failure. We dispense it at station pumps, sell it in 10 L packs, and deliver in bulk to fleet depots with dispensing equipment on request.",
+      "AdBlue® is a urea solution that modern diesel vehicles with an SCR system need to meet emission rules. It is made to the ISO 22241 standard. Ask our team about pump and pack availability.",
     applications: [
-      "Euro 5/6 trucks and buses",
-      "SCR-equipped passenger diesels",
+      "Trucks and buses with SCR",
+      "Diesel cars with SCR",
       "Agricultural machinery with SCR",
-      "Depot bulk storage",
     ],
     advantages: [
-      "ISO 22241 certified purity",
-      "Available at pump, in packs and in bulk",
-      "Depot storage and dispensing solutions",
-      "Protects SCR catalysts from contamination failure",
+      "Made to the ISO 22241 standard",
+      "Available at selected stations",
+      "Bulk supply on request",
     ],
     specs: [
       { label: "Standard", value: "ISO 22241" },
       { label: "Urea concentration", value: "32.5%" },
-      { label: "Supply", value: "Pump, 10 L pack, bulk" },
     ],
   },
   {
@@ -194,12 +172,12 @@ export const products = [
       "Taxis and high-mileage drivers",
     ],
     advantages: [
-      "Lower cost per kilometre than petrol",
+      "Lower fuel cost than petrol",
       "Works alongside your existing petrol tank",
       "Staff on hand to help with first-time filling",
     ],
     specs: [
-      { label: "Type", value: "Autogas (LPG)" },
+      { label: "Standard", value: "EN 589" },
       { label: "Use", value: "Vehicles converted to run on gas" },
     ],
   },

@@ -186,25 +186,6 @@ const sqExtended = {
   "Quality without shortcuts": "Cilësi pa kompromise",
   "Certified sourcing, sealed transport and independent testing. Quality is a chain, and we protect every link in it.":
     "Burime të certifikuara, transport i vulosur dhe testim i pavarur. Cilësia është zinxhir dhe ne mbrojmë çdo hallkë.",
-  "Each new station, tanker and service followed a real customer need—not a change in fashion.":
-    "Çdo pikë, cisternë dhe shërbim i ri iu përgjigj një nevoje reale të klientit.",
-  "Alfa Trade is founded": "Themelohet Alfa Trade",
-  "Started as a family fuel-trading business in Skenderaj with a single truck and a simple principle: deliver exactly what was promised, when it was promised.":
-    "Nisi si biznes familjar në Skenderaj me një kamion dhe një parim: të dërgohet saktësisht ajo që u premtua, në kohën e premtuar.",
-  "First retail station opens": "Hapet pika e parë",
-  "Our first fuel station opens in Çagllavicë on the Prishtina ring road, bringing our wholesale quality standards directly to drivers.":
-    "Pika e parë hapet në Çagllavicë, duke sjellë standardet tona të cilësisë direkt te vozitësit.",
-  "Network grows to four stations": "Rrjeti zgjerohet në katër pika",
-  "Stations in Kçiç, Klinë e Poshtme and Polac join the network, extending coverage across central and western Kosovo.":
-    "Pikat në Kçiç, Klinë të Poshtme dhe Polac i bashkohen rrjetit, duke zgjeruar mbulimin në Kosovën qendrore dhe perëndimore.",
-  "Commercial & construction supply expands": "Zgjerohet furnizimi komercial dhe ndërtimor",
-  "A dedicated bulk-delivery fleet and commercial contracts team is formed, serving construction sites, manufacturers and public institutions.":
-    "Formohet flota e dedikuar për dërgesa me shumicë dhe ekipi i kontratave komerciale për kantiere, prodhues dhe institucione.",
-  "Contract supply grows": "Rritet furnizimi me kontratë",
-  "More businesses move to contract supply with agreed prices and one monthly invoice.": "Gjithnjë e më shumë biznese kalojnë në furnizim me kontratë, me çmime të dakorduara dhe një faturë mujore.",
-  "Digital services and sustainability roadmap": "Shërbime digjitale dhe plani i qëndrueshmërisë",
-  "The online fleet portal goes live and we publish our first sustainability roadmap, committing to cleaner fuels and more efficient logistics.":
-    "Aktivizohet portali online i flotës dhe publikohet plani i parë për derivate më të pastra dhe logjistikë më efikase.",
   "The people accountable for the promise": "Njerëzit përgjegjës për premtimin",
   "Founder & Managing Director": "Themelues dhe drejtor menaxhues",
   "Founded Alfa Trade in 1997 and still walks the stations weekly. Nearly three decades in fuel trading.":

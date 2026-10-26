@@ -36,14 +36,26 @@ const inputClasses =
 const Contact = () => {
   usePageMeta(
     "Contact",
-    "Contact Alfa Trade: request a quote, arrange a delivery or reach our 24/7 dispatch line. Phone, email, WhatsApp and Viber."
+    "Contact Alfa Trade: request a quote or arrange a delivery. Phone, email, WhatsApp and Viber."
   );
 
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("sending");
+    try {
+      const data = new URLSearchParams(new FormData(e.currentTarget));
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: data.toString(),
+      });
+      if (!response.ok) throw new Error(`Form submission failed (${response.status})`);
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -151,33 +163,41 @@ const Contact = () => {
               lead="Product, estimated volume, delivery point and preferred timing are enough to start."
             />
             <Reveal className="mt-10">
-              {submitted ? (
+              {status === "sent" ? (
                 <div className="rounded-2xl border border-night-100 bg-white p-12 text-center shadow-card">
                   <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-brand-50 text-brand-600">
                     <Send size={24} aria-hidden="true" />
                   </span>
                   <h3 className="mt-5 text-xl font-bold text-night-950">Inquiry sent</h3>
                   <p className="mt-2 text-night-500">
-                    Thank you — our commercial team will reply within one working day.
+                    Thank you. Our team will get back to you as soon as possible.
                   </p>
                 </div>
               ) : (
                 <form
                   onSubmit={handleSubmit}
+                  name="contact"
                   className="space-y-5 rounded-2xl border border-night-100 bg-white p-7 shadow-card sm:p-9"
                 >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden" aria-hidden="true">
+                    <label>
+                      Leave this field empty
+                      <input name="bot-field" tabIndex={-1} autoComplete="off" />
+                    </label>
+                  </p>
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label htmlFor="contact-name" className="mb-1.5 block text-sm font-semibold text-night-800">
                         Full name
                       </label>
-                      <input id="contact-name" required type="text" autoComplete="name" className={inputClasses} placeholder="Your name" />
+                      <input id="contact-name" name="name" required type="text" autoComplete="name" className={inputClasses} placeholder="Your name" />
                     </div>
                     <div>
                       <label htmlFor="contact-company" className="mb-1.5 block text-sm font-semibold text-night-800">
                         Company <span className="font-normal text-night-400">(optional)</span>
                       </label>
-                      <input id="contact-company" type="text" autoComplete="organization" className={inputClasses} placeholder="Company name" />
+                      <input id="contact-company" name="company" type="text" autoComplete="organization" className={inputClasses} placeholder="Company name" />
                     </div>
                   </div>
                   <div className="grid gap-5 sm:grid-cols-2">
@@ -185,20 +205,20 @@ const Contact = () => {
                       <label htmlFor="contact-email" className="mb-1.5 block text-sm font-semibold text-night-800">
                         Email
                       </label>
-                      <input id="contact-email" required type="email" autoComplete="email" className={inputClasses} placeholder="you@example.com" />
+                      <input id="contact-email" name="email" required type="email" autoComplete="email" className={inputClasses} placeholder="you@example.com" />
                     </div>
                     <div>
                       <label htmlFor="contact-phone" className="mb-1.5 block text-sm font-semibold text-night-800">
                         Phone
                       </label>
-                      <input id="contact-phone" type="tel" autoComplete="tel" className={inputClasses} placeholder="+383 4x xxx xxx" />
+                      <input id="contact-phone" name="phone" type="tel" autoComplete="tel" className={inputClasses} placeholder="+383 4x xxx xxx" />
                     </div>
                   </div>
                   <div>
                     <label htmlFor="contact-department" className="mb-1.5 block text-sm font-semibold text-night-800">
                       Department
                     </label>
-                    <select id="contact-department" className={`${inputClasses} bg-white`}>
+                    <select id="contact-department" name="department" className={`${inputClasses} bg-white`}>
                       {departments.map((d) => (
                         <option key={d.name}>{`${d.name} — ${d.detail}`}</option>
                       ))}
@@ -210,14 +230,27 @@ const Contact = () => {
                     </label>
                     <textarea
                       id="contact-message"
+                      name="message"
                       required
                       rows={5}
                       className={`${inputClasses} resize-none`}
                       placeholder="Volumes, locations, timelines — the more detail, the faster the quote."
                     />
                   </div>
-                  <Button type="submit" size="lg" withArrow className="w-full">
-                    Send inquiry
+                  {status === "error" && (
+                    <p role="alert" className="rounded-xl bg-brand-50 px-4 py-3 text-sm text-brand-700">
+                      Something went wrong and your message was not sent. Please try again, or call us on{" "}
+                      {site.phoneDisplay}.
+                    </p>
+                  )}
+                  <Button
+                    type="submit"
+                    size="lg"
+                    withArrow
+                    disabled={status === "sending"}
+                    className="w-full disabled:opacity-60"
+                  >
+                    {status === "sending" ? "Sending…" : "Send inquiry"}
                   </Button>
                 </form>
               )}

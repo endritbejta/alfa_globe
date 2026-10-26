@@ -1,7 +1,7 @@
 export const site = {
   name: "Alfa Trade",
   tagline: "Reliable Petroleum Distribution for Businesses and Industries",
-  email: "alfaglobe.ks@gmail.com",
+  email: "alfatradeshpk@gmail.com",
   phone: "+383 44 192 422",
   phoneDisplay: "+383 (0) 44 192 422",
   whatsapp: "https://api.whatsapp.com/send?phone=38344192422",

@@ -318,8 +318,6 @@ const sqExtended = {
   "WhatsApp / Viber": "WhatsApp / Viber",
   "Product, estimated volume, delivery point and preferred timing are enough to start.":
     "Produkti, sasia e përafërt, pika e dërgesës dhe koha e preferuar mjaftojnë për të filluar.",
-  "Thank you — our commercial team will reply within one working day.":
-    "Faleminderit—ekipi komercial do t’ju përgjigjet brenda një dite pune.",
   "Volumes, locations, timelines — the more detail, the faster the quote.":
     "Sasitë, lokacionet dhe afatet—sa më shumë hollësi, aq më shpejt oferta.",
   "Fuel stations open daily 06:00 – 24:00. Consistent product standards, practical services and direct access from the road.":
@@ -422,6 +420,9 @@ const sqExtended = {
   "Made to the ISO 22241 standard": "Prodhuar sipas standardit ISO 22241",
   "Bulk supply on request": "Furnizim me shumicë me kërkesë",
   "Lower fuel cost than petrol": "Kosto më e ulët karburanti se benzina",
+  "Thank you. Our team will get back to you as soon as possible.": "Faleminderit. Ekipi ynë do t'ju kthejë përgjigje sa më shpejt të jetë e mundur.",
+  "Sending…": "Duke dërguar…",
+  "Something went wrong and your message was not sent. Please try again, or call us on": "Diçka shkoi keq dhe mesazhi nuk u dërgua. Provoni përsëri, ose na telefononi në",
 };
 
 export default sqExtended;

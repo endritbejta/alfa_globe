@@ -26,21 +26,36 @@ const Layout = () => {
   }, [pathname, hash]);
 
   // While the page scrolls, cards slide under a resting cursor and flip their
-  // hover lift on and off, which reads as flicker. Pause pointer hits on the
-  // page content until scrolling stops.
+  // hover styles on and off, which reads as flicker. Pause hover styles (see
+  // the `hover` variant in index.css) from the first scroll until the pointer
+  // really moves. Clicks still work: only the visual hover state is paused.
   useEffect(() => {
     const root = document.documentElement;
-    let idle;
-    const onScroll = () => {
-      root.classList.add("is-scrolling");
-      clearTimeout(idle);
-      idle = setTimeout(() => root.classList.remove("is-scrolling"), 150);
+    let paused = false;
+    let lastX = -1;
+    let lastY = -1;
+    const pause = () => {
+      if (paused) return;
+      paused = true;
+      root.classList.add("hover-paused");
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
+    const resume = (event) => {
+      // Some browsers fire a mousemove at the same spot after a scroll.
+      const moved = event.clientX !== lastX || event.clientY !== lastY;
+      lastX = event.clientX;
+      lastY = event.clientY;
+      if (!paused || (event.type === "pointermove" && !moved)) return;
+      paused = false;
+      root.classList.remove("hover-paused");
+    };
+    window.addEventListener("scroll", pause, { passive: true });
+    window.addEventListener("pointermove", resume, { passive: true });
+    window.addEventListener("pointerdown", resume, { passive: true });
     return () => {
-      window.removeEventListener("scroll", onScroll);
-      clearTimeout(idle);
-      root.classList.remove("is-scrolling");
+      window.removeEventListener("scroll", pause);
+      window.removeEventListener("pointermove", resume);
+      window.removeEventListener("pointerdown", resume);
+      root.classList.remove("hover-paused");
     };
   }, []);
 
